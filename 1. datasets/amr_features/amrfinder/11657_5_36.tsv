@@ -1,0 +1,21 @@
+Protein id	Contig id	Start	Stop	Strand	Element symbol	Element name	Scope	Type	Subtype	Class	Subclass	Method	Target length	Reference sequence length	% Coverage of reference	% Identity to reference	Alignment length	Closest reference accession	Closest reference name	HMM accession	HMM description
+NA	ERZ3165022.1	265570	268671	+	acrF	multidrug efflux RND transporter permease subunit AcrF	plus	AMR	AMR	EFFLUX	EFFLUX	BLASTX	1034	1034	100.00	99.42	1034	AAC76298.1	multidrug efflux RND transporter permease subunit AcrF	NA	NA
+NA	ERZ3165022.2	3776	4297	-	lpfA	long polar fimbria major subunit LpfA	plus	VIRULENCE	VIRULENCE	NA	NA	BLASTX	174	174	100.00	95.40	174	CAV00478.1	long polar fimbria major subunit LpfA	NA	NA
+NA	ERZ3165022.2	146516	147703	+	emrD	multidrug efflux MFS transporter EmrD	plus	AMR	AMR	EFFLUX	EFFLUX	BLASTX	396	396	100.00	98.99	396	EFF04178.1	multidrug efflux MFS transporter EmrD	NA	NA
+NA	ERZ3165022.25	31507	36066	-	sslE	lipoprotein metalloprotease SslE	plus	VIRULENCE	VIRULENCE	NA	NA	BLASTX	1520	1520	100.00	98.62	1520	ADE89421.1	lipoprotein metalloprotease SslE	NA	NA
+NA	ERZ3165022.28	3756	4019	+	ariR	biofilm/acid-resistance regulator AriR	plus	STRESS	ACID	NA	NA	BLASTX	88	88	100.00	97.73	88	AAC74250.1	biofilm/acid-resistance regulator AriR	NA	NA
+NA	ERZ3165022.39	17943	20030	+	iha	bifunctional siderophore receptor/adhesin Iha	plus	VIRULENCE	VIRULENCE	NA	NA	EXACTX	696	696	100.00	100.00	696	CAR09712.2	bifunctional siderophore receptor/adhesin Iha	NA	NA
+NA	ERZ3165022.39	26058	28103	+	ireA	TonB-dependent siderophore receptor IreA	plus	VIRULENCE	VIRULENCE	NA	NA	EXACTX	682	682	100.00	100.00	682	CAR09703.2	TonB-dependent siderophore receptor IreA	NA	NA
+NA	ERZ3165022.52	14924	16054	-	blaEC	BlaEC family class C beta-lactamase	plus	AMR	AMR	BETA-LACTAM	BETA-LACTAM	BLASTX	377	377	100.00	98.41	377	AAZ85965.1	cephalosporin-hydrolyzing class C beta-lactamase EC-5	NA	NA
+NA	ERZ3165022.54	13928	15649	+	iucA	aerobactin synthase IucA	plus	VIRULENCE	VIRULENCE	NA	NA	BLASTX	574	576	100.00	98.26	576	EGI25746.1	aerobactin synthase IucA	NA	NA
+NA	ERZ3165022.54	15653	16597	+	iucB	N(6)-hydroxylysine O-acetyltransferase IucB	plus	VIRULENCE	VIRULENCE	NA	NA	BLASTX	315	315	100.00	99.37	315	AAN82074.1	N(6)-hydroxylysine O-acetyltransferase IucB	NA	NA
+NA	ERZ3165022.54	16600	18339	+	iucC	NIS family aerobactin synthetase IucC	plus	VIRULENCE	VIRULENCE	NA	NA	BLASTX	580	580	100.00	99.48	580	AAN82073.1	NIS family aerobactin synthetase IucC	NA	NA
+NA	ERZ3165022.54	18339	19673	+	iucD	NADPH-dependent L-lysine N(6)-monooxygenase IucD	plus	VIRULENCE	VIRULENCE	NA	NA	BLASTX	445	445	100.00	99.78	445	AAD44749.1	NADPH-dependent L-lysine N(6)-monooxygenase IucD	NA	NA
+NA	ERZ3165022.54	19682	21874	+	iutA	ferric aerobactin receptor IutA	plus	VIRULENCE	VIRULENCE	NA	NA	BLASTX	731	731	100.00	99.59	731	AAN45165.2	ferric aerobactin receptor IutA	NA	NA
+NA	ERZ3165022.54	25372	26487	+	iha	bifunctional siderophore receptor/adhesin Iha	plus	VIRULENCE	VIRULENCE	NA	NA	PARTIAL_CONTIG_ENDX	372	696	53.45	100.00	372	AAG55323.1	bifunctional siderophore receptor/adhesin Iha	NA	NA
+NA	ERZ3165022.6	81670	83469	+	ybtP	yersiniabactin ABC transporter ATP-binding/permease protein YbtP	plus	VIRULENCE	VIRULENCE	NA	NA	BLASTX	600	600	100.00	99.67	600	CAA21388.1	yersiniabactin ABC transporter ATP-binding/permease protein YbtP	NA	NA
+NA	ERZ3165022.6	83459	85258	+	ybtQ	yersiniabactin ABC transporter ATP-binding/permease protein YbtQ	plus	VIRULENCE	VIRULENCE	NA	NA	BLASTX	600	600	100.00	99.83	600	AAC69584.1	yersiniabactin ABC transporter ATP-binding/permease protein YbtQ	NA	NA
+NA	ERZ3165022.6	121621	121950	+	emrE	multidrug efflux SMR transporter EmrE	plus	STRESS	BIOCIDE	EFFLUX	EFFLUX	BLASTX	110	110	100.00	98.18	110	CAA77936.1	multidrug efflux SMR transporter EmrE	NA	NA
+NA	ERZ3165022.62	68	2611	-	sigA	serine protease autotransporter toxin SigA	plus	VIRULENCE	VIRULENCE	NA	NA	PARTIALX	848	1285	65.99	97.76	848	AAN44449.1	serine protease autotransporter toxin SigA	NA	NA
+NA	ERZ3165022.80	691	1863	-	senB	enterotoxin production-related protein TieB	plus	VIRULENCE	VIRULENCE	NA	NA	EXACTX	391	391	100.00	100.00	391	AAZ89288.1	enterotoxin production-related protein TieB	NA	NA
+NA	ERZ3165022.88	1783	2868	+	capU	putative hexosyltransferase CapU	plus	VIRULENCE	VIRULENCE	NA	NA	EXACTX	362	362	100.00	100.00	362	AEQ15694.1	putative hexosyltransferase CapU	NA	NA

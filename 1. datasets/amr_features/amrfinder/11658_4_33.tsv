@@ -1,0 +1,28 @@
+Protein id	Contig id	Start	Stop	Strand	Element symbol	Element name	Scope	Type	Subtype	Class	Subclass	Method	Target length	Reference sequence length	% Coverage of reference	% Identity to reference	Alignment length	Closest reference accession	Closest reference name	HMM accession	HMM description
+NA	ERZ3164969.117	415	528	-	astA	heat-stable enterotoxin EAST1	plus	VIRULENCE	VIRULENCE	NA	NA	EXACTX	38	38	100.00	100.00	38	AAM88299.1	heat-stable enterotoxin EAST1	NA	NA
+NA	ERZ3164969.13	15330	16745	-	espX1	type III secretion system effector EspX1	plus	VIRULENCE	VIRULENCE	NA	NA	BLASTX	472	473	99.79	91.31	472	ADD54679.1	type III secretion system effector EspX1	NA	NA
+NA	ERZ3164969.16	5352	8387	-	acrF	multidrug efflux RND transporter permease subunit AcrF	plus	AMR	AMR	EFFLUX	EFFLUX	BLASTX	1012	1034	97.87	99.11	1012	AAC76298.1	multidrug efflux RND transporter permease subunit AcrF	NA	NA
+NA	ERZ3164969.249	3	218	+	iss	increased serum survival lipoprotein Iss	plus	VIRULENCE	VIRULENCE	NA	NA	PARTIAL_CONTIG_ENDX	72	97	74.23	100.00	72	AGC85979.1	increased serum survival lipoprotein Iss	NA	NA
+NA	ERZ3164969.28	12242	14041	-	ybtQ	yersiniabactin ABC transporter ATP-binding/permease protein YbtQ	plus	VIRULENCE	VIRULENCE	NA	NA	BLASTX	600	600	100.00	99.67	600	AAC69584.1	yersiniabactin ABC transporter ATP-binding/permease protein YbtQ	NA	NA
+NA	ERZ3164969.28	14031	15830	-	ybtP	yersiniabactin ABC transporter ATP-binding/permease protein YbtP	plus	VIRULENCE	VIRULENCE	NA	NA	BLASTX	600	600	100.00	99.33	600	CAA21388.1	yersiniabactin ABC transporter ATP-binding/permease protein YbtP	NA	NA
+NA	ERZ3164969.29	40204	44445	+	fdeC	inverse autotransporter adhesin FdeC	plus	VIRULENCE	VIRULENCE	NA	NA	BLASTX	1414	1416	99.93	92.65	1415	ABE05822.1	inverse autotransporter adhesin FdeC	NA	NA
+NA	ERZ3164969.4	47736	48962	+	mdtM	multidrug efflux MFS transporter MdtM	plus	AMR	AMR	EFFLUX	EFFLUX	BLASTX	409	410	99.76	98.04	409	AAC77293.1	multidrug efflux MFS transporter MdtM	NA	NA
+NA	ERZ3164969.41	18890	19747	+	blaTEM-1	broad-spectrum class A beta-lactamase TEM-1	core	AMR	AMR	BETA-LACTAM	BETA-LACTAM	ALLELEX	286	286	100.00	100.00	286	WP_000027057.1	broad-spectrum class A beta-lactamase TEM-1	NA	NA
+NA	ERZ3164969.44	1715	2827	+	iroB	salmochelin biosynthesis C-glycosyltransferase IroB	plus	VIRULENCE	VIRULENCE	NA	NA	BLASTX	371	371	100.00	99.73	371	EOW04219.1	salmochelin biosynthesis C-glycosyltransferase IroB	NA	NA
+NA	ERZ3164969.44	2970	6626	+	iroC	salmochelin/enterobactin export ABC transporter IroC	plus	VIRULENCE	VIRULENCE	NA	NA	BLASTX	1219	1219	100.00	99.59	1219	AUH19662.1	salmochelin/enterobactin export ABC transporter IroC	NA	NA
+NA	ERZ3164969.44	6733	7959	+	iroD	catecholate siderophore esterase IroD	plus	VIRULENCE	VIRULENCE	NA	NA	BLASTX	409	409	100.00	99.51	409	ACJ63529.1	catecholate siderophore esterase IroD	NA	NA
+NA	ERZ3164969.44	8047	9000	+	iroE	catecholate siderophore esterase IroE	plus	VIRULENCE	VIRULENCE	NA	NA	BLASTX	318	318	100.00	99.06	318	ACJ63530.1	catecholate siderophore esterase IroE	NA	NA
+NA	ERZ3164969.44	9051	11225	-	iroN	siderophore salmochelin receptor IroN	plus	VIRULENCE	VIRULENCE	NA	NA	BLASTX	725	725	100.00	99.86	725	AAN76093.1	siderophore salmochelin receptor IroN	NA	NA
+NA	ERZ3164969.44	16417	18510	+	cvaB	colicin V export peptidase/ABC transporter CvaB	plus	VIRULENCE	VIRULENCE	NA	NA	EXACTX	698	698	100.00	100.00	698	CAA40744.1	colicin V export peptidase/ABC transporter CvaB	NA	NA
+NA	ERZ3164969.44	18686	18994	-	cvaC	colicin V	plus	VIRULENCE	VIRULENCE	NA	NA	EXACTX	103	103	100.00	100.00	103	CAA40746.1	colicin V	NA	NA
+NA	ERZ3164969.54	15390	15680	+	iss	increased serum survival lipoprotein Iss	plus	VIRULENCE	VIRULENCE	NA	NA	EXACTX	97	97	100.00	100.00	97	CAR12622.1	increased serum survival lipoprotein Iss	NA	NA
+NA	ERZ3164969.57	7082	8803	+	iucA	aerobactin synthase IucA	plus	VIRULENCE	VIRULENCE	NA	NA	BLASTX	574	576	100.00	95.31	576	EGI25746.1	aerobactin synthase IucA	NA	NA
+NA	ERZ3164969.57	8807	9751	+	iucB	N(6)-hydroxylysine O-acetyltransferase IucB	plus	VIRULENCE	VIRULENCE	NA	NA	BLASTX	315	315	100.00	96.19	315	AAN82074.1	N(6)-hydroxylysine O-acetyltransferase IucB	NA	NA
+NA	ERZ3164969.57	9754	11493	+	iucC	NIS family aerobactin synthetase IucC	plus	VIRULENCE	VIRULENCE	NA	NA	BLASTX	580	580	100.00	97.59	580	AAN82073.1	NIS family aerobactin synthetase IucC	NA	NA
+NA	ERZ3164969.57	11493	12767	+	iucD	NADPH-dependent L-lysine N(6)-monooxygenase IucD	plus	VIRULENCE	VIRULENCE	NA	NA	BLASTX	425	445	95.51	97.65	425	AAD44749.1	NADPH-dependent L-lysine N(6)-monooxygenase IucD	NA	NA
+NA	ERZ3164969.57	12864	15050	+	iutA	ferric aerobactin receptor IutA	plus	VIRULENCE	VIRULENCE	NA	NA	BLASTX	729	731	99.73	89.71	729	AAN45165.2	ferric aerobactin receptor IutA	NA	NA
+NA	ERZ3164969.69	133	4263	-	tsh	temperature-sensitive protease autotransporter hemagglutinin Tsh	plus	VIRULENCE	VIRULENCE	NA	NA	EXACTX	1377	1377	100.00	100.00	1377	AAA24698.1	temperature-sensitive protease autotransporter hemagglutinin Tsh	NA	NA
+NA	ERZ3164969.7	30190	30759	+	lpfA-O113	long polar fimbria major subunit LpfA-O113	plus	VIRULENCE	VIRULENCE	NA	NA	EXACTX	190	190	100.00	100.00	190	AAT76975.1	long polar fimbria major subunit LpfA-O113	NA	NA
+NA	ERZ3164969.8	159005	160135	-	blaEC	BlaEC family class C beta-lactamase	plus	AMR	AMR	BETA-LACTAM	BETA-LACTAM	BLASTX	377	377	100.00	98.67	377	WP_063610930.1	extended-spectrum class C beta-lactamase EC-15	NA	NA
+NA	ERZ3164969.85	916	1206	-	iss	increased serum survival lipoprotein Iss	plus	VIRULENCE	VIRULENCE	NA	NA	EXACTX	97	97	100.00	100.00	97	ADR26561.1	increased serum survival lipoprotein Iss	NA	NA
+NA	ERZ3164969.9	105278	105541	+	ariR	biofilm/acid-resistance regulator AriR	plus	STRESS	ACID	NA	NA	EXACTX	88	88	100.00	100.00	88	AAC74250.1	biofilm/acid-resistance regulator AriR	NA	NA

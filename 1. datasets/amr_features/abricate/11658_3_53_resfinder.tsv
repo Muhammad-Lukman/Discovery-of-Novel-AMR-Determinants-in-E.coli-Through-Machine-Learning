@@ -1,0 +1,11 @@
+#FILE	SEQUENCE	START	END	GENE	COVERAGE	COVERAGE_MAP	GAPS	%COVERAGE	%IDENTITY	DATABASE	ACCESSION
+/home/ryder/AMR_PROJECT/assemblies/11658_3_53.fa	ERZ3165733.144	671	777	catB4_1	443-549/549	............===	0/0	19.49	100.00	resfinder	EU935739
+/home/ryder/AMR_PROJECT/assemblies/11658_3_53.fa	ERZ3165733.149	149	716	blaTEM-141_1	294-861/861	.....==========	0/0	65.97	100.00	resfinder	AY956335
+/home/ryder/AMR_PROJECT/assemblies/11658_3_53.fa	ERZ3165733.55	8040	8513	dfrA1_1	1-474/474	===============	0/0	100.00	100.00	resfinder	X00926
+/home/ryder/AMR_PROJECT/assemblies/11658_3_53.fa	ERZ3165733.64	1	67	blaTEM-101_1	294-360/861	.....==........	0/0	7.78	100.00	resfinder	AF495873
+/home/ryder/AMR_PROJECT/assemblies/11658_3_53.fa	ERZ3165733.70	3316	4131	sul2_2	1-816/816	===============	0/0	100.00	100.00	resfinder	GQ421466
+/home/ryder/AMR_PROJECT/assemblies/11658_3_53.fa	ERZ3165733.70	7838	8674	strB_1	1-837/837	===============	0/0	100.00	100.00	resfinder	M96392
+/home/ryder/AMR_PROJECT/assemblies/11658_3_53.fa	ERZ3165733.70	8674	9477	strA_4	1-804/804	===============	0/0	100.00	100.00	resfinder	AF321551
+/home/ryder/AMR_PROJECT/assemblies/11658_3_53.fa	ERZ3165733.74	8114	8473	blaTEM-104_1	1-360/861	=======........	0/0	41.81	100.00	resfinder	AF516719
+/home/ryder/AMR_PROJECT/assemblies/11658_3_53.fa	ERZ3165733.81	1	68	catB4_1	442-509/549	............==.	0/0	12.39	100.00	resfinder	EU935739
+/home/ryder/AMR_PROJECT/assemblies/11658_3_53.fa	ERZ3165733.89	1323	2528	tet(B)_4	1-1206/1206	===============	0/0	100.00	100.00	resfinder	AF326777

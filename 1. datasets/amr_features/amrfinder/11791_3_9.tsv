@@ -1,0 +1,9 @@
+Protein id	Contig id	Start	Stop	Strand	Element symbol	Element name	Scope	Type	Subtype	Class	Subclass	Method	Target length	Reference sequence length	% Coverage of reference	% Identity to reference	Alignment length	Closest reference accession	Closest reference name	HMM accession	HMM description
+NA	ERZ3165008.10	105274	105537	+	ariR	biofilm/acid-resistance regulator AriR	plus	STRESS	ACID	NA	NA	EXACTX	88	88	100.00	100.00	88	AAC74250.1	biofilm/acid-resistance regulator AriR	NA	NA
+NA	ERZ3165008.14	15330	16745	-	espX1	type III secretion system effector EspX1	plus	VIRULENCE	VIRULENCE	NA	NA	BLASTX	472	473	99.79	91.31	472	ADD54679.1	type III secretion system effector EspX1	NA	NA
+NA	ERZ3165008.18	5352	8453	-	acrF	multidrug efflux RND transporter permease subunit AcrF	plus	AMR	AMR	EFFLUX	EFFLUX	BLASTX	1034	1034	100.00	99.52	1034	AAC76298.1	multidrug efflux RND transporter permease subunit AcrF	NA	NA
+NA	ERZ3165008.2	217907	222148	-	fdeC	inverse autotransporter adhesin FdeC	plus	VIRULENCE	VIRULENCE	NA	NA	BLASTX	1414	1416	99.93	92.65	1415	ABE05822.1	inverse autotransporter adhesin FdeC	NA	NA
+NA	ERZ3165008.21	56150	56440	-	iss	increased serum survival lipoprotein Iss	plus	VIRULENCE	VIRULENCE	NA	NA	EXACTX	97	97	100.00	100.00	97	CAR12622.1	increased serum survival lipoprotein Iss	NA	NA
+NA	ERZ3165008.28	52912	54120	-	mdtM	multidrug efflux MFS transporter MdtM	plus	AMR	AMR	EFFLUX	EFFLUX	BLASTX	403	410	98.29	97.52	403	AAC77293.1	multidrug efflux MFS transporter MdtM	NA	NA
+NA	ERZ3165008.44	4647	5777	-	blaEC	BlaEC family class C beta-lactamase	plus	AMR	AMR	BETA-LACTAM	BETA-LACTAM	BLASTX	377	377	100.00	98.67	377	WP_063610930.1	extended-spectrum class C beta-lactamase EC-15	NA	NA
+NA	ERZ3165008.6	152290	152859	-	lpfA-O113	long polar fimbria major subunit LpfA-O113	plus	VIRULENCE	VIRULENCE	NA	NA	EXACTX	190	190	100.00	100.00	190	AAT76975.1	long polar fimbria major subunit LpfA-O113	NA	NA

@@ -1,0 +1,15 @@
+#FILE	SEQUENCE	START	END	GENE	COVERAGE	COVERAGE_MAP	GAPS	%COVERAGE	%IDENTITY	DATABASE	ACCESSION
+/home/ryder/AMR_PROJECT/assemblies/11658_5_50.fa	ERZ3164764.185	280	347	catB4_1	442-509/549	............==.	0/0	12.39	100.00	resfinder	EU935739
+/home/ryder/AMR_PROJECT/assemblies/11658_5_50.fa	ERZ3164764.48	15707	16567	blaTEM-1B_1	1-861/861	===============	0/0	100.00	100.00	resfinder	JF910132
+/home/ryder/AMR_PROJECT/assemblies/11658_5_50.fa	ERZ3164764.60	267	373	catB4_1	443-549/549	............===	0/0	19.49	100.00	resfinder	EU935739
+/home/ryder/AMR_PROJECT/assemblies/11658_5_50.fa	ERZ3164764.65	1	66	catB4_1	443-508/549	............==.	0/0	12.02	100.00	resfinder	EU935739
+/home/ryder/AMR_PROJECT/assemblies/11658_5_50.fa	ERZ3164764.65	136	1057	mph(A)_2	1-921/921	========/======	1/1	100.00	99.67	resfinder	U36578
+/home/ryder/AMR_PROJECT/assemblies/11658_5_50.fa	ERZ3164764.65	6352	7278	sul1_2	1-927/927	===============	0/0	100.00	100.00	resfinder	CP002151
+/home/ryder/AMR_PROJECT/assemblies/11658_5_50.fa	ERZ3164764.65	7738	8526	aadA5_1	1-789/789	===============	0/0	100.00	100.00	resfinder	AF137361
+/home/ryder/AMR_PROJECT/assemblies/11658_5_50.fa	ERZ3164764.65	8657	9130	dfrA17_1	1-474/474	===============	0/0	100.00	100.00	resfinder	FJ460238
+/home/ryder/AMR_PROJECT/assemblies/11658_5_50.fa	ERZ3164764.65	9149	9315	aadA1_1	1-174/972	===...../......	3/7	17.18	95.40	resfinder	X02340
+/home/ryder/AMR_PROJECT/assemblies/11658_5_50.fa	ERZ3164764.75	549	1364	sul2_2	1-816/816	===============	0/0	100.00	100.00	resfinder	GQ421466
+/home/ryder/AMR_PROJECT/assemblies/11658_5_50.fa	ERZ3164764.75	1425	2228	strA_4	1-804/804	===============	0/0	100.00	100.00	resfinder	AF321551
+/home/ryder/AMR_PROJECT/assemblies/11658_5_50.fa	ERZ3164764.75	2228	3064	strB_1	1-837/837	===============	0/0	100.00	99.88	resfinder	M96392
+/home/ryder/AMR_PROJECT/assemblies/11658_5_50.fa	ERZ3164764.75	4118	5317	tet(A)_4	1-1200/1200	===============	0/0	100.00	100.00	resfinder	AJ517790
+/home/ryder/AMR_PROJECT/assemblies/11658_5_50.fa	ERZ3164764.75	6725	6791	catB4_1	443-509/549	............==.	0/0	12.20	100.00	resfinder	EU935739

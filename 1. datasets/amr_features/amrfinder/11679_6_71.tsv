@@ -1,0 +1,9 @@
+Protein id	Contig id	Start	Stop	Strand	Element symbol	Element name	Scope	Type	Subtype	Class	Subclass	Method	Target length	Reference sequence length	% Coverage of reference	% Identity to reference	Alignment length	Closest reference accession	Closest reference name	HMM accession	HMM description
+NA	ERZ3165915.10	112409	113635	-	mdtM	multidrug efflux MFS transporter MdtM	plus	AMR	AMR	EFFLUX	EFFLUX	BLASTX	409	410	99.76	98.04	409	AAC77293.1	multidrug efflux MFS transporter MdtM	NA	NA
+NA	ERZ3165915.19	40102	44343	+	fdeC	inverse autotransporter adhesin FdeC	plus	VIRULENCE	VIRULENCE	NA	NA	BLASTX	1414	1416	99.93	92.58	1415	ABE05822.1	inverse autotransporter adhesin FdeC	NA	NA
+NA	ERZ3165915.2	69480	69743	-	ariR	biofilm/acid-resistance regulator AriR	plus	STRESS	ACID	NA	NA	EXACTX	88	88	100.00	100.00	88	AAC74250.1	biofilm/acid-resistance regulator AriR	NA	NA
+NA	ERZ3165915.3	5597	8698	-	acrF	multidrug efflux RND transporter permease subunit AcrF	plus	AMR	AMR	EFFLUX	EFFLUX	BLASTX	1034	1034	100.00	99.61	1034	AAC76298.1	multidrug efflux RND transporter permease subunit AcrF	NA	NA
+NA	ERZ3165915.32	2546	2875	-	emrE	multidrug efflux SMR transporter EmrE	plus	STRESS	BIOCIDE	EFFLUX	EFFLUX	BLASTX	110	110	100.00	98.18	110	CAA77936.1	multidrug efflux SMR transporter EmrE	NA	NA
+NA	ERZ3165915.4	193483	194631	+	espX1	type III secretion system effector EspX1	plus	VIRULENCE	VIRULENCE	NA	NA	PARTIALX	383	473	80.97	89.03	383	ADD54679.1	type III secretion system effector EspX1	NA	NA
+NA	ERZ3165915.45	12928	14058	+	blaEC	BlaEC family class C beta-lactamase	plus	AMR	AMR	BETA-LACTAM	BETA-LACTAM	BLASTX	377	377	100.00	99.20	377	WP_063610930.1	extended-spectrum class C beta-lactamase EC-15	NA	NA
+NA	ERZ3165915.6	30188	30757	+	lpfA-O113	long polar fimbria major subunit LpfA-O113	plus	VIRULENCE	VIRULENCE	NA	NA	EXACTX	190	190	100.00	100.00	190	AAT76975.1	long polar fimbria major subunit LpfA-O113	NA	NA

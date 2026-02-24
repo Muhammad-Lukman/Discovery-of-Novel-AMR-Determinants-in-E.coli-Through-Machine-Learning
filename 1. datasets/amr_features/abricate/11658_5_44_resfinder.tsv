@@ -1,0 +1,15 @@
+#FILE	SEQUENCE	START	END	GENE	COVERAGE	COVERAGE_MAP	GAPS	%COVERAGE	%IDENTITY	DATABASE	ACCESSION
+/home/ryder/AMR_PROJECT/assemblies/11658_5_44.fa	ERZ3164706.18	81254	82129	blaCTX-M-15_23	1-876/876	===============	0/0	100.00	100.00	resfinder	DQ302097
+/home/ryder/AMR_PROJECT/assemblies/11658_5_44.fa	ERZ3164706.56	110	216	catB4_1	443-549/549	............===	0/0	19.49	100.00	resfinder	EU935739
+/home/ryder/AMR_PROJECT/assemblies/11658_5_44.fa	ERZ3164706.56	10996	11062	catB4_1	443-509/549	............==.	0/0	12.20	100.00	resfinder	EU935739
+/home/ryder/AMR_PROJECT/assemblies/11658_5_44.fa	ERZ3164706.64	1	66	catB4_1	443-508/549	............==.	0/0	12.02	100.00	resfinder	EU935739
+/home/ryder/AMR_PROJECT/assemblies/11658_5_44.fa	ERZ3164706.64	136	1057	mph(A)_2	1-921/921	========/======	1/1	100.00	99.67	resfinder	U36578
+/home/ryder/AMR_PROJECT/assemblies/11658_5_44.fa	ERZ3164706.64	6352	7278	sul1_2	1-927/927	===============	0/0	100.00	100.00	resfinder	CP002151
+/home/ryder/AMR_PROJECT/assemblies/11658_5_44.fa	ERZ3164706.67	5306	6166	blaTEM-1B_1	1-861/861	===============	0/0	100.00	100.00	resfinder	JF910132
+/home/ryder/AMR_PROJECT/assemblies/11658_5_44.fa	ERZ3164706.81	103	963	aac(3)-IId_1	1-861/861	===============	0/0	100.00	99.88	resfinder	EU022314
+/home/ryder/AMR_PROJECT/assemblies/11658_5_44.fa	ERZ3164706.90	1	66	catB4_1	443-508/549	............==.	0/0	12.02	100.00	resfinder	EU935739
+/home/ryder/AMR_PROJECT/assemblies/11658_5_44.fa	ERZ3164706.90	113	712	aac(6')Ib-cr_1	1-600/600	===============	0/0	100.00	100.00	resfinder	DQ303918
+/home/ryder/AMR_PROJECT/assemblies/11658_5_44.fa	ERZ3164706.90	843	1673	blaOXA-1_1	1-831/831	===============	0/0	100.00	100.00	resfinder	J02967
+/home/ryder/AMR_PROJECT/assemblies/11658_5_44.fa	ERZ3164706.90	1811	2443	catB3_1	1-633/633	===============	0/0	100.00	99.84	resfinder	AJ009818
+/home/ryder/AMR_PROJECT/assemblies/11658_5_44.fa	ERZ3164706.90	2491	2777	ARR-3_4	54-340/543	.=========.....	0/0	52.85	99.30	resfinder	FM207631
+/home/ryder/AMR_PROJECT/assemblies/11658_5_44.fa	ERZ3164706.90	2771	2841	catB4_1	439-509/549	...........===.	0/0	12.93	98.59	resfinder	EU935739

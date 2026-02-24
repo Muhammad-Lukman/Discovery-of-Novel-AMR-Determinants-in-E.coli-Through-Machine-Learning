@@ -1,1 +1,1 @@
-# Discovery-of-Novel-AMR-Determinants-in-E.coli-Through-Machine-Learning
+# Pangenome-Wide Discovery of Novel Antimicrobial Resistance Determinants in Escherichia coli Through Machine Learning and Hierarchical Feature Engineering

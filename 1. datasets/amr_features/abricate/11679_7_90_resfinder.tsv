@@ -1,0 +1,15 @@
+#FILE	SEQUENCE	START	END	GENE	COVERAGE	COVERAGE_MAP	GAPS	%COVERAGE	%IDENTITY	DATABASE	ACCESSION
+/home/ryder/AMR_PROJECT/assemblies/11679_7_90.fa	ERZ3166282.128	1	67	catB4_1	443-509/549	............==.	0/0	12.20	100.00	resfinder	EU935739
+/home/ryder/AMR_PROJECT/assemblies/11679_7_90.fa	ERZ3166282.128	184	1044	aac(3)-IId_1	1-861/861	===============	0/0	100.00	99.88	resfinder	EU022314
+/home/ryder/AMR_PROJECT/assemblies/11679_7_90.fa	ERZ3166282.128	2089	2154	catB4_1	443-508/549	............==.	0/0	12.02	100.00	resfinder	EU935739
+/home/ryder/AMR_PROJECT/assemblies/11679_7_90.fa	ERZ3166282.151	148	1008	blaTEM-1C_5	1-861/861	===============	0/0	100.00	100.00	resfinder	FJ560503
+/home/ryder/AMR_PROJECT/assemblies/11679_7_90.fa	ERZ3166282.60	9807	10539	strB_1	105-837/837	.==============	0/0	87.57	100.00	resfinder	M96392
+/home/ryder/AMR_PROJECT/assemblies/11679_7_90.fa	ERZ3166282.66	270	376	catB4_1	443-549/549	............===	0/0	19.49	100.00	resfinder	EU935739
+/home/ryder/AMR_PROJECT/assemblies/11679_7_90.fa	ERZ3166282.68	9362	10177	sul2_2	1-816/816	===============	0/0	100.00	100.00	resfinder	GQ421466
+/home/ryder/AMR_PROJECT/assemblies/11679_7_90.fa	ERZ3166282.68	10238	11041	strA_4	1-804/804	===============	0/0	100.00	100.00	resfinder	AF321551
+/home/ryder/AMR_PROJECT/assemblies/11679_7_90.fa	ERZ3166282.68	11041	11149	strB_1	1-109/837	==.............	0/0	13.02	100.00	resfinder	M96392
+/home/ryder/AMR_PROJECT/assemblies/11679_7_90.fa	ERZ3166282.72	785	951	aadA1_1	1-174/972	===...../......	3/7	17.18	95.98	resfinder	X02340
+/home/ryder/AMR_PROJECT/assemblies/11679_7_90.fa	ERZ3166282.72	970	1443	dfrA17_1	1-474/474	===============	0/0	100.00	100.00	resfinder	FJ460238
+/home/ryder/AMR_PROJECT/assemblies/11679_7_90.fa	ERZ3166282.72	1574	2362	aadA5_1	1-789/789	===============	0/0	100.00	100.00	resfinder	AF137361
+/home/ryder/AMR_PROJECT/assemblies/11679_7_90.fa	ERZ3166282.72	2822	3748	sul1_2	1-927/927	===============	0/0	100.00	100.00	resfinder	CP002151
+/home/ryder/AMR_PROJECT/assemblies/11679_7_90.fa	ERZ3166282.72	9043	9554	mph(A)_2	411-921/921	......==/======	1/1	55.48	99.41	resfinder	U36578

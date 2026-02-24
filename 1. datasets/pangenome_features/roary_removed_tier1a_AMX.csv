@@ -1,0 +1,12 @@
+novel_gene,corr_with,correlation,tier
+folP2,sul2.1,0.9888429499205436,Tier 1A (Acquired AMR)
+ebr,sul1.1,0.9797895663281221,Tier 1A (Acquired AMR)
+repA,sul2_3,0.9139299607540204,Tier 1A (Acquired AMR)
+group_14507,sul2_3,0.9036515718888903,Tier 1A (Acquired AMR)
+dhfrI,dfrA17,0.9932764356935438,Tier 1A (Acquired AMR)
+mphR,Mrx,1.0,Tier 1A (Acquired AMR)
+group_20781,aadA5,0.9212488669286264,Tier 1A (Acquired AMR)
+group_14301,catA1,0.9654809784596114,Tier 1A (Acquired AMR)
+group_15444,Mrx,0.9752458796949969,Tier 1A (Acquired AMR)
+group_26088,CTX-M-15,0.9915486523636469,Tier 1A (Acquired AMR)
+group_24419,dfrA1,0.9999999999999998,Tier 1A (Acquired AMR)

@@ -1,0 +1,15 @@
+#FILE	SEQUENCE	START	END	GENE	COVERAGE	COVERAGE_MAP	GAPS	%COVERAGE	%IDENTITY	DATABASE	ACCESSION
+/home/ryder/AMR_PROJECT/assemblies/18090_8_21.fa	ERZ3486264.103	2709	3569	aac(3)-IId_1	1-861/861	===============	0/0	100.00	99.88	resfinder	EU022314
+/home/ryder/AMR_PROJECT/assemblies/18090_8_21.fa	ERZ3486264.103	4518	4596	catB4_1	443-521/549	............===	0/0	14.39	100.00	resfinder	EU935739
+/home/ryder/AMR_PROJECT/assemblies/18090_8_21.fa	ERZ3486264.113	2321	3242	mph(A)_2	1-921/921	========/======	1/1	100.00	99.67	resfinder	U36578
+/home/ryder/AMR_PROJECT/assemblies/18090_8_21.fa	ERZ3486264.113	3312	3389	catB4_1	443-520/549	............===	0/0	14.21	100.00	resfinder	EU935739
+/home/ryder/AMR_PROJECT/assemblies/18090_8_21.fa	ERZ3486264.141	1	107	catB4_1	443-549/549	............===	0/0	19.49	100.00	resfinder	EU935739
+/home/ryder/AMR_PROJECT/assemblies/18090_8_21.fa	ERZ3486264.24	39803	40678	blaCTX-M-14_1	1-876/876	===============	0/0	100.00	100.00	resfinder	AF252622
+/home/ryder/AMR_PROJECT/assemblies/18090_8_21.fa	ERZ3486264.30	16884	17239	tet(34)_1	66-421/465	.=======/=====.	2/2	76.34	75.35	resfinder	AB061440
+/home/ryder/AMR_PROJECT/assemblies/18090_8_21.fa	ERZ3486264.64	21336	21415	catB4_1	442-521/549	............===	0/0	14.57	100.00	resfinder	EU935739
+/home/ryder/AMR_PROJECT/assemblies/18090_8_21.fa	ERZ3486264.87	749	1405	QnrS1_1	1-657/657	===============	0/0	100.00	100.00	resfinder	AB187515
+/home/ryder/AMR_PROJECT/assemblies/18090_8_21.fa	ERZ3486264.87	6767	7627	blaTEM-1B_1	1-861/861	===============	0/0	100.00	100.00	resfinder	JF910132
+/home/ryder/AMR_PROJECT/assemblies/18090_8_21.fa	ERZ3486264.97	1138	2064	sul1_2	1-927/927	===============	0/0	100.00	100.00	resfinder	CP002151
+/home/ryder/AMR_PROJECT/assemblies/18090_8_21.fa	ERZ3486264.97	2524	3312	aadA5_1	1-789/789	===============	0/0	100.00	100.00	resfinder	AF137361
+/home/ryder/AMR_PROJECT/assemblies/18090_8_21.fa	ERZ3486264.97	3443	3916	dfrA17_1	1-474/474	===============	0/0	100.00	100.00	resfinder	FJ460238
+/home/ryder/AMR_PROJECT/assemblies/18090_8_21.fa	ERZ3486264.97	3935	4101	aadA1_1	1-174/972	===...../......	3/7	17.18	95.98	resfinder	X02340

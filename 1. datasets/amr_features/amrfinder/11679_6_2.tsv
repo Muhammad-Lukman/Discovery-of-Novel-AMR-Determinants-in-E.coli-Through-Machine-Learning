@@ -1,0 +1,28 @@
+Protein id	Contig id	Start	Stop	Strand	Element symbol	Element name	Scope	Type	Subtype	Class	Subclass	Method	Target length	Reference sequence length	% Coverage of reference	% Identity to reference	Alignment length	Closest reference accession	Closest reference name	HMM accession	HMM description
+NA	ERZ3164576.105	1951	5094	-	silA	Cu(+)/Ag(+) efflux RND transporter permease subunit SilA	plus	STRESS	METAL	COPPER/SILVER	COPPER/SILVER	BLASTX	1048	1048	100.00	99.33	1048	AAD11749.1	Cu(+)/Ag(+) efflux RND transporter permease subunit SilA	NA	NA
+NA	ERZ3164576.108	1945	5088	-	silA	Cu(+)/Ag(+) efflux RND transporter permease subunit SilA	plus	STRESS	METAL	COPPER/SILVER	COPPER/SILVER	BLASTX	1048	1048	100.00	98.66	1048	AAD11749.1	Cu(+)/Ag(+) efflux RND transporter permease subunit SilA	NA	NA
+NA	ERZ3164576.125	727	1404	-	silR	copper/silver response regulator transcription factor SilR	plus	STRESS	METAL	COPPER/SILVER	COPPER/SILVER	BLASTX	226	226	100.00	99.56	226	SPD96883.1	copper/silver response regulator transcription factor SilR	NA	NA
+NA	ERZ3164576.125	1594	2976	+	silC	Cu(+)/Ag(+) efflux RND transporter outer membrane channel SilC	plus	STRESS	METAL	COPPER/SILVER	COPPER/SILVER	EXACTX	461	461	100.00	100.00	461	AAD11746.1	Cu(+)/Ag(+) efflux RND transporter outer membrane channel SilC	NA	NA
+NA	ERZ3164576.125	3007	3315	+	silF	Cu(+)/Ag(+) efflux RND transporter periplasmic metallochaperone SilF	plus	STRESS	METAL	COPPER/SILVER	COPPER/SILVER	PARTIAL_CONTIG_ENDX	103	117	88.03	100.00	103	KGL71342.1	Cu(+)/Ag(+) efflux RND transporter periplasmic metallochaperone SilF	NA	NA
+NA	ERZ3164576.133	203	634	+	pcoE	copper resistance system metallochaperone PcoE	plus	STRESS	METAL	COPPER	COPPER	BLASTX	144	144	100.00	92.36	144	CAA58532.1	copper resistance system metallochaperone PcoE	NA	NA
+NA	ERZ3164576.135	2090	2518	-	silE	silver-binding protein SilE	plus	STRESS	METAL	SILVER	SILVER	BLASTX	143	143	100.00	90.21	143	AAD11743.1	silver-binding protein SilE	NA	NA
+NA	ERZ3164576.143	217	645	+	silE	silver-binding protein SilE	plus	STRESS	METAL	SILVER	SILVER	EXACTX	143	143	100.00	100.00	143	AAD11743.1	silver-binding protein SilE	NA	NA
+NA	ERZ3164576.31	5556	6704	-	espX1	type III secretion system effector EspX1	plus	VIRULENCE	VIRULENCE	NA	NA	PARTIALX	383	473	80.97	90.34	383	ADD54679.1	type III secretion system effector EspX1	NA	NA
+NA	ERZ3164576.55	22737	25838	+	acrF	multidrug efflux RND transporter permease subunit AcrF	plus	AMR	AMR	EFFLUX	EFFLUX	BLASTX	1034	1034	100.00	99.61	1034	AAC76298.1	multidrug efflux RND transporter permease subunit AcrF	NA	NA
+NA	ERZ3164576.59	15235	16365	-	blaEC	BlaEC family class C beta-lactamase	plus	AMR	AMR	BETA-LACTAM	BETA-LACTAM	BLASTX	377	377	100.00	99.73	377	ABS58643.1	BlaEC family class C beta-lactamase	NA	NA
+NA	ERZ3164576.63	2002	2610	-	hdeD-GI	heat resistance membrane protein HdeD-GI	plus	STRESS	HEAT	NA	NA	BLASTX	203	203	100.00	99.01	203	APX31174.1	heat resistance membrane protein HdeD-GI	NA	NA
+NA	ERZ3164576.63	2703	3587	-	yfdX2	heat resistance protein YfdX2	plus	STRESS	HEAT	NA	NA	BLASTX	295	295	100.00	95.59	295	ASF80766.1	heat resistance protein YfdX2	NA	NA
+NA	ERZ3164576.63	3693	4598	-	yfdX1	heat resistance protein YfdX1	plus	STRESS	HEAT	NA	NA	BLASTX	302	304	100.00	91.78	304	APX31172.1	heat resistance protein YfdX1	NA	NA
+NA	ERZ3164576.63	4623	5078	-	shsP	small heat shock protein sHSP20-GI	plus	STRESS	HEAT	NA	NA	BLASTX	152	152	100.00	97.37	152	ASF80771.1	small heat shock protein sHSP20-GI	NA	NA
+NA	ERZ3164576.63	8464	11310	-	clpK	heat shock survival AAA family ATPase ClpK	plus	STRESS	HEAT	NA	NA	BLASTX	949	949	100.00	94.52	949	ASF80763.1	heat shock survival AAA family ATPase ClpK	NA	NA
+NA	ERZ3164576.65	12184	12609	-	merR	mercury resistance transcriptional regulator MerR	plus	STRESS	METAL	MERCURY	MERCURY	BLASTX	142	144	98.61	92.96	142	CAA77320.1	mercury resistance transcriptional regulator MerR	NA	NA
+NA	ERZ3164576.65	12729	13073	+	merT	mercuric transport protein MerT	plus	STRESS	METAL	MERCURY	MERCURY	BLASTX	115	116	99.14	99.13	115	CAA70196.1	mercuric transport protein MerT	NA	NA
+NA	ERZ3164576.65	13859	15541	+	merA	mercury(II) reductase	plus	STRESS	METAL	MERCURY	MERCURY	BLASTX	561	561	100.00	93.23	561	ACU65296.1	mercury(II) reductase	NA	NA
+NA	ERZ3164576.65	15562	15924	+	merD	mercury resistance co-regulator MerD	plus	STRESS	METAL	MERCURY	MERCURY	BLASTX	121	121	100.00	90.08	121	AAC38221.1	mercury resistance co-regulator MerD	NA	NA
+NA	ERZ3164576.65	15924	16157	+	merE	broad-spectrum mercury transporter MerE	plus	STRESS	METAL	MERCURY	MERCURY	BLASTX	78	78	100.00	96.15	78	AAC38236.1	broad-spectrum mercury transporter MerE	NA	NA
+NA	ERZ3164576.70	17594	18811	-	mdtM	multidrug efflux MFS transporter MdtM	plus	AMR	AMR	EFFLUX	EFFLUX	BLASTX	406	410	99.02	95.07	406	AAC77293.1	multidrug efflux MFS transporter MdtM	NA	NA
+NA	ERZ3164576.98	319	996	-	pcoR	copper response regulator transcription factor PcoR	plus	STRESS	METAL	COPPER	COPPER	EXACTX	226	226	100.00	100.00	226	CAA58529.1	copper response regulator transcription factor PcoR	NA	NA
+NA	ERZ3164576.98	1054	1980	-	pcoD	copper resistance inner membrane protein PcoD	plus	STRESS	METAL	COPPER	COPPER	EXACTX	309	309	100.00	100.00	309	CAA58528.1	copper resistance inner membrane protein PcoD	NA	NA
+NA	ERZ3164576.98	1988	2365	-	pcoC	copper resistance system metallochaperone PcoC	plus	STRESS	METAL	COPPER	COPPER	EXACTX	126	126	100.00	100.00	126	CAA58527.1	copper resistance system metallochaperone PcoC	NA	NA
+NA	ERZ3164576.98	2408	3295	-	pcoB	copper-binding protein PcoB	plus	STRESS	METAL	COPPER	COPPER	BLASTX	296	296	100.00	99.66	296	CAA58526.1	copper-binding protein PcoB	NA	NA
+NA	ERZ3164576.98	3304	5118	-	pcoA	multicopper oxidase PcoA	plus	STRESS	METAL	COPPER	COPPER	BLASTX	605	605	100.00	99.83	605	CAA58525.1	multicopper oxidase PcoA	NA	NA

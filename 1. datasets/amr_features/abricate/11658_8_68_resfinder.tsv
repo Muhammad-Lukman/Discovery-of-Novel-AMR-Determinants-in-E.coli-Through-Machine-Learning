@@ -1,0 +1,15 @@
+#FILE	SEQUENCE	START	END	GENE	COVERAGE	COVERAGE_MAP	GAPS	%COVERAGE	%IDENTITY	DATABASE	ACCESSION
+/home/ryder/AMR_PROJECT/assemblies/11658_8_68.fa	ERZ3165277.104	2032	2096	catB4_1	443-507/549	............==.	0/0	11.84	100.00	resfinder	EU935739
+/home/ryder/AMR_PROJECT/assemblies/11658_8_68.fa	ERZ3165277.116	630	1362	strB_1	105-837/837	.==============	0/0	87.57	100.00	resfinder	M96392
+/home/ryder/AMR_PROJECT/assemblies/11658_8_68.fa	ERZ3165277.128	96	899	strA_4	1-804/804	===============	0/0	100.00	100.00	resfinder	AF321551
+/home/ryder/AMR_PROJECT/assemblies/11658_8_68.fa	ERZ3165277.128	899	1069	strB_1	1-171/837	====...........	0/0	20.43	100.00	resfinder	M96392
+/home/ryder/AMR_PROJECT/assemblies/11658_8_68.fa	ERZ3165277.136	33	848	sul2_2	1-816/816	===============	0/0	100.00	100.00	resfinder	GQ421466
+/home/ryder/AMR_PROJECT/assemblies/11658_8_68.fa	ERZ3165277.139	148	742	blaTEM-141_1	267-861/861	....===========	0/0	69.11	100.00	resfinder	AY956335
+/home/ryder/AMR_PROJECT/assemblies/11658_8_68.fa	ERZ3165277.22	57112	57467	tet(34)_1	66-421/465	.=======/=====.	2/2	76.34	75.35	resfinder	AB061440
+/home/ryder/AMR_PROJECT/assemblies/11658_8_68.fa	ERZ3165277.63	1	65	catB4_1	443-507/549	............==.	0/0	11.84	100.00	resfinder	EU935739
+/home/ryder/AMR_PROJECT/assemblies/11658_8_68.fa	ERZ3165277.63	1117	1223	catB4_1	443-549/549	............===	0/0	19.49	100.00	resfinder	EU935739
+/home/ryder/AMR_PROJECT/assemblies/11658_8_68.fa	ERZ3165277.68	10948	11015	catB4_1	442-509/549	............==.	0/0	12.39	100.00	resfinder	EU935739
+/home/ryder/AMR_PROJECT/assemblies/11658_8_68.fa	ERZ3165277.75	1	67	catB4_1	443-509/549	............==.	0/0	12.20	100.00	resfinder	EU935739
+/home/ryder/AMR_PROJECT/assemblies/11658_8_68.fa	ERZ3165277.75	9836	9900	catB4_1	443-507/549	............==.	0/0	11.84	100.00	resfinder	EU935739
+/home/ryder/AMR_PROJECT/assemblies/11658_8_68.fa	ERZ3165277.88	1	333	blaTEM-122_1	1-333/861	======.........	0/0	38.68	100.00	resfinder	AY307100
+/home/ryder/AMR_PROJECT/assemblies/11658_8_68.fa	ERZ3165277.88	4276	4342	strB_1	105-171/837	.===...........	0/0	8.00	100.00	resfinder	M96392

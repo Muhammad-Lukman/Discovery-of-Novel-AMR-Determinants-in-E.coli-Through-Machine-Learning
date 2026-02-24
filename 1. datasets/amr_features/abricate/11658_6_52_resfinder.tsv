@@ -1,0 +1,15 @@
+#FILE	SEQUENCE	START	END	GENE	COVERAGE	COVERAGE_MAP	GAPS	%COVERAGE	%IDENTITY	DATABASE	ACCESSION
+/home/ryder/AMR_PROJECT/assemblies/11658_6_52.fa	ERZ3164787.114	154	969	aph(3')-Ia_1	1-816/816	===============	0/0	100.00	100.00	resfinder	V00359
+/home/ryder/AMR_PROJECT/assemblies/11658_6_52.fa	ERZ3164787.114	1107	1173	catB4_1	443-509/549	............==.	0/0	12.20	100.00	resfinder	EU935739
+/home/ryder/AMR_PROJECT/assemblies/11658_6_52.fa	ERZ3164787.121	714	820	catB4_1	443-549/549	............===	0/0	19.49	100.00	resfinder	EU935739
+/home/ryder/AMR_PROJECT/assemblies/11658_6_52.fa	ERZ3164787.36	36496	36851	tet(34)_1	66-421/465	.=======/=====.	2/2	76.34	75.07	resfinder	AB061440
+/home/ryder/AMR_PROJECT/assemblies/11658_6_52.fa	ERZ3164787.48	34804	34971	aadA1_1	1-175/972	===...../......	3/7	17.28	96.00	resfinder	X02340
+/home/ryder/AMR_PROJECT/assemblies/11658_6_52.fa	ERZ3164787.48	34987	35460	dfrA5_1	1-474/474	===============	0/0	100.00	100.00	resfinder	X12868
+/home/ryder/AMR_PROJECT/assemblies/11658_6_52.fa	ERZ3164787.48	35559	35626	catB4_1	442-509/549	............==.	0/0	12.39	100.00	resfinder	EU935739
+/home/ryder/AMR_PROJECT/assemblies/11658_6_52.fa	ERZ3164787.79	4075	5280	tet(B)_4	1-1206/1206	===============	0/0	100.00	100.00	resfinder	AF326777
+/home/ryder/AMR_PROJECT/assemblies/11658_6_52.fa	ERZ3164787.83	1	67	catB4_1	443-509/549	............==.	0/0	12.20	100.00	resfinder	EU935739
+/home/ryder/AMR_PROJECT/assemblies/11658_6_52.fa	ERZ3164787.83	1931	2746	sul2_3	1-816/816	===============	0/0	100.00	100.00	resfinder	HQ840942
+/home/ryder/AMR_PROJECT/assemblies/11658_6_52.fa	ERZ3164787.83	2807	3610	strA_4	1-804/804	===============	0/0	100.00	100.00	resfinder	AF321551
+/home/ryder/AMR_PROJECT/assemblies/11658_6_52.fa	ERZ3164787.83	3610	4446	strB_1	1-837/837	===============	0/0	100.00	100.00	resfinder	M96392
+/home/ryder/AMR_PROJECT/assemblies/11658_6_52.fa	ERZ3164787.83	4454	4520	catB4_1	442-508/549	............==.	0/0	12.20	100.00	resfinder	EU935739
+/home/ryder/AMR_PROJECT/assemblies/11658_6_52.fa	ERZ3164787.95	589	1449	blaTEM-1B_1	1-861/861	===============	0/0	100.00	100.00	resfinder	JF910132

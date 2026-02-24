@@ -1,0 +1,15 @@
+#FILE	SEQUENCE	START	END	GENE	COVERAGE	COVERAGE_MAP	GAPS	%COVERAGE	%IDENTITY	DATABASE	ACCESSION
+/home/ryder/AMR_PROJECT/assemblies/11679_6_83.fa	ERZ3166169.117	1	71	catB4_1	439-509/549	...........===.	0/0	12.93	98.59	resfinder	EU935739
+/home/ryder/AMR_PROJECT/assemblies/11679_6_83.fa	ERZ3166169.117	65	351	ARR-3_4	54-340/543	.=========.....	0/0	52.85	99.30	resfinder	FM207631
+/home/ryder/AMR_PROJECT/assemblies/11679_6_83.fa	ERZ3166169.117	399	1031	catB3_1	1-633/633	===============	0/0	100.00	99.84	resfinder	AJ009818
+/home/ryder/AMR_PROJECT/assemblies/11679_6_83.fa	ERZ3166169.117	1169	1999	blaOXA-1_1	1-831/831	===============	0/0	100.00	100.00	resfinder	J02967
+/home/ryder/AMR_PROJECT/assemblies/11679_6_83.fa	ERZ3166169.117	2130	2729	aac(6')Ib-cr_1	1-600/600	===============	0/0	100.00	100.00	resfinder	DQ303918
+/home/ryder/AMR_PROJECT/assemblies/11679_6_83.fa	ERZ3166169.117	2776	2842	catB4_1	443-509/549	............==.	0/0	12.20	100.00	resfinder	EU935739
+/home/ryder/AMR_PROJECT/assemblies/11679_6_83.fa	ERZ3166169.151	1	107	catB4_1	443-549/549	............===	0/0	19.49	100.00	resfinder	EU935739
+/home/ryder/AMR_PROJECT/assemblies/11679_6_83.fa	ERZ3166169.155	1	67	catB4_1	443-509/549	............==.	0/0	12.20	100.00	resfinder	EU935739
+/home/ryder/AMR_PROJECT/assemblies/11679_6_83.fa	ERZ3166169.8	16139	16494	tet(34)_1	66-421/465	.=======/=====.	2/2	76.34	75.63	resfinder	AB061440
+/home/ryder/AMR_PROJECT/assemblies/11679_6_83.fa	ERZ3166169.94	1355	2560	tet(B)_4	1-1206/1206	===============	0/0	100.00	100.00	resfinder	AF326777
+/home/ryder/AMR_PROJECT/assemblies/11679_6_83.fa	ERZ3166169.99	2233	3159	sul1_2	1-927/927	===============	0/0	100.00	100.00	resfinder	CP002151
+/home/ryder/AMR_PROJECT/assemblies/11679_6_83.fa	ERZ3166169.99	3619	4407	aadA5_1	1-789/789	===============	0/0	100.00	100.00	resfinder	AF137361
+/home/ryder/AMR_PROJECT/assemblies/11679_6_83.fa	ERZ3166169.99	4538	5011	dfrA17_1	1-474/474	===============	0/0	100.00	100.00	resfinder	FJ460238
+/home/ryder/AMR_PROJECT/assemblies/11679_6_83.fa	ERZ3166169.99	5030	5196	aadA1_1	1-174/972	===...../......	3/7	17.18	95.98	resfinder	X02340

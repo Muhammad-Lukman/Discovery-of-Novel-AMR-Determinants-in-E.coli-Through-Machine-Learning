@@ -1,0 +1,10 @@
+Protein id	Contig id	Start	Stop	Strand	Element symbol	Element name	Scope	Type	Subtype	Class	Subclass	Method	Target length	Reference sequence length	% Coverage of reference	% Identity to reference	Alignment length	Closest reference accession	Closest reference name	HMM accession	HMM description
+NA	ERZ3166048.1	52704	52967	-	ariR	biofilm/acid-resistance regulator AriR	plus	STRESS	ACID	NA	NA	EXACTX	88	88	100.00	100.00	88	AAC74250.1	biofilm/acid-resistance regulator AriR	NA	NA
+NA	ERZ3166048.11	5352	8453	-	acrF	multidrug efflux RND transporter permease subunit AcrF	plus	AMR	AMR	EFFLUX	EFFLUX	BLASTX	1034	1034	100.00	99.61	1034	AAC76298.1	multidrug efflux RND transporter permease subunit AcrF	NA	NA
+NA	ERZ3166048.12	89881	91104	+	espX1	type III secretion system effector EspX1	plus	VIRULENCE	VIRULENCE	NA	NA	PARTIALX	408	473	86.26	90.93	408	ADD54679.1	type III secretion system effector EspX1	NA	NA
+NA	ERZ3166048.18	30190	30759	+	lpfA-O113	long polar fimbria major subunit LpfA-O113	plus	VIRULENCE	VIRULENCE	NA	NA	EXACTX	190	190	100.00	100.00	190	AAT76975.1	long polar fimbria major subunit LpfA-O113	NA	NA
+NA	ERZ3166048.22	47628	48854	+	mdtM	multidrug efflux MFS transporter MdtM	plus	AMR	AMR	EFFLUX	EFFLUX	BLASTX	409	410	99.76	98.29	409	AAC77293.1	multidrug efflux MFS transporter MdtM	NA	NA
+NA	ERZ3166048.22	81083	81502	-	fosA7.5	fosfomycin resistance glutathione transferase FosA7.5	core	AMR	AMR	FOSFOMYCIN	FOSFOMYCIN	ALLELEX	140	140	100.00	100.00	140	WP_000941933.1	fosfomycin resistance glutathione transferase FosA7.5	NA	NA
+NA	ERZ3166048.25	15774	16295	-	lpfA	long polar fimbria major subunit LpfA	plus	VIRULENCE	VIRULENCE	NA	NA	EXACTX	174	174	100.00	100.00	174	CAV00478.1	long polar fimbria major subunit LpfA	NA	NA
+NA	ERZ3166048.3	215238	219479	-	fdeC	inverse autotransporter adhesin FdeC	plus	VIRULENCE	VIRULENCE	NA	NA	BLASTX	1414	1416	99.93	92.51	1415	ABE05822.1	inverse autotransporter adhesin FdeC	NA	NA
+NA	ERZ3166048.44	13716	14846	+	blaEC	BlaEC family class C beta-lactamase	plus	AMR	AMR	BETA-LACTAM	BETA-LACTAM	BLASTX	377	377	100.00	98.67	377	WP_063610930.1	extended-spectrum class C beta-lactamase EC-15	NA	NA

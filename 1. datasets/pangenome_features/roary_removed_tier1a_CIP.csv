@@ -1,0 +1,6 @@
+novel_gene,corr_with,correlation,tier
+mphR,Mrx,1.0,Tier 1A (Acquired AMR)
+dhfrI,dfrA17,0.9932764356935438,Tier 1A (Acquired AMR)
+group_26088,CTX-M-15,0.9915486523636469,Tier 1A (Acquired AMR)
+group_15444,Mrx,0.9752458796949969,Tier 1A (Acquired AMR)
+group_20781,aadA5,0.9212488669286264,Tier 1A (Acquired AMR)

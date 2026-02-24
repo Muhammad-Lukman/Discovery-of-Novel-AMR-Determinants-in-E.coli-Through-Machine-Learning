@@ -1,0 +1,9 @@
+Protein id	Contig id	Start	Stop	Strand	Element symbol	Element name	Scope	Type	Subtype	Class	Subclass	Method	Target length	Reference sequence length	% Coverage of reference	% Identity to reference	Alignment length	Closest reference accession	Closest reference name	HMM accession	HMM description
+NA	ERZ3165075.10	145995	149096	+	acrF	multidrug efflux RND transporter permease subunit AcrF	plus	AMR	AMR	EFFLUX	EFFLUX	BLASTX	1034	1034	100.00	99.42	1034	AAC76298.1	multidrug efflux RND transporter permease subunit AcrF	NA	NA
+NA	ERZ3165075.14	30345	30914	+	lpfA-O113	long polar fimbria major subunit LpfA-O113	plus	VIRULENCE	VIRULENCE	NA	NA	EXACTX	190	190	100.00	100.00	190	AAT76975.1	long polar fimbria major subunit LpfA-O113	NA	NA
+NA	ERZ3165075.2	33125	37366	+	fdeC	inverse autotransporter adhesin FdeC	plus	VIRULENCE	VIRULENCE	NA	NA	BLASTX	1414	1416	99.93	91.10	1415	ABE05822.1	inverse autotransporter adhesin FdeC	NA	NA
+NA	ERZ3165075.27	7361	7882	-	lpfA	long polar fimbria major subunit LpfA	plus	VIRULENCE	VIRULENCE	NA	NA	EXACTX	174	174	100.00	100.00	174	CAV00478.1	long polar fimbria major subunit LpfA	NA	NA
+NA	ERZ3165075.37	15262	16410	-	espX1	type III secretion system effector EspX1	plus	VIRULENCE	VIRULENCE	NA	NA	PARTIALX	383	473	80.97	89.30	383	ADD54679.1	type III secretion system effector EspX1	NA	NA
+NA	ERZ3165075.49	3284	4414	-	blaEC	BlaEC family class C beta-lactamase	plus	AMR	AMR	BETA-LACTAM	BETA-LACTAM	BLASTX	377	377	100.00	98.67	377	WP_063610930.1	extended-spectrum class C beta-lactamase EC-15	NA	NA
+NA	ERZ3165075.9	105452	105715	+	ariR	biofilm/acid-resistance regulator AriR	plus	STRESS	ACID	NA	NA	EXACTX	88	88	100.00	100.00	88	AAC74250.1	biofilm/acid-resistance regulator AriR	NA	NA
+NA	ERZ3165075.92	788	901	+	astA	heat-stable enterotoxin EAST1	plus	VIRULENCE	VIRULENCE	NA	NA	EXACTX	38	38	100.00	100.00	38	AAM88299.1	heat-stable enterotoxin EAST1	NA	NA

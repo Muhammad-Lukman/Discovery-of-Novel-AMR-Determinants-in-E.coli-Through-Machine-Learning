@@ -1,0 +1,11 @@
+Protein id	Contig id	Start	Stop	Strand	Element symbol	Element name	Scope	Type	Subtype	Class	Subclass	Method	Target length	Reference sequence length	% Coverage of reference	% Identity to reference	Alignment length	Closest reference accession	Closest reference name	HMM accession	HMM description
+NA	ERZ3166157.1	200853	202268	+	espX1	type III secretion system effector EspX1	plus	VIRULENCE	VIRULENCE	NA	NA	INTERNAL_STOP	472	473	99.79	91.74	472	ADD54679.1	type III secretion system effector EspX1	NA	NA
+NA	ERZ3166157.11	80768	81337	-	lpfA-O113	long polar fimbria major subunit LpfA-O113	plus	VIRULENCE	VIRULENCE	NA	NA	EXACTX	190	190	100.00	100.00	190	AAT76975.1	long polar fimbria major subunit LpfA-O113	NA	NA
+NA	ERZ3166157.111	788	901	+	astA	heat-stable enterotoxin EAST1	plus	VIRULENCE	VIRULENCE	NA	NA	EXACTX	38	38	100.00	100.00	38	AAM88299.1	heat-stable enterotoxin EAST1	NA	NA
+NA	ERZ3166157.12	101949	105050	+	acrF	multidrug efflux RND transporter permease subunit AcrF	plus	AMR	AMR	EFFLUX	EFFLUX	BLASTX	1034	1034	100.00	99.61	1034	AAC76298.1	multidrug efflux RND transporter permease subunit AcrF	NA	NA
+NA	ERZ3166157.14	31673	32899	-	mdtM	multidrug efflux MFS transporter MdtM	plus	AMR	AMR	EFFLUX	EFFLUX	BLASTX	409	410	99.76	98.29	409	AAC77293.1	multidrug efflux MFS transporter MdtM	NA	NA
+NA	ERZ3166157.17	80653	84894	-	fdeC	inverse autotransporter adhesin FdeC	plus	VIRULENCE	VIRULENCE	NA	NA	BLASTX	1414	1416	99.93	92.51	1415	ABE05822.1	inverse autotransporter adhesin FdeC	NA	NA
+NA	ERZ3166157.19	52637	52900	-	ariR	biofilm/acid-resistance regulator AriR	plus	STRESS	ACID	NA	NA	EXACTX	88	88	100.00	100.00	88	AAC74250.1	biofilm/acid-resistance regulator AriR	NA	NA
+NA	ERZ3166157.35	2546	2875	-	emrE	multidrug efflux SMR transporter EmrE	plus	STRESS	BIOCIDE	EFFLUX	EFFLUX	BLASTX	110	110	100.00	98.18	110	CAA77936.1	multidrug efflux SMR transporter EmrE	NA	NA
+NA	ERZ3166157.64	4656	5786	-	blaEC	BlaEC family class C beta-lactamase	plus	AMR	AMR	BETA-LACTAM	BETA-LACTAM	BLASTX	377	377	100.00	99.73	377	WP_063860256.1	extended-spectrum class C beta-lactamase EC-18	NA	NA
+NA	ERZ3166157.65	10305	13376	-	hlyA-alpha	RTX toxin hemolysin HlyA	plus	VIRULENCE	VIRULENCE	NA	NA	EXACTX	1024	1024	100.00	100.00	1024	CAQ77251.1	RTX toxin hemolysin HlyA	NA	NA

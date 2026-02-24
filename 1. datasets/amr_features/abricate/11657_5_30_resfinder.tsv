@@ -1,0 +1,15 @@
+#FILE	SEQUENCE	START	END	GENE	COVERAGE	COVERAGE_MAP	GAPS	%COVERAGE	%IDENTITY	DATABASE	ACCESSION
+/home/ryder/AMR_PROJECT/assemblies/11657_5_30.fa	ERZ3164949.113	1	169	aadA1_1	1-173/972	===...../......	2/4	17.39	97.69	resfinder	X02340
+/home/ryder/AMR_PROJECT/assemblies/11657_5_30.fa	ERZ3164949.114	146	950	aadA1_1	168-972/972	..=============	0/0	82.82	99.63	resfinder	X02340
+/home/ryder/AMR_PROJECT/assemblies/11657_5_30.fa	ERZ3164949.114	1050	1880	blaOXA-1_1	1-831/831	===============	0/0	100.00	100.00	resfinder	J02967
+/home/ryder/AMR_PROJECT/assemblies/11657_5_30.fa	ERZ3164949.114	1949	2015	aadA1_1	107-173/972	.==............	0/0	6.89	100.00	resfinder	X02340
+/home/ryder/AMR_PROJECT/assemblies/11657_5_30.fa	ERZ3164949.128	152	1012	blaTEM-1C_5	1-861/861	===============	0/0	100.00	100.00	resfinder	FJ560503
+/home/ryder/AMR_PROJECT/assemblies/11657_5_30.fa	ERZ3164949.139	1	67	catB4_1	443-509/549	............==.	0/0	12.20	100.00	resfinder	EU935739
+/home/ryder/AMR_PROJECT/assemblies/11657_5_30.fa	ERZ3164949.139	205	1020	aph(3')-Ia_1	1-816/816	===============	0/0	100.00	100.00	resfinder	V00359
+/home/ryder/AMR_PROJECT/assemblies/11657_5_30.fa	ERZ3164949.219	1	107	catB4_1	443-549/549	............===	0/0	19.49	100.00	resfinder	EU935739
+/home/ryder/AMR_PROJECT/assemblies/11657_5_30.fa	ERZ3164949.54	12258	13184	sul1_2	1-927/927	===============	0/0	100.00	100.00	resfinder	CP002151
+/home/ryder/AMR_PROJECT/assemblies/11657_5_30.fa	ERZ3164949.54	13568	14141	dfrA7_1	1-570/570	========/======	3/4	100.00	98.78	resfinder	AJ419170
+/home/ryder/AMR_PROJECT/assemblies/11657_5_30.fa	ERZ3164949.54	14147	14227	aadA1_1	107-187/972	.==............	0/0	8.33	93.83	resfinder	X02340
+/home/ryder/AMR_PROJECT/assemblies/11657_5_30.fa	ERZ3164949.59	12826	12892	catB4_1	443-509/549	............==.	0/0	12.20	100.00	resfinder	EU935739
+/home/ryder/AMR_PROJECT/assemblies/11657_5_30.fa	ERZ3164949.82	289	948	catA1_1	1-660/660	===============	0/0	100.00	99.85	resfinder	V00622
+/home/ryder/AMR_PROJECT/assemblies/11657_5_30.fa	ERZ3164949.90	2067	3272	tet(B)_4	1-1206/1206	===============	0/0	100.00	100.00	resfinder	AF326777

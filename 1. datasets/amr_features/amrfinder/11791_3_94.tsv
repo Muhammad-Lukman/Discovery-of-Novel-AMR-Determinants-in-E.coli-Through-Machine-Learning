@@ -1,0 +1,15 @@
+Protein id	Contig id	Start	Stop	Strand	Element symbol	Element name	Scope	Type	Subtype	Class	Subclass	Method	Target length	Reference sequence length	% Coverage of reference	% Identity to reference	Alignment length	Closest reference accession	Closest reference name	HMM accession	HMM description
+NA	ERZ3166313.1	5635	8736	-	acrF	multidrug efflux RND transporter permease subunit AcrF	plus	AMR	AMR	EFFLUX	EFFLUX	BLASTX	1034	1034	100.00	99.32	1034	AAC76298.1	multidrug efflux RND transporter permease subunit AcrF	NA	NA
+NA	ERZ3166313.14	8993	9256	-	ariR	biofilm/acid-resistance regulator AriR	plus	STRESS	ACID	NA	NA	BLASTX	88	88	100.00	98.86	88	AAC74250.1	biofilm/acid-resistance regulator AriR	NA	NA
+NA	ERZ3166313.143	55	168	+	astA	heat-stable enterotoxin EAST1	plus	VIRULENCE	VIRULENCE	NA	NA	BLASTX	38	38	100.00	94.74	38	AAM88299.1	heat-stable enterotoxin EAST1	NA	NA
+NA	ERZ3166313.17	2	7033	-	air	inverse autotransporter adhesin EaeX/Air	plus	VIRULENCE	VIRULENCE	NA	NA	PARTIAL_CONTIG_ENDX	2344	3806	61.59	90.70	2344	CBG36838.1	inverse autotransporter adhesin EaeX/Air	NA	NA
+NA	ERZ3166313.17	24904	26091	+	emrD	multidrug efflux MFS transporter EmrD	plus	AMR	AMR	EFFLUX	EFFLUX	BLASTX	396	396	100.00	99.75	396	EFF04178.1	multidrug efflux MFS transporter EmrD	NA	NA
+NA	ERZ3166313.19	40611	41837	+	mdtM	multidrug efflux MFS transporter MdtM	plus	AMR	AMR	EFFLUX	EFFLUX	BLASTX	409	410	99.76	98.29	409	AAC77293.1	multidrug efflux MFS transporter MdtM	NA	NA
+NA	ERZ3166313.23	12928	14058	+	blaEC	BlaEC family class C beta-lactamase	plus	AMR	AMR	BETA-LACTAM	BETA-LACTAM	BLASTX	377	377	100.00	98.41	377	AAZ85968.1	cephalosporin-hydrolyzing class C beta-lactamase EC-8	NA	NA
+NA	ERZ3166313.26	6927	9470	+	cyaA_S352T	Escherichia fosmidomycin resistant CyaA	core	AMR	POINT	FOSMIDOMYCIN	FOSMIDOMYCIN	POINTX	848	848	100.00	99.29	848	WP_000281668.1	adenylate cyclase CyaA	NA	NA
+NA	ERZ3166313.31	46321	47739	+	espX1	type III secretion system effector EspX1	plus	VIRULENCE	VIRULENCE	NA	NA	BLASTX	473	473	100.00	92.60	473	ADD54679.1	type III secretion system effector EspX1	NA	NA
+NA	ERZ3166313.32	39207	43448	-	fdeC	inverse autotransporter adhesin FdeC	plus	VIRULENCE	VIRULENCE	NA	NA	BLASTX	1414	1416	99.93	92.37	1415	ABE05822.1	inverse autotransporter adhesin FdeC	NA	NA
+NA	ERZ3166313.4	28434	28793	-	arsD	arsenite efflux transporter metallochaperone ArsD	plus	STRESS	METAL	ARSENIC	ARSENITE	BLASTX	120	120	100.00	90.00	120	AAB09625.1	arsenite efflux transporter metallochaperone ArsD	NA	NA
+NA	ERZ3166313.48	949	1518	-	lpfA-O113	long polar fimbria major subunit LpfA-O113	plus	VIRULENCE	VIRULENCE	NA	NA	EXACTX	190	190	100.00	100.00	190	ACB16424.1	long polar fimbria major subunit LpfA-O113	NA	NA
+NA	ERZ3166313.6	175900	177594	+	eilA	HilA family transcriptional regulator EilA	plus	VIRULENCE	VIRULENCE	NA	NA	EXACTX	565	565	100.00	100.00	565	CBG36837.1	HilA family transcriptional regulator EilA	NA	NA
+NA	ERZ3166313.84	221	568	-	aap	dispersin Aap	plus	VIRULENCE	VIRULENCE	NA	NA	BLASTX	116	116	100.00	95.69	116	CBG27807.1	dispersin Aap	NA	NA

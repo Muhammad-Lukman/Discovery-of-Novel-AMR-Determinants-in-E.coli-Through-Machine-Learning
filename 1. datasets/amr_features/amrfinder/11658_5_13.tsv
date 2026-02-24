@@ -1,0 +1,13 @@
+Protein id	Contig id	Start	Stop	Strand	Element symbol	Element name	Scope	Type	Subtype	Class	Subclass	Method	Target length	Reference sequence length	% Coverage of reference	% Identity to reference	Alignment length	Closest reference accession	Closest reference name	HMM accession	HMM description
+NA	ERZ3164364.16	29985	30554	+	lpfA-O113	long polar fimbria major subunit LpfA-O113	plus	VIRULENCE	VIRULENCE	NA	NA	EXACTX	190	190	100.00	100.00	190	ACB16424.1	long polar fimbria major subunit LpfA-O113	NA	NA
+NA	ERZ3164364.16	90062	91249	-	emrD	multidrug efflux MFS transporter EmrD	plus	AMR	AMR	EFFLUX	EFFLUX	BLASTX	396	396	100.00	99.75	396	EFF04178.1	multidrug efflux MFS transporter EmrD	NA	NA
+NA	ERZ3164364.2	145716	147134	-	espX1	type III secretion system effector EspX1	plus	VIRULENCE	VIRULENCE	NA	NA	BLASTX	473	473	100.00	92.60	473	ADD54679.1	type III secretion system effector EspX1	NA	NA
+NA	ERZ3164364.20	42230	44773	-	cyaA_S352T	Escherichia fosmidomycin resistant CyaA	core	AMR	POINT	FOSMIDOMYCIN	FOSMIDOMYCIN	POINTX	848	848	100.00	99.29	848	WP_000281668.1	adenylate cyclase CyaA	NA	NA
+NA	ERZ3164364.22	6245	16498	+	air	inverse autotransporter adhesin EaeX/Air	plus	VIRULENCE	VIRULENCE	NA	NA	EXACTX	3418	3418	100.00	100.00	3418	CAR15326.1	inverse autotransporter adhesin EaeX/Air	NA	NA
+NA	ERZ3164364.22	16556	18250	-	eilA	HilA family transcriptional regulator EilA	plus	VIRULENCE	VIRULENCE	NA	NA	EXACTX	565	565	100.00	100.00	565	CBG36837.1	HilA family transcriptional regulator EilA	NA	NA
+NA	ERZ3164364.25	51236	52366	-	blaEC	BlaEC family class C beta-lactamase	plus	AMR	AMR	BETA-LACTAM	BETA-LACTAM	BLASTX	377	377	100.00	98.67	377	AAZ85968.1	cephalosporin-hydrolyzing class C beta-lactamase EC-8	NA	NA
+NA	ERZ3164364.28	18374	22615	+	fdeC	inverse autotransporter adhesin FdeC	plus	VIRULENCE	VIRULENCE	NA	NA	BLASTX	1414	1416	99.93	92.44	1415	ABE05822.1	inverse autotransporter adhesin FdeC	NA	NA
+NA	ERZ3164364.3	5193	8294	-	acrF	multidrug efflux RND transporter permease subunit AcrF	plus	AMR	AMR	EFFLUX	EFFLUX	BLASTX	1034	1034	100.00	99.42	1034	AAC76298.1	multidrug efflux RND transporter permease subunit AcrF	NA	NA
+NA	ERZ3164364.45	782	1072	+	iss	increased serum survival lipoprotein Iss	plus	VIRULENCE	VIRULENCE	NA	NA	EXACTX	97	97	100.00	100.00	97	BAG76115.1	increased serum survival lipoprotein Iss	NA	NA
+NA	ERZ3164364.5	77905	78168	-	ariR	biofilm/acid-resistance regulator AriR	plus	STRESS	ACID	NA	NA	BLASTX	88	88	100.00	98.86	88	AAC74250.1	biofilm/acid-resistance regulator AriR	NA	NA
+NA	ERZ3164364.7	28432	28791	-	arsD	arsenite efflux transporter metallochaperone ArsD	plus	STRESS	METAL	ARSENIC	ARSENITE	BLASTX	120	120	100.00	90.00	120	AAB09625.1	arsenite efflux transporter metallochaperone ArsD	NA	NA

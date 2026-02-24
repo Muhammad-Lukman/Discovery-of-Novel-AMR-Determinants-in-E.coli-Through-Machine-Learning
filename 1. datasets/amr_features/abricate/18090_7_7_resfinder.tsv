@@ -1,0 +1,17 @@
+#FILE	SEQUENCE	START	END	GENE	COVERAGE	COVERAGE_MAP	GAPS	%COVERAGE	%IDENTITY	DATABASE	ACCESSION
+/home/ryder/AMR_PROJECT/assemblies/18090_7_7.fa	ERZ3484920.39	1	80	catB4_1	441-520/549	............===	0/0	14.57	100.00	resfinder	EU935739
+/home/ryder/AMR_PROJECT/assemblies/18090_7_7.fa	ERZ3484920.39	30203	30281	catB4_1	443-521/549	............===	0/0	14.39	100.00	resfinder	EU935739
+/home/ryder/AMR_PROJECT/assemblies/18090_7_7.fa	ERZ3484920.41	1134	2333	tet(A)_4	1-1200/1200	===============	0/0	100.00	100.00	resfinder	AJ517790
+/home/ryder/AMR_PROJECT/assemblies/18090_7_7.fa	ERZ3484920.49	1	77	catB4_1	443-519/549	............===	0/0	14.03	100.00	resfinder	EU935739
+/home/ryder/AMR_PROJECT/assemblies/18090_7_7.fa	ERZ3484920.49	239	1099	blaTEM-1B_1	1-861/861	===============	0/0	100.00	100.00	resfinder	JF910132
+/home/ryder/AMR_PROJECT/assemblies/18090_7_7.fa	ERZ3484920.49	1330	2166	strB_1	1-837/837	===============	0/0	100.00	99.88	resfinder	M96392
+/home/ryder/AMR_PROJECT/assemblies/18090_7_7.fa	ERZ3484920.49	2166	2969	strA_4	1-804/804	===============	0/0	100.00	99.88	resfinder	AF321551
+/home/ryder/AMR_PROJECT/assemblies/18090_7_7.fa	ERZ3484920.49	3030	3845	sul2_2	1-816/816	===============	0/0	100.00	100.00	resfinder	GQ421466
+/home/ryder/AMR_PROJECT/assemblies/18090_7_7.fa	ERZ3484920.49	8901	8979	catB4_1	443-521/549	............===	0/0	14.39	100.00	resfinder	EU935739
+/home/ryder/AMR_PROJECT/assemblies/18090_7_7.fa	ERZ3484920.50	487	1209	tet(M)_6	1198-1920/1920	.........======	0/0	37.66	98.06	resfinder	M21136
+/home/ryder/AMR_PROJECT/assemblies/18090_7_7.fa	ERZ3484920.50	1753	2628	blaCTX-M-55_2	1-876/876	===============	0/0	100.00	100.00	resfinder	GQ456159
+/home/ryder/AMR_PROJECT/assemblies/18090_7_7.fa	ERZ3484920.50	6897	7553	QnrS1_1	1-657/657	===============	0/0	100.00	100.00	resfinder	AB187515
+/home/ryder/AMR_PROJECT/assemblies/18090_7_7.fa	ERZ3484920.52	4111	4218	catB4_1	442-549/549	............===	0/0	19.67	100.00	resfinder	EU935739
+/home/ryder/AMR_PROJECT/assemblies/18090_7_7.fa	ERZ3484920.65	1	92	catB4_1	426-521/549	......../..====	1/4	16.76	93.75	resfinder	EU935739
+/home/ryder/AMR_PROJECT/assemblies/18090_7_7.fa	ERZ3484920.65	1461	1628	aadA1_1	1-175/972	===...../......	3/7	17.28	96.00	resfinder	X02340
+/home/ryder/AMR_PROJECT/assemblies/18090_7_7.fa	ERZ3484920.65	1635	2117	dfrA14_1	1-483/483	===============	0/0	100.00	99.59	resfinder	DQ388123

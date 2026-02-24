@@ -1,0 +1,9 @@
+Protein id	Contig id	Start	Stop	Strand	Element symbol	Element name	Scope	Type	Subtype	Class	Subclass	Method	Target length	Reference sequence length	% Coverage of reference	% Identity to reference	Alignment length	Closest reference accession	Closest reference name	HMM accession	HMM description
+NA	ERZ3164524.10	52617	52880	-	ariR	biofilm/acid-resistance regulator AriR	plus	STRESS	ACID	NA	NA	EXACTX	88	88	100.00	100.00	88	AAC74250.1	biofilm/acid-resistance regulator AriR	NA	NA
+NA	ERZ3164524.11	30190	30759	+	lpfA-O113	long polar fimbria major subunit LpfA-O113	plus	VIRULENCE	VIRULENCE	NA	NA	EXACTX	190	190	100.00	100.00	190	AAT76975.1	long polar fimbria major subunit LpfA-O113	NA	NA
+NA	ERZ3164524.12	15385	16803	-	espX1	type III secretion system effector EspX1	plus	VIRULENCE	VIRULENCE	NA	NA	BLASTX	473	473	100.00	91.33	473	ADD54679.1	type III secretion system effector EspX1	NA	NA
+NA	ERZ3164524.15	103109	106210	+	acrF	multidrug efflux RND transporter permease subunit AcrF	plus	AMR	AMR	EFFLUX	EFFLUX	BLASTX	1034	1034	100.00	99.42	1034	AAC76298.1	multidrug efflux RND transporter permease subunit AcrF	NA	NA
+NA	ERZ3164524.18	40156	44397	+	fdeC	inverse autotransporter adhesin FdeC	plus	VIRULENCE	VIRULENCE	NA	NA	BLASTX	1414	1416	99.93	91.17	1415	ABE05822.1	inverse autotransporter adhesin FdeC	NA	NA
+NA	ERZ3164524.27	15774	16295	-	lpfA	long polar fimbria major subunit LpfA	plus	VIRULENCE	VIRULENCE	NA	NA	EXACTX	174	174	100.00	100.00	174	CAV00478.1	long polar fimbria major subunit LpfA	NA	NA
+NA	ERZ3164524.7	75699	76925	+	mdtM	multidrug efflux MFS transporter MdtM	plus	AMR	AMR	EFFLUX	EFFLUX	BLASTX	409	410	99.76	98.53	409	AAC77293.1	multidrug efflux MFS transporter MdtM	NA	NA
+NA	ERZ3164524.8	159084	160214	-	blaEC	BlaEC family class C beta-lactamase	plus	AMR	AMR	BETA-LACTAM	BETA-LACTAM	BLASTX	377	377	100.00	98.67	377	WP_063860256.1	extended-spectrum class C beta-lactamase EC-18	NA	NA

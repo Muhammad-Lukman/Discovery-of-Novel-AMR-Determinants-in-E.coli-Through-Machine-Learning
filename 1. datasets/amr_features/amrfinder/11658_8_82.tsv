@@ -1,0 +1,31 @@
+Protein id	Contig id	Start	Stop	Strand	Element symbol	Element name	Scope	Type	Subtype	Class	Subclass	Method	Target length	Reference sequence length	% Coverage of reference	% Identity to reference	Alignment length	Closest reference accession	Closest reference name	HMM accession	HMM description
+NA	ERZ3165333.1	8672	11773	-	acrF	multidrug efflux RND transporter permease subunit AcrF	plus	AMR	AMR	EFFLUX	EFFLUX	BLASTX	1034	1034	100.00	99.42	1034	AAC76298.1	multidrug efflux RND transporter permease subunit AcrF	NA	NA
+NA	ERZ3165333.1	308798	313363	+	sslE	lipoprotein metalloprotease SslE	plus	VIRULENCE	VIRULENCE	NA	NA	BLASTX	1522	1520	100.00	90.75	1525	ADE89421.1	lipoprotein metalloprotease SslE	NA	NA
+NA	ERZ3165333.11	12928	14058	+	blaEC	BlaEC family class C beta-lactamase	plus	AMR	AMR	BETA-LACTAM	BETA-LACTAM	BLASTX	377	377	100.00	99.73	377	AAZ85968.1	cephalosporin-hydrolyzing class C beta-lactamase EC-8	NA	NA
+NA	ERZ3165333.16	10046	11434	-	uhpT_E350Q	Escherichia fosfomycin resistant UhpT	core	AMR	POINT	FOSFOMYCIN	FOSFOMYCIN	POINTX	463	463	100.00	99.78	463	WP_000879194.1	hexose phosphate transporter UhpT	NA	NA
+NA	ERZ3165333.16	21616	22803	+	emrD	multidrug efflux MFS transporter EmrD	plus	AMR	AMR	EFFLUX	EFFLUX	BLASTX	396	396	100.00	99.49	396	EFF04178.1	multidrug efflux MFS transporter EmrD	NA	NA
+NA	ERZ3165333.2	242415	246656	-	fdeC	inverse autotransporter adhesin FdeC	plus	VIRULENCE	VIRULENCE	NA	NA	BLASTX	1414	1416	99.93	90.88	1415	ABE05822.1	inverse autotransporter adhesin FdeC	NA	NA
+NA	ERZ3165333.22	45098	46324	+	mdtM	multidrug efflux MFS transporter MdtM	plus	AMR	AMR	EFFLUX	EFFLUX	BLASTX	409	410	99.76	98.04	409	AAC77293.1	multidrug efflux MFS transporter MdtM	NA	NA
+NA	ERZ3165333.23	67579	69273	+	eilA	HilA family transcriptional regulator EilA	plus	VIRULENCE	VIRULENCE	NA	NA	BLASTX	565	565	100.00	99.12	565	ACB16655.1	HilA family transcriptional regulator EilA	NA	NA
+NA	ERZ3165333.27	15525	15815	+	iss	increased serum survival lipoprotein Iss	plus	VIRULENCE	VIRULENCE	NA	NA	EXACTX	97	97	100.00	100.00	97	ADR26561.1	increased serum survival lipoprotein Iss	NA	NA
+NA	ERZ3165333.27	18964	20076	+	iroB	salmochelin biosynthesis C-glycosyltransferase IroB	plus	VIRULENCE	VIRULENCE	NA	NA	BLASTX	371	371	100.00	99.73	371	EOW04219.1	salmochelin biosynthesis C-glycosyltransferase IroB	NA	NA
+NA	ERZ3165333.27	20219	23875	+	iroC	salmochelin/enterobactin export ABC transporter IroC	plus	VIRULENCE	VIRULENCE	NA	NA	BLASTX	1219	1219	100.00	99.59	1219	AUH19662.1	salmochelin/enterobactin export ABC transporter IroC	NA	NA
+NA	ERZ3165333.27	23982	25208	+	iroD	catecholate siderophore esterase IroD	plus	VIRULENCE	VIRULENCE	NA	NA	BLASTX	409	409	100.00	99.51	409	ACJ63529.1	catecholate siderophore esterase IroD	NA	NA
+NA	ERZ3165333.27	25296	26249	+	iroE	catecholate siderophore esterase IroE	plus	VIRULENCE	VIRULENCE	NA	NA	BLASTX	318	318	100.00	99.06	318	ACJ63530.1	catecholate siderophore esterase IroE	NA	NA
+NA	ERZ3165333.27	26300	28474	-	iroN	siderophore salmochelin receptor IroN	plus	VIRULENCE	VIRULENCE	NA	NA	EXACTX	725	725	100.00	100.00	725	AAN76093.1	siderophore salmochelin receptor IroN	NA	NA
+NA	ERZ3165333.27	33666	35759	+	cvaB	colicin V export peptidase/ABC transporter CvaB	plus	VIRULENCE	VIRULENCE	NA	NA	EXACTX	698	698	100.00	100.00	698	CAA40744.1	colicin V export peptidase/ABC transporter CvaB	NA	NA
+NA	ERZ3165333.27	35935	36243	-	cvaC	colicin V	plus	VIRULENCE	VIRULENCE	NA	NA	EXACTX	103	103	100.00	100.00	103	CAA40746.1	colicin V	NA	NA
+NA	ERZ3165333.27	45989	46891	-	mph(A)	Mph(A) family macrolide 2'-phosphotransferase	core	AMR	AMR	MACROLIDE	AZITHROMYCIN/ERYTHROMYCIN/SPIRAMYCIN/TELITHROMYCIN	EXACTX	301	301	100.00	100.00	301	WP_000219391.1	Mph(A) family macrolide 2'-phosphotransferase	NA	NA
+NA	ERZ3165333.27	50153	50401	-	merD	mercury resistance co-regulator MerD	plus	STRESS	METAL	MERCURY	MERCURY	PARTIALX	83	121	68.60	90.36	83	AAC38221.1	mercury resistance co-regulator MerD	NA	NA
+NA	ERZ3165333.27	52168	52587	-	merC	organomercurial transporter MerC	plus	STRESS	METAL	MERCURY	ORGANOMERCURY	EXACTX	140	140	100.00	100.00	140	AAC33908.1	organomercurial transporter MerC	NA	NA
+NA	ERZ3165333.27	52626	52898	-	merP	mercury resistance system periplasmic binding protein MerP	plus	STRESS	METAL	MERCURY	MERCURY	BLASTX	91	91	100.00	90.11	91	AAC38219.1	mercury resistance system periplasmic binding protein MerP	NA	NA
+NA	ERZ3165333.27	52915	53262	-	merT	mercuric transport protein MerT	plus	STRESS	METAL	MERCURY	MERCURY	EXACTX	116	116	100.00	100.00	116	AAB59075.1	mercuric transport protein MerT	NA	NA
+NA	ERZ3165333.27	53334	53765	+	merR	mercury resistance transcriptional regulator MerR	plus	STRESS	METAL	MERCURY	MERCURY	BLASTX	144	144	100.00	93.75	144	CAA77320.1	mercury resistance transcriptional regulator MerR	NA	NA
+NA	ERZ3165333.34	8803	9066	-	ariR	biofilm/acid-resistance regulator AriR	plus	STRESS	ACID	NA	NA	BLASTX	88	88	100.00	97.73	88	AAC74250.1	biofilm/acid-resistance regulator AriR	NA	NA
+NA	ERZ3165333.4	91536	92948	-	espX1	type III secretion system effector EspX1	plus	VIRULENCE	VIRULENCE	NA	NA	BLASTX	471	473	99.58	90.87	471	ADD54679.1	type III secretion system effector EspX1	NA	NA
+NA	ERZ3165333.41	7149	8870	+	iucA	aerobactin synthase IucA	plus	VIRULENCE	VIRULENCE	NA	NA	BLASTX	574	576	100.00	95.31	576	EGI25746.1	aerobactin synthase IucA	NA	NA
+NA	ERZ3165333.41	8874	9818	+	iucB	N(6)-hydroxylysine O-acetyltransferase IucB	plus	VIRULENCE	VIRULENCE	NA	NA	BLASTX	315	315	100.00	95.87	315	AAN82074.1	N(6)-hydroxylysine O-acetyltransferase IucB	NA	NA
+NA	ERZ3165333.41	9821	11560	+	iucC	NIS family aerobactin synthetase IucC	plus	VIRULENCE	VIRULENCE	NA	NA	BLASTX	580	580	100.00	97.59	580	AAN82073.1	NIS family aerobactin synthetase IucC	NA	NA
+NA	ERZ3165333.41	11560	12834	+	iucD	NADPH-dependent L-lysine N(6)-monooxygenase IucD	plus	VIRULENCE	VIRULENCE	NA	NA	BLASTX	425	445	95.51	97.65	425	AAD44749.1	NADPH-dependent L-lysine N(6)-monooxygenase IucD	NA	NA
+NA	ERZ3165333.41	12931	15117	+	iutA	ferric aerobactin receptor IutA	plus	VIRULENCE	VIRULENCE	NA	NA	BLASTX	729	731	99.73	89.71	729	AAN45165.2	ferric aerobactin receptor IutA	NA	NA
+NA	ERZ3165333.9	28422	28781	-	arsD	arsenite efflux transporter metallochaperone ArsD	plus	STRESS	METAL	ARSENIC	ARSENITE	BLASTX	120	120	100.00	90.00	120	AAB09625.1	arsenite efflux transporter metallochaperone ArsD	NA	NA

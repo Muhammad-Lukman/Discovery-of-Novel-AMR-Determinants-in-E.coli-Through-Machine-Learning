@@ -1,0 +1,20 @@
+Protein id	Contig id	Start	Stop	Strand	Element symbol	Element name	Scope	Type	Subtype	Class	Subclass	Method	Target length	Reference sequence length	% Coverage of reference	% Identity to reference	Alignment length	Closest reference accession	Closest reference name	HMM accession	HMM description
+NA	ERZ3165999.1	279438	283679	-	fdeC	inverse autotransporter adhesin FdeC	plus	VIRULENCE	VIRULENCE	NA	NA	BLASTX	1414	1416	99.93	90.88	1415	ABE05822.1	inverse autotransporter adhesin FdeC	NA	NA
+NA	ERZ3165999.13	126224	129325	+	acrF	multidrug efflux RND transporter permease subunit AcrF	plus	AMR	AMR	EFFLUX	EFFLUX	BLASTX	1034	1034	100.00	99.42	1034	AAC76298.1	multidrug efflux RND transporter permease subunit AcrF	NA	NA
+NA	ERZ3165999.16	8803	9066	-	ariR	biofilm/acid-resistance regulator AriR	plus	STRESS	ACID	NA	NA	BLASTX	88	88	100.00	97.73	88	AAC74250.1	biofilm/acid-resistance regulator AriR	NA	NA
+NA	ERZ3165999.22	1815	3002	+	emrD	multidrug efflux MFS transporter EmrD	plus	AMR	AMR	EFFLUX	EFFLUX	BLASTX	396	396	100.00	99.49	396	EFF04178.1	multidrug efflux MFS transporter EmrD	NA	NA
+NA	ERZ3165999.3	202652	204064	+	espX1	type III secretion system effector EspX1	plus	VIRULENCE	VIRULENCE	NA	NA	BLASTX	471	473	99.58	90.87	471	ADD54679.1	type III secretion system effector EspX1	NA	NA
+NA	ERZ3165999.3	301805	303031	+	mdtM	multidrug efflux MFS transporter MdtM	plus	AMR	AMR	EFFLUX	EFFLUX	BLASTX	409	410	99.76	98.04	409	AAC77293.1	multidrug efflux MFS transporter MdtM	NA	NA
+NA	ERZ3165999.40	16119	17345	+	iroD	catecholate siderophore esterase IroD	plus	VIRULENCE	VIRULENCE	NA	NA	BLASTX	409	409	100.00	98.78	409	ACJ63529.1	catecholate siderophore esterase IroD	NA	NA
+NA	ERZ3165999.40	17433	18224	+	iroE	catecholate siderophore esterase IroE	plus	VIRULENCE	VIRULENCE	NA	NA	PARTIALX	264	318	83.02	97.35	264	ACJ63530.1	catecholate siderophore esterase IroE	NA	NA
+NA	ERZ3165999.43	441	770	+	emrE	multidrug efflux SMR transporter EmrE	plus	STRESS	BIOCIDE	EFFLUX	EFFLUX	BLASTX	110	110	100.00	98.18	110	CAA77936.1	multidrug efflux SMR transporter EmrE	NA	NA
+NA	ERZ3165999.46	5768	5881	-	astA	heat-stable enterotoxin EAST1	plus	VIRULENCE	VIRULENCE	NA	NA	EXACTX	38	38	100.00	100.00	38	AAM88299.1	heat-stable enterotoxin EAST1	NA	NA
+NA	ERZ3165999.49	2449	2919	+	dfrA7	trimethoprim-resistant dihydrofolate reductase DfrA7	core	AMR	AMR	TRIMETHOPRIM	TRIMETHOPRIM	EXACTX	157	157	100.00	100.00	157	WP_000703418.1	trimethoprim-resistant dihydrofolate reductase DfrA7	NA	NA
+NA	ERZ3165999.52	1817	2902	+	capU	putative hexosyltransferase CapU	plus	VIRULENCE	VIRULENCE	NA	NA	BLASTX	362	362	100.00	99.72	362	CAV02025.1	putative hexosyltransferase CapU	NA	NA
+NA	ERZ3165999.54	1928	2740	+	sul2	sulfonamide-resistant dihydropteroate synthase Sul2	core	AMR	AMR	SULFONAMIDE	SULFONAMIDE	EXACTX	271	271	100.00	100.00	271	WP_001043265.1	sulfonamide-resistant dihydropteroate synthase Sul2	NA	NA
+NA	ERZ3165999.54	2804	3604	+	aph(3'')-Ib	aminoglycoside O-phosphotransferase APH(3'')-Ib	core	AMR	AMR	AMINOGLYCOSIDE	STREPTOMYCIN	EXACTX	267	267	100.00	100.00	267	WP_001082319.1	aminoglycoside O-phosphotransferase APH(3'')-Ib	NA	NA
+NA	ERZ3165999.54	3607	4440	+	aph(6)-Id	aminoglycoside O-phosphotransferase APH(6)-Id	core	AMR	AMR	AMINOGLYCOSIDE	STREPTOMYCIN	EXACTX	278	278	100.00	100.00	278	WP_000480968.1	aminoglycoside O-phosphotransferase APH(6)-Id	NA	NA
+NA	ERZ3165999.7	28422	28781	-	arsD	arsenite efflux transporter metallochaperone ArsD	plus	STRESS	METAL	ARSENIC	ARSENITE	BLASTX	120	120	100.00	90.00	120	AAB09625.1	arsenite efflux transporter metallochaperone ArsD	NA	NA
+NA	ERZ3165999.74	433	1290	+	blaTEM-1	broad-spectrum class A beta-lactamase TEM-1	core	AMR	AMR	BETA-LACTAM	BETA-LACTAM	ALLELEX	286	286	100.00	100.00	286	WP_000027057.1	broad-spectrum class A beta-lactamase TEM-1	NA	NA
+NA	ERZ3165999.9	13161	14291	+	blaEC	BlaEC family class C beta-lactamase	plus	AMR	AMR	BETA-LACTAM	BETA-LACTAM	BLASTX	377	377	100.00	99.73	377	AAZ85968.1	cephalosporin-hydrolyzing class C beta-lactamase EC-8	NA	NA
+NA	ERZ3165999.90	532	822	+	iss	increased serum survival lipoprotein Iss	plus	VIRULENCE	VIRULENCE	NA	NA	EXACTX	97	97	100.00	100.00	97	BAG76115.1	increased serum survival lipoprotein Iss	NA	NA

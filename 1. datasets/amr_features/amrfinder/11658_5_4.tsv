@@ -1,0 +1,13 @@
+Protein id	Contig id	Start	Stop	Strand	Element symbol	Element name	Scope	Type	Subtype	Class	Subclass	Method	Target length	Reference sequence length	% Coverage of reference	% Identity to reference	Alignment length	Closest reference accession	Closest reference name	HMM accession	HMM description
+NA	ERZ3164310.11	8803	9066	-	ariR	biofilm/acid-resistance regulator AriR	plus	STRESS	ACID	NA	NA	BLASTX	88	88	100.00	97.73	88	AAC74250.1	biofilm/acid-resistance regulator AriR	NA	NA
+NA	ERZ3164310.16	86113	86472	+	arsD	arsenite efflux transporter metallochaperone ArsD	plus	STRESS	METAL	ARSENIC	ARSENITE	BLASTX	120	120	100.00	90.00	120	AAB09625.1	arsenite efflux transporter metallochaperone ArsD	NA	NA
+NA	ERZ3164310.2	102027	106268	+	fdeC	inverse autotransporter adhesin FdeC	plus	VIRULENCE	VIRULENCE	NA	NA	BLASTX	1414	1416	99.93	90.88	1415	ABE05822.1	inverse autotransporter adhesin FdeC	NA	NA
+NA	ERZ3164310.20	53482	54708	-	mdtM	multidrug efflux MFS transporter MdtM	plus	AMR	AMR	EFFLUX	EFFLUX	BLASTX	409	410	99.76	98.04	409	AAC77293.1	multidrug efflux MFS transporter MdtM	NA	NA
+NA	ERZ3164310.4	61658	63070	-	espX1	type III secretion system effector EspX1	plus	VIRULENCE	VIRULENCE	NA	NA	BLASTX	471	473	99.58	90.87	471	ADD54679.1	type III secretion system effector EspX1	NA	NA
+NA	ERZ3164310.41	22389	22859	+	dfrA1	trimethoprim-resistant dihydrofolate reductase DfrA1	core	AMR	AMR	TRIMETHOPRIM	TRIMETHOPRIM	EXACTX	157	157	100.00	100.00	157	WP_000777555.1	trimethoprim-resistant dihydrofolate reductase DfrA1	NA	NA
+NA	ERZ3164310.41	23409	24266	-	blaTEM-1	broad-spectrum class A beta-lactamase TEM-1	core	AMR	AMR	BETA-LACTAM	BETA-LACTAM	ALLELEX	286	286	100.00	100.00	286	WP_000027057.1	broad-spectrum class A beta-lactamase TEM-1	NA	NA
+NA	ERZ3164310.46	14920	16050	-	blaEC	BlaEC family class C beta-lactamase	plus	AMR	AMR	BETA-LACTAM	BETA-LACTAM	BLASTX	377	377	100.00	99.73	377	AAZ85968.1	cephalosporin-hydrolyzing class C beta-lactamase EC-8	NA	NA
+NA	ERZ3164310.6	8672	11773	-	acrF	multidrug efflux RND transporter permease subunit AcrF	plus	AMR	AMR	EFFLUX	EFFLUX	BLASTX	1034	1034	100.00	99.42	1034	AAC76298.1	multidrug efflux RND transporter permease subunit AcrF	NA	NA
+NA	ERZ3164310.62	68	928	+	pcoS	copper resistance membrane spanning protein PcoS	plus	STRESS	METAL	COPPER	COPPER	PARTIALX	287	466	61.59	100.00	287	CAA58530.1	copper resistance membrane spanning protein PcoS	NA	NA
+NA	ERZ3164310.8	82225	83412	-	emrD	multidrug efflux MFS transporter EmrD	plus	AMR	AMR	EFFLUX	EFFLUX	BLASTX	396	396	100.00	99.49	396	EFF04178.1	multidrug efflux MFS transporter EmrD	NA	NA
+NA	ERZ3164310.9	34117	38676	-	sslE	lipoprotein metalloprotease SslE	plus	VIRULENCE	VIRULENCE	NA	NA	BLASTX	1520	1520	100.00	97.76	1520	ADE89421.1	lipoprotein metalloprotease SslE	NA	NA

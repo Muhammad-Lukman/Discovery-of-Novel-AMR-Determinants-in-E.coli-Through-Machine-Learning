@@ -1,0 +1,17 @@
+#FILE	SEQUENCE	START	END	GENE	COVERAGE	COVERAGE_MAP	GAPS	%COVERAGE	%IDENTITY	DATABASE	ACCESSION
+/home/ryder/AMR_PROJECT/assemblies/11658_4_48.fa	ERZ3165324.122	671	777	catB4_1	443-549/549	............===	0/0	19.49	100.00	resfinder	EU935739
+/home/ryder/AMR_PROJECT/assemblies/11658_4_48.fa	ERZ3165324.138	559	625	catB4_1	443-509/549	............==.	0/0	12.20	100.00	resfinder	EU935739
+/home/ryder/AMR_PROJECT/assemblies/11658_4_48.fa	ERZ3165324.43	1	67	catB4_1	443-509/549	............==.	0/0	12.20	100.00	resfinder	EU935739
+/home/ryder/AMR_PROJECT/assemblies/11658_4_48.fa	ERZ3165324.48	1	66	catB4_1	443-508/549	............==.	0/0	12.02	100.00	resfinder	EU935739
+/home/ryder/AMR_PROJECT/assemblies/11658_4_48.fa	ERZ3165324.48	1031	1957	sul1_2	1-927/927	===============	0/0	100.00	100.00	resfinder	CP002151
+/home/ryder/AMR_PROJECT/assemblies/11658_4_48.fa	ERZ3165324.48	2394	3620	ere(A)_2	1-1227/1227	===============	0/0	100.00	100.00	resfinder	AF099140
+/home/ryder/AMR_PROJECT/assemblies/11658_4_48.fa	ERZ3165324.48	3771	4244	dfrA5_1	1-474/474	===============	0/0	100.00	100.00	resfinder	X12868
+/home/ryder/AMR_PROJECT/assemblies/11658_4_48.fa	ERZ3165324.48	4260	4427	aadA1_1	1-175/972	===...../......	3/7	17.28	96.00	resfinder	X02340
+/home/ryder/AMR_PROJECT/assemblies/11658_4_48.fa	ERZ3165324.54	1	67	catB4_1	443-509/549	............==.	0/0	12.20	100.00	resfinder	EU935739
+/home/ryder/AMR_PROJECT/assemblies/11658_4_48.fa	ERZ3165324.54	5245	6105	blaTEM-1A_4	1-861/861	===============	0/0	100.00	100.00	resfinder	HM749966
+/home/ryder/AMR_PROJECT/assemblies/11658_4_48.fa	ERZ3165324.57	1	66	catB4_1	443-508/549	............==.	0/0	12.02	100.00	resfinder	EU935739
+/home/ryder/AMR_PROJECT/assemblies/11658_4_48.fa	ERZ3165324.63	141	1001	blaSHV-12_1	1-861/861	===============	0/0	100.00	100.00	resfinder	AF462395
+/home/ryder/AMR_PROJECT/assemblies/11658_4_48.fa	ERZ3165324.63	4528	4595	catB4_1	442-509/549	............==.	0/0	12.39	100.00	resfinder	EU935739
+/home/ryder/AMR_PROJECT/assemblies/11658_4_48.fa	ERZ3165324.78	49	654	aac(6')-Ib_1	1-606/606	===============	0/0	100.00	99.83	resfinder	M21682
+/home/ryder/AMR_PROJECT/assemblies/11658_4_48.fa	ERZ3165324.78	711	1512	aadA1_1	168-972/972	..======/======	1/3	82.51	99.25	resfinder	X02340
+/home/ryder/AMR_PROJECT/assemblies/11658_4_48.fa	ERZ3165324.78	1557	2396	blaOXA-9_2	1-840/840	===============	0/0	100.00	100.00	resfinder	JF703130

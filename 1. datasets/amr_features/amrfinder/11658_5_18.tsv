@@ -1,0 +1,18 @@
+Protein id	Contig id	Start	Stop	Strand	Element symbol	Element name	Scope	Type	Subtype	Class	Subclass	Method	Target length	Reference sequence length	% Coverage of reference	% Identity to reference	Alignment length	Closest reference accession	Closest reference name	HMM accession	HMM description
+NA	ERZ3164414.10	105438	105701	+	ariR	biofilm/acid-resistance regulator AriR	plus	STRESS	ACID	NA	NA	EXACTX	88	88	100.00	100.00	88	AAC74250.1	biofilm/acid-resistance regulator AriR	NA	NA
+NA	ERZ3164414.11	145540	148641	+	acrF	multidrug efflux RND transporter permease subunit AcrF	plus	AMR	AMR	EFFLUX	EFFLUX	EXACTX	1034	1034	100.00	100.00	1034	AAC76298.1	multidrug efflux RND transporter permease subunit AcrF	NA	NA
+NA	ERZ3164414.14	83027	84826	+	ybtP	yersiniabactin ABC transporter ATP-binding/permease protein YbtP	plus	VIRULENCE	VIRULENCE	NA	NA	BLASTX	600	600	100.00	99.67	600	CAA21388.1	yersiniabactin ABC transporter ATP-binding/permease protein YbtP	NA	NA
+NA	ERZ3164414.14	84816	86615	+	ybtQ	yersiniabactin ABC transporter ATP-binding/permease protein YbtQ	plus	VIRULENCE	VIRULENCE	NA	NA	BLASTX	600	600	100.00	99.50	600	AAC69584.1	yersiniabactin ABC transporter ATP-binding/permease protein YbtQ	NA	NA
+NA	ERZ3164414.15	130511	131596	-	capU	putative hexosyltransferase CapU	plus	VIRULENCE	VIRULENCE	NA	NA	EXACTX	362	362	100.00	100.00	362	CAV02025.1	putative hexosyltransferase CapU	NA	NA
+NA	ERZ3164414.16	99719	103966	+	fdeC	inverse autotransporter adhesin FdeC	plus	VIRULENCE	VIRULENCE	NA	NA	BLASTX	1416	1416	100.00	94.07	1416	ABE05822.1	inverse autotransporter adhesin FdeC	NA	NA
+NA	ERZ3164414.2	203708	204856	+	espX1	type III secretion system effector EspX1	plus	VIRULENCE	VIRULENCE	NA	NA	PARTIALX	383	473	80.97	90.34	383	ADD54679.1	type III secretion system effector EspX1	NA	NA
+NA	ERZ3164414.29	32704	33930	+	mdtM	multidrug efflux MFS transporter MdtM	plus	AMR	AMR	EFFLUX	EFFLUX	BLASTX	409	410	99.76	98.04	409	AAC77293.1	multidrug efflux MFS transporter MdtM	NA	NA
+NA	ERZ3164414.30	51544	52674	-	blaEC	BlaEC family class C beta-lactamase	plus	AMR	AMR	BETA-LACTAM	BETA-LACTAM	EXACTX	377	377	100.00	100.00	377	AAC77110.1	BlaEC family class C beta-lactamase	NA	NA
+NA	ERZ3164414.53	1018	2190	-	senB	enterotoxin production-related protein TieB	plus	VIRULENCE	VIRULENCE	NA	NA	EXACTX	391	391	100.00	100.00	391	AAZ89288.1	enterotoxin production-related protein TieB	NA	NA
+NA	ERZ3164414.55	966	3053	-	iha	bifunctional siderophore receptor/adhesin Iha	plus	VIRULENCE	VIRULENCE	NA	NA	BLASTX	696	696	100.00	99.86	696	AAG55323.1	bifunctional siderophore receptor/adhesin Iha	NA	NA
+NA	ERZ3164414.56	283	2475	-	iutA	ferric aerobactin receptor IutA	plus	VIRULENCE	VIRULENCE	NA	NA	BLASTX	731	731	100.00	99.18	731	AAN45165.2	ferric aerobactin receptor IutA	NA	NA
+NA	ERZ3164414.56	2484	3818	-	iucD	NADPH-dependent L-lysine N(6)-monooxygenase IucD	plus	VIRULENCE	VIRULENCE	NA	NA	BLASTX	445	445	100.00	98.88	445	AAD44749.1	NADPH-dependent L-lysine N(6)-monooxygenase IucD	NA	NA
+NA	ERZ3164414.56	3818	5557	-	iucC	NIS family aerobactin synthetase IucC	plus	VIRULENCE	VIRULENCE	NA	NA	BLASTX	580	580	100.00	99.83	580	AAN82073.1	NIS family aerobactin synthetase IucC	NA	NA
+NA	ERZ3164414.56	5560	6504	-	iucB	N(6)-hydroxylysine O-acetyltransferase IucB	plus	VIRULENCE	VIRULENCE	NA	NA	EXACTX	315	315	100.00	100.00	315	AAN82074.1	N(6)-hydroxylysine O-acetyltransferase IucB	NA	NA
+NA	ERZ3164414.56	6508	8229	-	iucA	aerobactin synthase IucA	plus	VIRULENCE	VIRULENCE	NA	NA	BLASTX	574	576	100.00	98.61	576	EGI25746.1	aerobactin synthase IucA	NA	NA
+NA	ERZ3164414.65	587	4675	+	espI	serine protease autotransporter EspI	plus	VIRULENCE	VIRULENCE	NA	NA	BLASTX	1363	1363	100.00	99.05	1363	BAI32516.1	serine protease autotransporter EspI	NA	NA

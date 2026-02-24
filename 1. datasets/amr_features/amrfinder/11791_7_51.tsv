@@ -1,0 +1,31 @@
+Protein id	Contig id	Start	Stop	Strand	Element symbol	Element name	Scope	Type	Subtype	Class	Subclass	Method	Target length	Reference sequence length	% Coverage of reference	% Identity to reference	Alignment length	Closest reference accession	Closest reference name	HMM accession	HMM description
+NA	ERZ3165238.1	341505	341834	-	emrE	multidrug efflux SMR transporter EmrE	plus	STRESS	BIOCIDE	EFFLUX	EFFLUX	BLASTX	110	110	100.00	98.18	110	CAA77936.1	multidrug efflux SMR transporter EmrE	NA	NA
+NA	ERZ3165238.15	81799	82986	-	emrD	multidrug efflux MFS transporter EmrD	plus	AMR	AMR	EFFLUX	EFFLUX	BLASTX	396	396	100.00	99.49	396	EFF04178.1	multidrug efflux MFS transporter EmrD	NA	NA
+NA	ERZ3165238.15	89199	90587	+	uhpT_E350Q	Escherichia fosfomycin resistant UhpT	core	AMR	POINT	FOSFOMYCIN	FOSFOMYCIN	POINTX	463	463	100.00	99.78	463	WP_000879194.1	hexose phosphate transporter UhpT	NA	NA
+NA	ERZ3165238.19	58847	59368	+	lpfA	long polar fimbria major subunit LpfA	plus	VIRULENCE	VIRULENCE	NA	NA	BLASTX	174	174	100.00	95.40	174	CAV00478.1	long polar fimbria major subunit LpfA	NA	NA
+NA	ERZ3165238.2	34540	39093	-	sslE	lipoprotein metalloprotease SslE	plus	VIRULENCE	VIRULENCE	NA	NA	BLASTX	1518	1520	100.00	92.70	1520	ADE89421.1	lipoprotein metalloprotease SslE	NA	NA
+NA	ERZ3165238.2	349901	353002	+	acrF	multidrug efflux RND transporter permease subunit AcrF	plus	AMR	AMR	EFFLUX	EFFLUX	BLASTX	1034	1034	100.00	99.32	1034	AAC76298.1	multidrug efflux RND transporter permease subunit AcrF	NA	NA
+NA	ERZ3165238.21	69301	69564	-	ariR	biofilm/acid-resistance regulator AriR	plus	STRESS	ACID	NA	NA	BLASTX	88	88	100.00	97.73	88	AAC74250.1	biofilm/acid-resistance regulator AriR	NA	NA
+NA	ERZ3165238.23	44980	46110	+	blaEC	BlaEC family class C beta-lactamase	plus	AMR	AMR	BETA-LACTAM	BETA-LACTAM	BLASTX	377	377	100.00	98.41	377	AAZ85965.1	cephalosporin-hydrolyzing class C beta-lactamase EC-5	NA	NA
+NA	ERZ3165238.3	283449	284657	+	mdtM	multidrug efflux MFS transporter MdtM	plus	AMR	AMR	EFFLUX	EFFLUX	BLASTX	403	410	98.29	97.52	403	AAC77293.1	multidrug efflux MFS transporter MdtM	NA	NA
+NA	ERZ3165238.35	16501	17229	-	aph(6)-Id	aminoglycoside O-phosphotransferase APH(6)-Id	core	AMR	AMR	AMINOGLYCOSIDE	STREPTOMYCIN	PARTIALX	243	278	87.41	100.00	243	WP_000480968.1	aminoglycoside O-phosphotransferase APH(6)-Id	NA	NA
+NA	ERZ3165238.35	21173	22030	+	blaTEM-1	broad-spectrum class A beta-lactamase TEM-1	core	AMR	AMR	BETA-LACTAM	BETA-LACTAM	ALLELEX	286	286	100.00	100.00	286	WP_000027057.1	broad-spectrum class A beta-lactamase TEM-1	NA	NA
+NA	ERZ3165238.35	22292	23092	-	aph(3'')-Ib	aminoglycoside O-phosphotransferase APH(3'')-Ib	core	AMR	AMR	AMINOGLYCOSIDE	STREPTOMYCIN	EXACTX	267	267	100.00	100.00	267	WP_001082319.1	aminoglycoside O-phosphotransferase APH(3'')-Ib	NA	NA
+NA	ERZ3165238.35	23156	23968	-	sul2	sulfonamide-resistant dihydropteroate synthase Sul2	core	AMR	AMR	SULFONAMIDE	SULFONAMIDE	EXACTX	271	271	100.00	100.00	271	WP_001043260.1	sulfonamide-resistant dihydropteroate synthase Sul2	NA	NA
+NA	ERZ3165238.39	797	4681	-	sat	serine protease autotransporter toxin Sat	plus	VIRULENCE	VIRULENCE	NA	NA	BLASTX	1295	1295	100.00	99.54	1295	AFK88558.1	serine protease autotransporter toxin Sat	NA	NA
+NA	ERZ3165238.39	5629	7821	-	iutA	ferric aerobactin receptor IutA	plus	VIRULENCE	VIRULENCE	NA	NA	BLASTX	731	731	100.00	99.86	731	AAN45165.2	ferric aerobactin receptor IutA	NA	NA
+NA	ERZ3165238.39	7830	9164	-	iucD	NADPH-dependent L-lysine N(6)-monooxygenase IucD	plus	VIRULENCE	VIRULENCE	NA	NA	BLASTX	445	445	100.00	99.33	445	AAD44749.1	NADPH-dependent L-lysine N(6)-monooxygenase IucD	NA	NA
+NA	ERZ3165238.39	9164	10903	-	iucC	NIS family aerobactin synthetase IucC	plus	VIRULENCE	VIRULENCE	NA	NA	BLASTX	580	580	100.00	99.31	580	AAN82073.1	NIS family aerobactin synthetase IucC	NA	NA
+NA	ERZ3165238.39	10906	11850	-	iucB	N(6)-hydroxylysine O-acetyltransferase IucB	plus	VIRULENCE	VIRULENCE	NA	NA	BLASTX	315	315	100.00	99.68	315	AAN82074.1	N(6)-hydroxylysine O-acetyltransferase IucB	NA	NA
+NA	ERZ3165238.39	11854	13575	-	iucA	aerobactin synthase IucA	plus	VIRULENCE	VIRULENCE	NA	NA	BLASTX	574	576	100.00	98.44	576	EGI25746.1	aerobactin synthase IucA	NA	NA
+NA	ERZ3165238.42	13676	15763	+	iha	bifunctional siderophore receptor/adhesin Iha	plus	VIRULENCE	VIRULENCE	NA	NA	BLASTX	696	696	100.00	99.86	696	AAG55323.1	bifunctional siderophore receptor/adhesin Iha	NA	NA
+NA	ERZ3165238.46	8488	9660	+	senB	enterotoxin production-related protein TieB	plus	VIRULENCE	VIRULENCE	NA	NA	EXACTX	391	391	100.00	100.00	391	AAZ89288.1	enterotoxin production-related protein TieB	NA	NA
+NA	ERZ3165238.5	16523	20650	-	vactox	vacuolating autotransporter toxin Vat	plus	VIRULENCE	VIRULENCE	NA	NA	BLASTX	1376	1376	100.00	99.78	1376	AAN78874.1	vacuolating autotransporter toxin Vat	NA	NA
+NA	ERZ3165238.5	40350	44597	+	fdeC	inverse autotransporter adhesin FdeC	plus	VIRULENCE	VIRULENCE	NA	NA	BLASTX	1416	1416	100.00	99.86	1416	ABE05822.1	inverse autotransporter adhesin FdeC	NA	NA
+NA	ERZ3165238.55	112	696	+	papH	P fimbrial minor subunit PapH	plus	VIRULENCE	VIRULENCE	NA	NA	BLASTX	195	195	100.00	94.36	195	CAA43563.1	P fimbrial minor subunit PapH	NA	NA
+NA	ERZ3165238.55	758	3265	+	papC	P fimbrial usher protein PapC	plus	VIRULENCE	VIRULENCE	NA	NA	BLASTX	836	836	100.00	96.20	841	CAA43564.1	P fimbrial usher protein PapC	NA	NA
+NA	ERZ3165238.55	5860	6357	+	papF	P fimbrial tip protein PapF	plus	VIRULENCE	VIRULENCE	NA	NA	BLASTX	166	167	100.00	92.22	167	CAA43569.1	P fimbrial tip protein PapF	NA	NA
+NA	ERZ3165238.55	6404	7411	+	papG-II	P fimbria tip G-adhesin PapG-II	plus	VIRULENCE	VIRULENCE	NA	NA	BLASTX	336	337	100.00	97.63	337	AAA24293.1	P fimbria tip G-adhesin PapG-II	NA	NA
+NA	ERZ3165238.66	1481	3526	-	ireA	TonB-dependent siderophore receptor IreA	plus	VIRULENCE	VIRULENCE	NA	NA	BLASTX	682	682	100.00	99.85	682	ABJ02430.1	TonB-dependent siderophore receptor IreA	NA	NA
+NA	ERZ3165238.7	7648	9447	-	ybtQ	yersiniabactin ABC transporter ATP-binding/permease protein YbtQ	plus	VIRULENCE	VIRULENCE	NA	NA	BLASTX	600	600	100.00	99.67	600	AAC69584.1	yersiniabactin ABC transporter ATP-binding/permease protein YbtQ	NA	NA
+NA	ERZ3165238.7	9437	11236	-	ybtP	yersiniabactin ABC transporter ATP-binding/permease protein YbtP	plus	VIRULENCE	VIRULENCE	NA	NA	BLASTX	600	600	100.00	99.83	600	CAA21388.1	yersiniabactin ABC transporter ATP-binding/permease protein YbtP	NA	NA

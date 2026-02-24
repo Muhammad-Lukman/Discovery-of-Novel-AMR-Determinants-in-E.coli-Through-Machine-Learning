@@ -1,0 +1,16 @@
+#FILE	SEQUENCE	START	END	GENE	COVERAGE	COVERAGE_MAP	GAPS	%COVERAGE	%IDENTITY	DATABASE	ACCESSION
+/home/ryder/AMR_PROJECT/assemblies/11679_7_95.fa	ERZ3166332.102	148	990	blaTEM-1B_1	19-861/861	===============	0/0	97.91	100.00	resfinder	JF910132
+/home/ryder/AMR_PROJECT/assemblies/11679_7_95.fa	ERZ3166332.133	1	85	blaTEM-101_1	1-85/861	==.............	0/0	9.87	100.00	resfinder	AF495873
+/home/ryder/AMR_PROJECT/assemblies/11679_7_95.fa	ERZ3166332.2	17697	18052	tet(34)_1	66-421/465	.=======/=====.	2/2	76.34	75.35	resfinder	AB061440
+/home/ryder/AMR_PROJECT/assemblies/11679_7_95.fa	ERZ3166332.30	30681	31826	blaCMY-2_1	1-1146/1146	===============	0/0	100.00	100.00	resfinder	X91840
+/home/ryder/AMR_PROJECT/assemblies/11679_7_95.fa	ERZ3166332.51	23020	23987	aadA1_1	1-972/972	========/======	2/4	99.59	97.53	resfinder	X02340
+/home/ryder/AMR_PROJECT/assemblies/11679_7_95.fa	ERZ3166332.51	24405	25331	sul1_2	1-927/927	===============	0/0	100.00	100.00	resfinder	CP002151
+/home/ryder/AMR_PROJECT/assemblies/11679_7_95.fa	ERZ3166332.57	1	85	blaTEM-104_1	1-85/861	==.............	0/0	9.87	100.00	resfinder	AF516719
+/home/ryder/AMR_PROJECT/assemblies/11679_7_95.fa	ERZ3166332.67	9328	10164	strB_1	1-837/837	===============	0/0	100.00	100.00	resfinder	M96392
+/home/ryder/AMR_PROJECT/assemblies/11679_7_95.fa	ERZ3166332.67	10164	10440	strA_1	528-804/804	.........======	0/0	34.45	100.00	resfinder	M96392
+/home/ryder/AMR_PROJECT/assemblies/11679_7_95.fa	ERZ3166332.67	10514	10996	dfrA14_1	1-483/483	===============	0/0	100.00	99.79	resfinder	DQ388123
+/home/ryder/AMR_PROJECT/assemblies/11679_7_95.fa	ERZ3166332.67	11004	11535	strA_4	1-532/804	==========.....	0/0	66.17	99.81	resfinder	AF321551
+/home/ryder/AMR_PROJECT/assemblies/11679_7_95.fa	ERZ3166332.67	11596	12411	sul2_2	1-816/816	===============	0/0	100.00	100.00	resfinder	GQ421466
+/home/ryder/AMR_PROJECT/assemblies/11679_7_95.fa	ERZ3166332.70	492	1697	tet(B)_4	1-1206/1206	===============	0/0	100.00	100.00	resfinder	AF326777
+/home/ryder/AMR_PROJECT/assemblies/11679_7_95.fa	ERZ3166332.70	6240	7041	lnu(B)_1	2-803/804	===============	0/0	99.75	77.18	resfinder	AJ238249
+/home/ryder/AMR_PROJECT/assemblies/11679_7_95.fa	ERZ3166332.80	849	2048	tet(A)_4	1-1200/1200	===============	0/0	100.00	100.00	resfinder	AJ517790

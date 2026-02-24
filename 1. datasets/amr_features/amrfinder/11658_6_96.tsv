@@ -1,0 +1,15 @@
+Protein id	Contig id	Start	Stop	Strand	Element symbol	Element name	Scope	Type	Subtype	Class	Subclass	Method	Target length	Reference sequence length	% Coverage of reference	% Identity to reference	Alignment length	Closest reference accession	Closest reference name	HMM accession	HMM description
+NA	ERZ3166145.1	249532	249795	-	ariR	biofilm/acid-resistance regulator AriR	plus	STRESS	ACID	NA	NA	EXACTX	88	88	100.00	100.00	88	AAC74250.1	biofilm/acid-resistance regulator AriR	NA	NA
+NA	ERZ3166145.1	385887	387029	-	blaCMY-2	extended-spectrum class C beta-lactamase CMY-2	core	AMR	AMR	BETA-LACTAM	CEPHALOSPORIN	ALLELEX	381	381	100.00	100.00	381	WP_000976514.1	extended-spectrum class C beta-lactamase CMY-2	NA	NA
+NA	ERZ3166145.13	82090	82659	-	lpfA-O113	long polar fimbria major subunit LpfA-O113	plus	VIRULENCE	VIRULENCE	NA	NA	EXACTX	190	190	100.00	100.00	190	AAT76975.1	long polar fimbria major subunit LpfA-O113	NA	NA
+NA	ERZ3166145.16	75728	76954	+	mdtM	multidrug efflux MFS transporter MdtM	plus	AMR	AMR	EFFLUX	EFFLUX	BLASTX	409	410	99.76	98.04	409	AAC77293.1	multidrug efflux MFS transporter MdtM	NA	NA
+NA	ERZ3166145.3	168175	172416	-	fdeC	inverse autotransporter adhesin FdeC	plus	VIRULENCE	VIRULENCE	NA	NA	BLASTX	1414	1416	99.93	91.10	1415	ABE05822.1	inverse autotransporter adhesin FdeC	NA	NA
+NA	ERZ3166145.5	98272	100896	-	gyrA_D87N	Escherichia quinolone resistant GyrA	core	AMR	POINT	QUINOLONE	QUINOLONE	POINTX	875	878	99.66	98.97	875	WP_001281243.1	DNA gyrase subunit A GyrA	NA	NA
+NA	ERZ3166145.5	98272	100896	-	gyrA_S83L	Escherichia quinolone resistant GyrA	core	AMR	POINT	QUINOLONE	QUINOLONE	POINTX	875	878	99.66	98.97	875	WP_001281243.1	DNA gyrase subunit A GyrA	NA	NA
+NA	ERZ3166145.53	12928	14058	+	blaEC	BlaEC family class C beta-lactamase	plus	AMR	AMR	BETA-LACTAM	BETA-LACTAM	BLASTX	377	377	100.00	99.73	377	WP_063610930.1	extended-spectrum class C beta-lactamase EC-15	NA	NA
+NA	ERZ3166145.7	24085	26340	-	parC_S80I	Escherichia quinolone resistant ParC	core	AMR	POINT	QUINOLONE	QUINOLONE	POINTX	752	752	100.00	99.73	752	WP_001281881.1	DNA topoisomerase IV subunit A ParC	NA	NA
+NA	ERZ3166145.7	31644	33533	-	parE_S458A	Escherichia quinolone resistant ParE	core	AMR	POINT	QUINOLONE	QUINOLONE	POINTX	630	630	100.00	99.68	630	WP_033554192.1	DNA topoisomerase IV subunit B ParE	NA	NA
+NA	ERZ3166145.71	824	1681	+	blaTEM-1	broad-spectrum class A beta-lactamase TEM-1	core	AMR	AMR	BETA-LACTAM	BETA-LACTAM	ALLELEX	286	286	100.00	100.00	286	WP_000027057.1	broad-spectrum class A beta-lactamase TEM-1	NA	NA
+NA	ERZ3166145.77	870	2072	+	tet(B)	tetracycline efflux MFS transporter Tet(B)	core	AMR	AMR	TETRACYCLINE	TETRACYCLINE	EXACTX	401	401	100.00	100.00	401	WP_001089068.1	tetracycline efflux MFS transporter Tet(B)	NA	NA
+NA	ERZ3166145.8	130874	133975	+	acrF	multidrug efflux RND transporter permease subunit AcrF	plus	AMR	AMR	EFFLUX	EFFLUX	BLASTX	1034	1034	100.00	99.52	1034	AAC76298.1	multidrug efflux RND transporter permease subunit AcrF	NA	NA
+NA	ERZ3166145.9	15331	16746	-	espX1	type III secretion system effector EspX1	plus	VIRULENCE	VIRULENCE	NA	NA	BLASTX	472	473	99.79	91.95	472	ADD54679.1	type III secretion system effector EspX1	NA	NA

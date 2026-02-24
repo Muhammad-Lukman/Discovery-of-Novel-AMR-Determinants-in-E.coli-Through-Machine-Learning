@@ -1,0 +1,14 @@
+Protein id	Contig id	Start	Stop	Strand	Element symbol	Element name	Scope	Type	Subtype	Class	Subclass	Method	Target length	Reference sequence length	% Coverage of reference	% Identity to reference	Alignment length	Closest reference accession	Closest reference name	HMM accession	HMM description
+NA	ERZ3164473.10	7107	7436	-	emrE	multidrug efflux SMR transporter EmrE	plus	STRESS	BIOCIDE	EFFLUX	EFFLUX	BLASTX	110	110	100.00	99.09	110	CAA77936.1	multidrug efflux SMR transporter EmrE	NA	NA
+NA	ERZ3164473.12	161843	162973	-	blaEC	BlaEC family class C beta-lactamase	plus	AMR	AMR	BETA-LACTAM	BETA-LACTAM	BLASTX	377	377	100.00	98.41	377	AAZ85968.1	cephalosporin-hydrolyzing class C beta-lactamase EC-8	NA	NA
+NA	ERZ3164473.17	42227	44770	-	cyaA_S352T	Escherichia fosmidomycin resistant CyaA	core	AMR	POINT	FOSMIDOMYCIN	FOSMIDOMYCIN	POINTX	848	848	100.00	99.17	848	WP_000281668.1	adenylate cyclase CyaA	NA	NA
+NA	ERZ3164473.2	149318	150544	-	mdtM	multidrug efflux MFS transporter MdtM	plus	AMR	AMR	EFFLUX	EFFLUX	BLASTX	409	410	99.76	97.07	409	AAC77293.1	multidrug efflux MFS transporter MdtM	NA	NA
+NA	ERZ3164473.2	258401	259819	-	espX1	type III secretion system effector EspX1	plus	VIRULENCE	VIRULENCE	NA	NA	BLASTX	473	473	100.00	93.45	473	ADD54679.1	type III secretion system effector EspX1	NA	NA
+NA	ERZ3164473.35	174	464	-	iss	increased serum survival lipoprotein Iss	plus	VIRULENCE	VIRULENCE	NA	NA	EXACTX	97	97	100.00	100.00	97	CAR12622.1	increased serum survival lipoprotein Iss	NA	NA
+NA	ERZ3164473.4	8729	8992	-	ariR	biofilm/acid-resistance regulator AriR	plus	STRESS	ACID	NA	NA	BLASTX	88	88	100.00	98.86	88	AAC74250.1	biofilm/acid-resistance regulator AriR	NA	NA
+NA	ERZ3164473.5	87532	88719	-	emrD	multidrug efflux MFS transporter EmrD	plus	AMR	AMR	EFFLUX	EFFLUX	BLASTX	396	396	100.00	99.49	396	EFF04178.1	multidrug efflux MFS transporter EmrD	NA	NA
+NA	ERZ3164473.5	98859	100247	+	uhpT_E350Q	Escherichia fosfomycin resistant UhpT	core	AMR	POINT	FOSFOMYCIN	FOSFOMYCIN	POINTX	463	463	100.00	99.78	463	WP_000879194.1	hexose phosphate transporter UhpT	NA	NA
+NA	ERZ3164473.5	106472	116725	+	air	inverse autotransporter adhesin EaeX/Air	plus	VIRULENCE	VIRULENCE	NA	NA	BLASTX	3418	3418	100.00	91.52	3418	CAR15326.1	inverse autotransporter adhesin EaeX/Air	NA	NA
+NA	ERZ3164473.5	116783	118477	-	eilA	HilA family transcriptional regulator EilA	plus	VIRULENCE	VIRULENCE	NA	NA	BLASTX	565	565	100.00	99.47	565	ACB16655.1	HilA family transcriptional regulator EilA	NA	NA
+NA	ERZ3164473.6	8671	11772	-	acrF	multidrug efflux RND transporter permease subunit AcrF	plus	AMR	AMR	EFFLUX	EFFLUX	BLASTX	1034	1034	100.00	99.32	1034	AAC76298.1	multidrug efflux RND transporter permease subunit AcrF	NA	NA
+NA	ERZ3164473.8	111037	115278	+	fdeC	inverse autotransporter adhesin FdeC	plus	VIRULENCE	VIRULENCE	NA	NA	BLASTX	1414	1416	99.93	93.07	1415	ABE05822.1	inverse autotransporter adhesin FdeC	NA	NA

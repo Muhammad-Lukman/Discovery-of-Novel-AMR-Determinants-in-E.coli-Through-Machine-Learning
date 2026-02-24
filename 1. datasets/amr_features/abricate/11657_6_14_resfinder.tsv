@@ -1,0 +1,16 @@
+#FILE	SEQUENCE	START	END	GENE	COVERAGE	COVERAGE_MAP	GAPS	%COVERAGE	%IDENTITY	DATABASE	ACCESSION
+/home/ryder/AMR_PROJECT/assemblies/11657_6_14.fa	ERZ3164610.115	1	413	blaTEM-104_1	1-413/861	========.......	0/0	47.97	100.00	resfinder	AF516719
+/home/ryder/AMR_PROJECT/assemblies/11657_6_14.fa	ERZ3164610.138	66	544	strB_1	359-837/837	......=========	0/0	57.23	100.00	resfinder	M96392
+/home/ryder/AMR_PROJECT/assemblies/11657_6_14.fa	ERZ3164610.138	552	617	catB4_1	442-507/549	............==.	0/0	12.02	100.00	resfinder	EU935739
+/home/ryder/AMR_PROJECT/assemblies/11657_6_14.fa	ERZ3164610.142	149	604	blaTEM-105_1	406-861/861	.......========	0/0	52.96	100.00	resfinder	AF516720
+/home/ryder/AMR_PROJECT/assemblies/11657_6_14.fa	ERZ3164610.146	1	107	catB4_1	443-549/549	............===	0/0	19.49	100.00	resfinder	EU935739
+/home/ryder/AMR_PROJECT/assemblies/11657_6_14.fa	ERZ3164610.58	1	62	catB4_1	443-504/549	............==.	0/0	11.29	100.00	resfinder	EU935739
+/home/ryder/AMR_PROJECT/assemblies/11657_6_14.fa	ERZ3164610.77	1	67	catB4_1	443-509/549	............==.	0/0	12.20	100.00	resfinder	EU935739
+/home/ryder/AMR_PROJECT/assemblies/11657_6_14.fa	ERZ3164610.77	137	1058	mph(A)_2	1-921/921	========/======	1/1	100.00	99.67	resfinder	U36578
+/home/ryder/AMR_PROJECT/assemblies/11657_6_14.fa	ERZ3164610.77	4194	4261	catB4_1	442-509/549	............==.	0/0	12.39	100.00	resfinder	EU935739
+/home/ryder/AMR_PROJECT/assemblies/11657_6_14.fa	ERZ3164610.80	66	425	strB_1	1-360/837	=======........	0/0	43.01	100.00	resfinder	M96392
+/home/ryder/AMR_PROJECT/assemblies/11657_6_14.fa	ERZ3164610.80	425	1228	strA_4	1-804/804	===============	0/0	100.00	100.00	resfinder	AF321551
+/home/ryder/AMR_PROJECT/assemblies/11657_6_14.fa	ERZ3164610.80	1289	2104	sul2_3	1-816/816	===============	0/0	100.00	100.00	resfinder	HQ840942
+/home/ryder/AMR_PROJECT/assemblies/11657_6_14.fa	ERZ3164610.80	3967	4031	catB4_1	443-507/549	............==.	0/0	11.84	100.00	resfinder	EU935739
+/home/ryder/AMR_PROJECT/assemblies/11657_6_14.fa	ERZ3164610.81	1800	3005	tet(B)_4	1-1206/1206	===============	0/0	100.00	100.00	resfinder	AF326777
+/home/ryder/AMR_PROJECT/assemblies/11657_6_14.fa	ERZ3164610.82	2698	3558	aac(3)-IId_1	1-861/861	===============	0/0	100.00	99.88	resfinder	EU022314
