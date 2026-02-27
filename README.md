@@ -412,6 +412,7 @@ Our approach progressively adds feature layers to test specific hypotheses:
 **2. Tier 1b:**
 <details>
 <summary>Click to expand Results</summary>
+  
 **Features**: 409 acquired AMR genes from CARD, ResFinder, AMRFinderPlus + Plasmid Replicons (`4.1 tier2_acquired_amr_genes+plasmids_MODEL.ipynb`)
 
 **Drug-Specific Performance (scale_pos_weight):**
@@ -430,9 +431,9 @@ Our approach progressively adds feature layers to test specific hypotheses:
 <details>
 <summary>Click to expand Results</summary>
   
-**Features**: 409 genes + 827 high-impact SNPs in 25 AMR-related genes = 1,236 total (`3.1 AMR_genes_plus_Roary_pangenome_plus_snpeff_mutations_model_tier2_and_tier3.ipynb`) 
-**Hypothesis**: Mutations add signal beyond genes  
-**Result**: Transformative for CIP (+18.7% F1), moderate for AMC (+9.1% F1), minimal for AMX
+- **Features**: 409 genes + 827 high-impact SNPs in 25 AMR-related genes = 1,236 total (`3.1 AMR_genes_plus_Roary_pangenome_plus_snpeff_mutations_model_tier2_and_tier3.ipynb`) 
+- **Hypothesis**: Mutations add signal beyond genes  
+- **Result**: Transformative for CIP (+18.7% F1), moderate for AMC (+9.1% F1), minimal for AMX
 
 **Mutation Filtering Pipeline:** (`3.0 SnpEff_SNP_Mutation_Matrix(MPAM)_tier2.ipynb`)
 
@@ -503,9 +504,10 @@ Our approach progressively adds feature layers to test specific hypotheses:
 
 <details>
 <summary>Click to expand the Results</summary>
-**Features**: Tier 2 (1,236) + 88-179 novel genes (drug-specific, after lineage filtering) = 1,324-1,415 total  
-**Hypothesis**: Pangenome contains undiscovered resistance determinants independent of lineage  
-**Result**: 55 unique novel genes contribute 27-41% of predictive power
+  
+- **Features**: Tier 2 (1,236) + 88-179 novel genes (drug-specific, after lineage filtering) = 1,324-1,415 total  
+- **Hypothesis**: Pangenome contains undiscovered resistance determinants independent of lineage  
+- **Result**: 55 unique novel genes contribute 27-41% of predictive power
 
 **Final Feature Counts:**
 - **AMX**: 1,236 (Tier 2) + 179 (Novel) = **1,415 features**
@@ -544,9 +546,10 @@ Our approach progressively adds feature layers to test specific hypotheses:
 (`3.1 AMR_genes_plus_Roary_pangenome_plus_snpeff_mutations_model_tier2_and_tier3.ipynb`)
 <details>
 <summary>Click to expand the Results</summary>
-**Features**: Tier 2 (1,236) + top 500 pangenome genes (pre-filtering) = 1,736 total  
-**Hypothesis**: Pangenome-wide scan identifies candidate resistance genes before lineage filtering  
-**Result**: Novel genes contribute 14-38% of predictive power across all drugs
+  
+- **Features**: Tier 2 (1,236) + top 500 pangenome genes (pre-filtering) = 1,736 total  
+- **Hypothesis**: Pangenome-wide scan identifies candidate resistance genes before lineage filtering  
+- **Result**: Novel genes contribute 14-38% of predictive power across all drugs
 
 **Final Feature Counts (All Drugs):**
 - **AMX/AMC/CIP**: 1,236 (Tier 2) + 500 (Pangenome) = **1,736 features**
