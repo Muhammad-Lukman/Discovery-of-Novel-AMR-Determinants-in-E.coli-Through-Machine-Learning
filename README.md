@@ -14,16 +14,15 @@
 - [Overview](#overview)
 - [Key Achievements](#key-achievements)
 - [Repository Structure](#repository-structure)
-- [Datasets](#-datasets)
-- [Methodology](#-methodology)
+- [Datasets](#datasets)
+- [Methodology](#methodology)
   - [Hierarchical Tier System](#hierarchical-tier-system)
   - [Novel Gene Discovery Pipeline](#novel-gene-discovery-pipeline)
-- [Notebooks Guide](#-notebooks-guide)
-- [Results Summary](#-results-summary)
-- [Installation](#-installation)
-- [Key Findings](#-key-findings)
-- [Citation](#-citation)
-- [Contact](#-contact)
+- [Notebooks Guide](#notebooks-guide)
+- [Results Summary](#results-summary)
+- [Installation](#installation)
+- [Citation](#citation)
+- [Contact](#contact)
 
 ---
 
@@ -76,7 +75,7 @@ The diagram below illustrates the complete data processing pipeline and hierarch
 
 ```mermaid
 graph TD
-    subgraph "📥 RAW GENOMIC DATA"
+    subgraph "RAW GENOMIC DATA"
         A[ENA Genome Assemblies<br/><b>1,651 isolates</b>]
     end
     
@@ -119,7 +118,7 @@ graph TD
         V --> W[<b>Step 3:</b> MI + RF Selection<br/>Mutual Information + Random Forest<br/><b>Top 500 genes per drug</b>]
         W --> X[<b>Step 4:</b> Post-Hoc Correlation Filter<br/>Remove genes with ρ ≥ 0.9 with Tier 1a<br/>Plasmid linkage disequilibrium]
         X --> Y[<b>Step 5:</b> Lineage Marker Filter<br/>Remove genes with ρ ≥ 0.7 with Tier 2 SNPs<br/>Population structure confounding]
-        Y --> Z[<b>FINAL NOVEL GENES</b><br/>AMX: <b>179 genes</b><br/>AMC: <b>118 genes</b><br/>CIP: <b>88 genes</b><br/><b>55 unique genes total</b>]
+        Y --> Z[<b>FINAL NOVEL GENES</b><br/>AMX: <b>179 genes</b><br/>AMC: <b>118 genes</b><br/>CIP: <b>88 genes</b><br/><b>Used for Novel Genes only Model</b>]
     end
     
     S & Z & O --> AA
@@ -289,7 +288,10 @@ B) Novel Genes Model (WITH Lineage Filter, ρ ≥ 0.70 Removed)
 
 ---
 
-## Repository Structure
+## **Repository Structure**
+
+<details>
+<summary>Click to expand the Repo Structure</summary>
 
 ```
 Discovery-of-Novel-AMR-Determinants-in-E.coli-Through-Machine-Learning/
@@ -343,10 +345,11 @@ Discovery-of-Novel-AMR-Determinants-in-E.coli-Through-Machine-Learning/
 │
 └── README.md                             # This file
 ```
+</details>
 
 ---
 
-## Datasets
+## **Datasets**
 
 ### Complete Data Inventory
 
