@@ -1463,202 +1463,679 @@ scale_pos_weight = (# Susceptible samples) / (# Resistant samples)
 
 ---
 
-## Results Summary
+## **Results Summary**
 
 <details>
-<summary>Click to expand the Results</summary>
-  
-### Overall Model Performance (All Tiers)
+<summary>Click to expand the Results Summary</summary>
 
-| Model Tier | Drug | AUROC | AUPRC | Precision | Recall | F1 Score | Top Mechanism |
-|------------|------|-------|-------|-----------|--------|----------|---------------|
-| **Tier 1 (Baseline)** | AMX | 0.935 | 0.967 | 0.983 | 0.849 | 0.911 | TEM-4 β-lactamase |
-| | AMC | 0.826 | 0.715 | 0.588 | 0.800 | 0.678 | TEM-4, OXA-1 |
-| | CIP | 0.927 | 0.861 | 0.716 | 0.806 | 0.758 | mdtM efflux (surrogate) |
-| **Tier 2 (+ Mutations)** | AMX | 0.936 | 0.968 | 0.983 | 0.856 | 0.915 | TEM-4 + ftsI_L192F |
-| | AMC | 0.883 | 0.775 | 0.632 | 0.738 | 0.681 | TEM-4, OXA-1, ompC |
-| | CIP | **0.981** | 0.962 | 1.000 | 0.917 | **0.957** | gyrA_S83L, gyrA_V85F |
-| **Tier 3 (+ Novel)** | AMX | 0.927 | 0.963 | 0.949 | 0.849 | 0.896 | TEM-4, tnpR, ybeT |
-| | AMC | 0.883 | 0.754 | 0.632 | 0.738 | **0.681** | TEM-4, OXA-1, yfeA, wcaM |
-| | CIP | 0.963 | 0.953 | 0.971 | 0.917 | **0.943** | gyrA mutations + chpB, yedI |
-| **Mutations Only** | AMX | 0.742 | 0.817 | 0.823 | 0.599 | 0.693 | gyrA (lineage marker) |
-| | AMC | 0.707 | 0.545 | 0.455 | 0.708 | 0.554 | gyrA, parC (surrogate) |
-| | CIP | **0.972** | **0.958** | 1.000 | 0.917 | **0.957** | gyrA_V85F, gyrA_S83L |
-| **Novel Only** | AMX | 0.888 | 0.939 | 0.936 | 0.780 | 0.851 | tnpR, ybeT |
-| | AMC | 0.825 | 0.670 | 0.579 | 0.677 | 0.624 | tnpR, yfeA |
-| | CIP | 0.966 | 0.952 | 0.846 | 0.917 | 0.880 | chpB, yihF_2 |
+### Overview of Model Performance Across All Experimental Conditions
 
-### Drug-Specific Mechanisms
+This section presents comprehensive results from all 12 notebooks, organized by experimental design. The results demonstrate that **novel genes discovered through pangenome-wide analysis can independently predict resistance**, with performance that in some cases **surpasses baseline models using known AMR databases** (CIP: F1 0.880 vs 0.758).
 
-#### **AMX (Amoxicillin) - Gene-Driven Resistance**
-
-**Dominant Mechanism**: β-lactamase enzyme production (plasmid-mediated)
-
-**Top 10 Features (Tier 3 Final)**:
-
-| Rank | Feature | SHAP | Type | Biological Role |
-|------|---------|------|------|----------------|
-| 1 | TEM-4 | 1.458 | Tier2 | Extended-spectrum β-lactamase |
-| 2 | blaTEM-1 | 0.749 | Tier2 | Class A β-lactamase (most common) |
-| 3 | **tnpR** | **0.257** | **Novel** | **Tn3 transposase resolvase** |
-| 4 | **ybeT** | **0.177** | **Novel** | **Outer membrane protein** |
-| 5 | **yhjK_2** | **0.152** | **Novel** | **Modulator protein** |
-| 6 | sul1 | 0.148 | Tier1B | Sulfonamide resistance (plasmid marker) |
-| 7 | OXA-1 | 0.144 | Tier2 | Class D β-lactamase |
-| 8 | ftsI_L192F | 0.139 | Tier2 | PBP3 mutation (target alteration) |
-| 9 | **group_3820** | **0.137** | **Novel** | **Phage major head protein** |
-| 10 | **group_24688** | **0.124** | **Novel** | **Hypothetical (pan-drug candidate)** |
-
-**Novel Gene Contribution**: **38.6%** of total SHAP importance (2.4× enrichment)
-
-**Biological Insight**:
-- Resistance is **plasmid-mediated** via mobile β-lactamases
-- Novel genes (tnpR, traL) are **transposable element markers**, confirming horizontal gene transfer as key driver
-- ybeT (outer membrane protein) may alter **β-lactam permeability** (reduced influx)
-- group_3820 (phage protein) suggests **prophages as hotspots** for AMR gene acquisition
-
-**Clinical Relevance**:
-- **First-line therapy** for uncomplicated infections (UTIs, respiratory)
-- TEM-4 confers high-level resistance (MIC > 256 µg/mL)
-- Clavulanate addition (AMC) attempts to inhibit TEM enzymes
-
-#### **AMC (Amoxicillin/Clavulanate) - Complex Multi-Factorial**
-
-**Dominant Mechanism**: Clavulanate-resistant β-lactamases + efflux/biofilm tolerance
-
-**Top 10 Features (Tier 3 Final)**:
-
-| Rank | Feature | SHAP | Type | Biological Role |
-|------|---------|------|------|----------------|
-| 1 | TEM-4 | 0.792 | Tier2 | β-lactamase (reduced vs AMX) |
-| 2 | blaOXA-1 | 0.413 | Tier2 | **OXA enzyme (not inhibited by clavulanate)** |
-| 3 | **tnpR** | **0.400** | **Novel** | **Tn3 transposase** |
-| 4 | **group_24688** | **0.134** | **Novel** | **Hypothetical (pan-drug)** |
-| 5 | parC_V244L | 0.120 | Tier2 | Topoisomerase IV mutation (co-resistance) |
-| 6 | OXA-1 | 0.120 | Tier2 | β-lactamase (plasmid variant) |
-| 7 | **insA_1** | **0.116** | **Novel** | **IS1 transposase** |
-| 8 | **group_3326** | **0.115** | **Novel** | **Tn3 transposase variant** |
-| 9 | **group_5884** | **0.115** | **Novel** | **Hypothetical** |
-| 10 | **wcaM** | **0.103** | **Novel** | **Colanic acid biosynthesis** |
-
-**Novel Gene Contribution**: **41.3%** of total SHAP (highest, 3.4× enrichment)
-
-**Biological Insight**:
-- **Most complex drug** - requires multiple mechanisms to overcome inhibitor
-- OXA enzymes resist clavulanate inhibition (TEM-4 importance drops 42% vs AMX)
-- Novel genes fill critical gaps:
-  - **yfeA** (diguanylate cyclase): c-di-GMP signaling → **biofilm formation** (tolerance)
-  - **wcaM** (colanic acid): **Capsule biosynthesis** (physical barrier)
-  - **neuC** (sialic acid): Capsule modification (immune evasion + drug barrier)
-- Multiple transposases (tnpR, insA_1, group_3326) confirm **complex mobile resistome**
-
-**Clinical Relevance**:
-- **Second-line therapy** when AMX fails (adds β-lactamase inhibitor)
-- Lower performance (F1=0.681) reflects **clinical treatment challenges**
-- Model accurately predicts "difficult to treat" cases (complex mechanisms)
-
-#### **CIP (Ciprofloxacin) - Mutation-Driven Resistance**
-
-**Dominant Mechanism**: Target alteration (DNA gyrase QRDR mutations)
-
-**Top 10 Features (Tier 3 Final)**:
-
-| Rank | Feature | SHAP | Type | Biological Role |
-|------|---------|------|------|----------------|
-| 1 | gyrA_V85F | 1.967 | Tier2 | **QRDR mutation (primary)** |
-| 2 | gyrA_S83L | 1.746 | Tier2 | **QRDR mutation (primary)** |
-| 3 | **group_8350** | **0.285** | **Novel** | **Hypothetical** |
-| 4 | PmrE | 0.272 | Tier1B | Polymyxin resistance (colistin) |
-| 5 | parE_L397F | 0.265 | Tier2 | Topoisomerase IV mutation |
-| 6 | **group_12513** | **0.253** | **Novel** | **Hypothetical** |
-| 7 | folP_E73A | 0.236 | Tier2 | Sulfonamide target (co-resistance) |
-| 8 | **group_12337** | **0.214** | **Novel** | **Hypothetical** |
-| 9 | ompC_G133R | 0.190 | Tier2 | Porin mutation (reduced influx) |
-| 10 | gyrA_T654S | 0.171 | Tier2 | Secondary gyrase mutation |
-| 11 | **group_16337 (yedI)** | **0.161** | **Novel** | **Methyl-independent mismatch repair** |
-| 12 | phoP_G53* | 0.153 | Tier2 | Two-component regulator (efflux) |
-| 13 | **yicJ_2** | **0.129** | **Novel** | **Conserved protein** |
-| 14 | gyrA_T658P | 0.129 | Tier2 | Secondary gyrase mutation |
-| 15 | **chpB** | **0.126** | **Novel** | **Toxin (ChpB-ChpS TA system)** |
-
-**Two gyrA mutations account for 56% of model importance** (SHAP sum: 3.71 / total: 6.65)
-
-**Novel Gene Contribution**: **27.5%** of total SHAP (2.2× enrichment)
-
-**Biological Insight**:
-- **Chromosomal mutations are necessary and sufficient** (Mutations-Only model: AUROC 0.972)
-- Primary resistance: gyrA_S83L + gyrA_V85F (synergistic effect, SHAP interaction: 1.038)
-- Novel genes capture **accessory mechanisms**:
-  - **chpB/chpS** (toxin-antitoxin): **Persister cell induction** (non-genetic tolerance)
-  - **group_16337/yedI** (DNA repair): **Surviving quinolone-induced damage**
-  - **group_9126** (ABC transporter): Additional **efflux mechanism**
-- Control experiment: Replacing novel genes drops F1 by **16.2%** (largest effect)
-
-**Clinical Relevance**:
-- **First-line for complicated UTIs, respiratory, GI infections**
-- High-level resistance common in **ST131 clonal group** (pandemic lineage)
-- Two-step mutation process: S83L first (low-level), then V85F (high-level)
-- Near-perfect prediction (F1=0.943) enables **precision antibiotic stewardship**
-
-### Novel Gene Functional Categories
-
-| Category | % of Novel Genes | Key Genes | Proposed Mechanisms |
-|----------|------------------|-----------|---------------------|
-| **Mobile Genetic Elements** | 40% | tnpR, insA_1, traL, group_3326, group_16811 | Transposases, conjugative transfer, plasmid maintenance. High importance reflects role in **disseminating resistance genes**. |
-| **Prophage Elements** | 25% | group_3820, group_17656, group_7896, group_8907 | Phage structural proteins, integration machinery. Prophages as **hotspots for AMR gene acquisition** (lysogenic conversion). |
-| **Membrane/Permeability** | 15% | ybeT, wcaM, neuC | Outer membrane proteins, capsule biosynthesis. Altering **drug influx/efflux or physical barriers** (biofilm). |
-| **Stress/Tolerance** | 15% | yfeA, chpB/chpS, group_16337 (yedI) | c-di-GMP signaling, toxin-antitoxin systems, DNA repair. **Non-genetic tolerance** allowing survival at sub-lethal drug concentrations. |
-| **Hypothetical/Uncharacterized** | 5% | group_24688 (pan-drug) | Genuinely novel resistance genes. **HIGHEST PRIORITY** for experimental validation. |
-
-### Validation Prioritization (Top Targets for Experimental Studies)
-
-| Priority | Gene(s) | Drug | Annotation | SHAP | Validation Approach |
-|----------|---------|------|------------|------|---------------------|
-| **HIGHEST** | **group_24688** | AMX, AMC, CIP | **Hypothetical protein** | 0.11-0.13 | **Gene knockout + MIC testing (multi-drug)**. Only gene appearing in all three models. |
-| **HIGHEST** | **ybeT** | AMX | Outer membrane protein | 0.177 | Gene knockout + **permeability assays** (ONPG uptake), β-lactam accumulation. |
-| **HIGH** | **yfeA** | AMC | Diguanylate cyclase | 0.152 | Gene knockout + **biofilm formation assays**, **c-di-GMP quantification** (HPLC-MS). |
-| **HIGH** | **chpB/chpS** | CIP | Toxin-antitoxin system | 0.126 | Gene knockout + **time-kill curves** (persister frequency at 10× MIC), rifampicin tolerance assays. |
-| **HIGH** | **group_16337 (yedI)** | CIP | DNA mismatch repair | 0.161 | Gene knockout + **DNA damage assays** (Comet assay, γH2AX foci), CIP-induced mutagenesis. |
-| **MEDIUM** | **tnpR, insA_1** | AMX, AMC | Transposases | 0.26, 0.12 | **Plasmid curing experiments** (SDS treatment, elevated temp), transconjugation assays. |
-| **MEDIUM** | **wcaM** | AMC | Colanic acid biosynthesis | 0.103 | Gene knockout + **capsule/biofilm assays** (crystal violet, Congo red binding), TEM imaging. |
-
-**Validation Strategies by Category**:
-
-1. **Membrane/Permeability Genes (ybeT, wcaM, neuC)**:
-   - Knockout strains + MIC testing (AMX, AMC)
-   - Permeability assays (ONPG uptake, β-lactam accumulation via HPLC)
-   - Capsule visualization (India ink staining, TEM)
-   - Biofilm formation (crystal violet, flow cell microscopy)
-
-2. **Stress/Tolerance Genes (yfeA, chpB, yedI)**:
-   - Knockout strains + MIC testing
-   - Time-kill curves (measure persister frequency)
-   - c-di-GMP quantification (HPLC-MS)
-   - DNA damage assays (Comet assay, γH2AX immunofluorescence)
-   - Transcriptomics (RNA-seq of knockout vs wild-type under drug stress)
-
-3. **Mobile Element Genes (tnpR, insA_1, traL)**:
-   - Plasmid curing experiments (validate role in resistance maintenance)
-   - Transposon mutagenesis (disrupt tnpR, test resistance loss)
-   - Conjugation assays (measure horizontal transfer efficiency)
-   - Plasmid profiling (long-read sequencing to map insertion sites)
-
-4. **Hypothetical Genes (group_24688, group_8350, etc.)**:
-   - Gene knockout + comprehensive MIC panel (15 antibiotics)
-   - Protein expression and purification (if soluble)
-   - Structural characterization (X-ray crystallography, AlphaFold prediction)
-   - Interactome studies (pull-down assays, Y2H)
-   - Metabolomics (identify altered metabolic pathways)
+**Experimental Flow**:
+1. **Baseline Models** (Notebooks 4.0-4.2): Known AMR databases only → establishes reference performance
+2. **Mutations-Only** (Notebook 3.2): Chromosomal mutations only → tests mutation sufficiency
+3. **Tier 2 Models** (Notebook 3.1): Genes + mutations → tests additive value
+4. **Tier 3 Comprehensive** (Notebooks 3.1, 3.5): All features combined → demonstrates contribution
+5. **Control Experiment** (Notebook 3.4): Tier 2 + stress genes vs Tier 2 + novel → validates non-redundancy
+6. **PRIMARY OUTCOME** (Notebook 3.6): Novel genes only → proves independent predictive power
 
 ---
 
-## 🛠 Installation
+### 1. Baseline Models (Notebooks 4.0-4.2) - Known AMR Databases
+
+**Purpose**: Establish reference performance using only characterized resistance mechanisms from CARD, ResFinder, and AMRFinderPlus.
+
+#### Tier 1A: Acquired AMR Genes Only (Notebook 4.0)
+
+**Features**: 409 acquired AMR genes from unified databases
+
+**Drug-Specific Performance**:
+
+| Drug | scale_pos_weight | AUROC | AUPRC | Precision | Recall | F1 Score | 5-Fold CV | Top Feature (SHAP) |
+|------|------------------|-------|-------|-----------|--------|----------|-----------|-------------------|
+| **AMX** | 0.65 | 0.935 | 0.967 | 0.983 | 0.849 | **0.911** | 0.945 ± 0.006 | TEM-4 (1.75) |
+| **AMC** | 2.29 | 0.826 | 0.715 | 0.588 | 0.800 | **0.678** | 0.854 ± 0.019 | TEM-4 (1.12) |
+| **CIP** | 3.62 | 0.927 | 0.861 | 0.716 | 0.806 | **0.758** | 0.927 ± 0.004 | mdtM efflux (0.76) |
+
+**Key Baseline Findings**:
+
+**AMX - Excellent Baseline**:
+- F1 = 0.911 demonstrates known β-lactamase genes capture most resistance signal
+- TEM-4 dominates with 1.75 SHAP importance (>25% of total model importance)
+- blaTEM-1 secondary at 0.64 SHAP
+- **Together TEM-4 + blaTEM-1 account for >80% of predictive power**
+- Conclusion: AMX resistance is **gene-driven** and well-characterized
+
+**AMC - Moderate Baseline**:
+- F1 = 0.678 indicates moderate performance despite known enzymes
+- TEM-4 importance reduced to 1.12 (42% drop vs AMX)
+- **Evidence of inhibitor complexity**: Clavulanate partially neutralizes TEM enzymes
+- OXA-1 (0.39 SHAP) becomes critical as it **resists clavulanate inhibition**
+- Conclusion: AMC requires mechanisms beyond simple β-lactamases
+
+**CIP - Poor Baseline** (Critical Limitation):
+- F1 = 0.758 is lowest baseline performance
+- **Problem**: No chromosomal gyrA/parC mutations in Tier 1A (these are in Tier 2)
+- Model compensates by using **plasmid replicons as surrogates** for MDR lineages:
+  - IncFIA_1 plasmid: 1.21 SHAP (highest feature!)
+  - mdtM efflux: 0.63 SHAP
+- **Interpretation**: Model learns "IncFIA plasmid → Resistance" because ST131 MDR lineage carries IncFIA plasmids AND has gyrA mutations
+- This is **phylogenetic confounding** - plasmids mark clonal group, not functional mechanism
+- Conclusion: Tier 1A is **insufficient** for CIP without chromosomal mutations
+
+#### Tier 1B: Genes + Plasmid Replicons (Notebook 4.1)
+
+**Features**: 409 genes + 60 plasmid replicons = 469 total
+
+**Performance** (nearly identical to Tier 1A):
+
+| Drug | AUROC | F1 | Δ vs Tier 1A | Interpretation |
+|------|-------|-----|--------------|----------------|
+| **AMX** | 0.934 | 0.911 | 0.000 | No change - plasmids already implicit via gene co-occurrence |
+| **AMC** | 0.816 | 0.643 | -0.035 | Slight decrease (noise) |
+| **CIP** | 0.946 | 0.828 | **+0.070** | Improvement from explicit plasmid modeling |
+
+**CIP Improvement Explained**:
+- Explicit plasmid features (IncFIA, IncFIB) better capture MDR lineage signal
+- Still fundamentally a proxy approach (not causal mechanism)
+- Real improvement requires gyrA/parC mutations (Tier 2)
+
+---
+
+### 2. Mutations-Only Models (Notebook 3.2) - Testing Chromosomal Sufficiency
+
+**Hypothesis**: Can chromosomal mutations alone predict resistance without any acquired genes?
+
+**Features**: 827 high-impact chromosomal mutations (NO acquired AMR genes)
+
+#### Performance Summary
+
+| Drug | AUROC | AUPRC | Precision | Recall | F1 Score | 5-Fold CV | Top Feature (SHAP) |
+|------|-------|-------|-----------|--------|----------|-----------|-------------------|
+| **AMX** | 0.742 | 0.817 | 0.823 | 0.599 | **0.693** | 0.686 ± 0.022 | gyrA_S83L (0.359) |
+| **AMC** | 0.707 | 0.545 | 0.455 | 0.708 | **0.554** | 0.711 ± 0.025 | gyrA_S83L (0.232) |
+| **CIP** | **0.972** | **0.958** | 1.000 | 0.917 | **0.957** | 0.980 ± 0.005 | gyrA_V85F (2.509) |
+
+#### Critical Finding - CIP Mutation Sufficiency
+
+**CIP achieves near-perfect performance with mutations alone**:
+- AUROC 0.972 is only 0.009 lower than full Tier 2 model (0.981)
+- F1 0.957 **equals Tier 2 performance** (same score)
+- Two gyrA mutations dominate:
+  - gyrA_V85F: 2.509 SHAP
+  - gyrA_S83L: 2.426 SHAP
+  - **Combined: 4.935 SHAP = 57% of total model importance**
+
+**Biological Validation**:
+- Quinolone resistance is **target-mediated** (DNA gyrase alteration)
+- Double QRDR mutations (S83L + V85F) cause high-level resistance (MIC >128 µg/mL)
+- **Chromosomal mutations are necessary AND sufficient** for CIP prediction
+- This validates the known mechanism: CIP resistance = gyrA/parC mutations
+
+#### AMX/AMC Failure - Phylogenetic Confounding
+
+**Both drugs show poor performance**:
+- AMX F1: 0.693 (24% worse than baseline)
+- AMC F1: 0.554 (18% worse than baseline)
+
+**Problem**: Top features are **quinolone resistance markers**, not β-lactam-related:
+- AMX top feature: gyrA_S83L (0.359 SHAP)
+- AMC top feature: gyrA_S83L (0.232 SHAP)
+- parC, folP mutations also prominent
+
+**Interpretation**:
+- Without β-lactamase genes, model cannot predict β-lactam resistance mechanistically
+- Instead, model uses **quinolone resistance as proxy for MDR lineages**
+- Logic: "ST131 is CIP-resistant (gyrA mutations) AND AMX-resistant (carries TEM-4) → gyrA mutations predict AMX resistance"
+- This is **confounding by population structure**, not causal mechanism
+
+**Mechanistic Classification Validated**:
+
+| Drug | Resistance Type | Evidence from Mutations-Only |
+|------|-----------------|----------------------------|
+| **AMX** | **Gene-driven** | Poor performance (F1=0.693) confirms acquired β-lactamases are essential |
+| **AMC** | **Multi-factorial** | Worst performance (F1=0.554) confirms complex mechanisms required |
+| **CIP** | **Mutation-driven** | Excellent performance (F1=0.957) confirms gyrA/parC mutations are sufficient |
+
+---
+
+### 3. Tier 2 Models (Notebook 3.1) - Adding Chromosomal Mutations to Known Genes
+
+**Features**: 409 acquired AMR genes + 827 high-impact chromosomal mutations = 1,236 total
+
+**Hypothesis**: Do chromosomal mutations add signal beyond acquired genes?
+
+#### Performance Comparison (Tier 1 Baseline → Tier 2)
+
+| Drug | Tier 1 AUROC | Tier 2 AUROC | Δ AUROC | Tier 1 F1 | Tier 2 F1 | Δ F1 | Interpretation |
+|------|--------------|--------------|---------|-----------|-----------|------|----------------|
+| **AMX** | 0.935 | 0.936 | **+0.001** | 0.911 | 0.915 | **+0.004** | Minimal - genes dominate |
+| **AMC** | 0.826 | 0.883 | **+0.057** | 0.678 | 0.681 | **+0.003** | Moderate AUROC gain, modest F1 |
+| **CIP** | 0.927 | **0.981** | **+0.054** | 0.758 | **0.957** | **+0.199** | **TRANSFORMATIVE (+19.9% F1)** |
+
+#### Drug-Specific Analysis
+
+**AMX - Minimal Mutation Value**:
+- F1 improves by only 0.4% (0.911 → 0.915)
+- TEM-4 dominance continues (2.069 SHAP in Tier 2 vs 1.75 in Tier 1)
+- **New mutations contribute <5% to model**:
+  - ftsI_L192F (PBP3 mutation): 0.245 SHAP (minor)
+  - ompC mutations: minimal contribution
+- **Interpretation**: β-lactamase genes already capture ~95% of AMX resistance signal
+- Mutations provide marginal target alteration signal but genes are primary
+
+**AMC - Moderate Mutation Value**:
+- AUROC improves significantly (+5.7%: 0.826 → 0.883)
+- F1 improves modestly (+0.3%: 0.678 → 0.681)
+- **Permeability mutations become important**:
+  - ompC_G362R: 0.202 SHAP (porin mutation - reduced drug influx)
+  - ompC mutations complement enzyme-based resistance
+- TEM-4 importance drops to 1.405 (was 1.12 in Tier 1)
+- blaOXA-1 rises to 0.567 SHAP (clavulanate-resistant enzyme)
+- **Interpretation**: AMC requires **multiple mechanisms** - enzymes + permeability + tolerance
+
+**CIP - Transformative Mutation Value** (Critical Result):
+- F1 improves dramatically (+19.9%: 0.758 → 0.957)
+- AUROC improves (+5.4%: 0.927 → 0.981)
+- **Mechanism completely shifts** from plasmid surrogates to actual QRDR mutations:
+  
+**Tier 1 CIP** (without mutations):
+- Top: IncFIA_1 plasmid (1.21 SHAP) - phylogenetic proxy
+- #2: mdtM efflux (0.63 SHAP)
+- Model uses **indirect markers** of MDR lineages
+
+**Tier 2 CIP** (with mutations):
+- Top: gyrA_S83L (2.566 SHAP) - actual resistance mechanism
+- #2: gyrA_V85F (2.522 SHAP) - actual resistance mechanism
+- **Combined gyrA SHAP: 5.088 = 56% of total model importance**
+- Model now uses **direct causal mechanisms**
+
+**Two gyrA Mutations Show Synergy**:
+- Individual effects: S83L (2.566) + V85F (2.522) = 5.088
+- Interaction effect: +1.038 SHAP (from feature interactions analysis)
+- **Total contribution: 6.126 SHAP**
+- This synergy explains **two-step resistance** clinically observed:
+  - Step 1: S83L mutation → low-level resistance (MIC 2-8 µg/mL)
+  - Step 2: + V85F mutation → high-level resistance (MIC >128 µg/mL)
+
+#### Mechanism Classification Confirmed
+
+| Drug | Primary Mechanism | Evidence | Top Tier 2 Features |
+|------|-------------------|----------|-------------------|
+| **AMX** | Acquired β-lactamases | TEM-4 accounts for ~85% SHAP | TEM-4 (2.069), blaTEM-1 (0.654) |
+| **AMC** | Multi-factorial (enzymes + permeability) | No single dominant feature (<20% each) | TEM-4 (1.405), OXA-1 (0.567), ompC (0.202) |
+| **CIP** | Chromosomal QRDR mutations | Two gyrA mutations = 56% SHAP | gyrA_S83L (2.566), gyrA_V85F (2.522) |
+
+---
+
+### 4. Tier 3 Models - Adding Novel Genes
+
+Two variants examined:
+- **Notebook 3.1**: Tier 2 + Top 500 unfiltered pangenome genes
+- **Notebook 3.5**: Tier 2 + Tier 1B stress genes + Lineage-filtered novel genes (FINAL COMPREHENSIVE MODEL)
+
+#### A) Tier 3 with Unfiltered Top 500 Genes (Notebook 3.1)
+
+**Features**: 1,236 (Tier 2) + 500 (unfiltered pangenome) = 1,736 total
+
+**Purpose**: Exploratory analysis before lineage filtering
+
+**Performance (Tier 2 → Tier 3 Unfiltered)**:
+
+| Drug | Tier 2 AUROC | Tier 3 AUROC | Δ AUROC | Tier 2 F1 | Tier 3 F1 | Δ F1 |
+|------|--------------|--------------|---------|-----------|-----------|------|
+| **AMX** | 0.936 | 0.935 | -0.001 | 0.915 | 0.911 | -0.004 |
+| **AMC** | 0.883 | 0.893 | **+0.010** | 0.681 | **0.712** | **+0.031** |
+| **CIP** | 0.981 | 0.966 | -0.015 | 0.957 | 0.957 | 0.000 |
+
+**Feature Contribution (SHAP Sum) - Unfiltered**:
+
+| Drug | Tier 2 SHAP | Novel 500 SHAP | Novel % | Enrichment |
+|------|-------------|----------------|---------|------------|
+| **AMX** | 5.08 (61.4%) | **3.19 (38.6%)** | 38.6% | **2.4×** |
+| **AMC** | 4.64 (58.7%) | **3.27 (41.3%)** | 41.3% | **3.4×** |
+| **CIP** | 6.55 (72.5%) | 2.48 (27.5%) | 27.5% | **2.2×** |
+
+**Top Unfiltered Novel Genes**:
+- AMX: tnpR (0.291 SHAP) - Tn3 transposase
+- AMC: tnpR (0.109 SHAP) - same gene
+- CIP: rz (0.312 SHAP) - Endopeptidase (phage lysis protein)
+
+**Interpretation**: Even before filtering, novel genes show **2.2-3.4× enrichment** - validates MI+RF selection strategy
+
+#### B) Tier 3 with Filtered Novel Genes (Notebook 3.5) - FINAL COMPREHENSIVE MODEL
+
+**Features**: 1,236 (Tier 2) + 50 (Tier 1B stress) + 88-179 (filtered novel) = 1,374-1,465 total
+
+**Purpose**: Comprehensive model demonstrating contribution of high-confidence novel genes after lineage filtering
+
+**Performance (Tier 2 → Tier 3 Filtered)**:
+
+| Drug | Tier 2 AUROC | Tier 3 AUROC | Δ AUROC | Tier 2 F1 | Tier 3 F1 | Δ F1 | Interpretation |
+|------|--------------|--------------|---------|-----------|-----------|------|----------------|
+| **AMX** | 0.936 | 0.936 | 0.000 | 0.915 | 0.903 | **-0.012** | Slight decrease (TEM-4 saturation) |
+| **AMC** | 0.883 | 0.889 | **+0.006** | 0.681 | **0.685** | **+0.004** | Modest improvement |
+| **CIP** | 0.981 | 0.973 | -0.008 | 0.957 | 0.943 | -0.014 | Maintains near-perfect |
+
+**Feature Contribution (SHAP Sum) - Filtered Novel**:
+
+| Drug | Tier 2 + Tier 1B SHAP | Filtered Novel SHAP | Novel % | Enrichment |
+|------|------------------------|---------------------|---------|------------|
+| **AMX** | 5.60 (69.7%) | **2.44 (30.3%)** | 30.3% | **2.4×** |
+| **AMC** | 5.39 (70.4%) | **2.27 (29.6%)** | 29.6% | **3.4×** |
+| **CIP** | 7.62 (85.6%) | 1.28 (14.4%) | 14.4% | **2.2×** |
+
+**Critical Finding**: After aggressive lineage filtering (removing 63-82% of candidates), filtered novel genes STILL provide **2.2-3.4× enrichment**, confirming genuine functional signal independent of population structure.
+
+**Top Filtered Novel Genes by Drug**:
+
+**AMX - Membrane/Mobile Elements**:
+- ybeT (0.199 SHAP) - Outer membrane protein (permeability)
+- group_3820 (0.137 SHAP) - Phage major head protein (prophage marker)
+- yhjK_2 (0.152 SHAP) - Modulator protein (regulatory)
+- group_24688 (0.124 SHAP) - **Hypothetical (pan-drug candidate)**
+
+**AMC - Tolerance Mechanisms**:
+- group_3326 (0.185 SHAP) - Tn3 transposase (persists after filtering)
+- yfeA (0.152 SHAP) - **Diguanylate cyclase (c-di-GMP → biofilm)**
+- wcaM (0.103 SHAP) - **Colanic acid biosynthesis (capsule/biofilm)**
+- insA_1 (0.116 SHAP) - IS1 transposase
+- group_24688 (0.134 SHAP) - **Hypothetical (pan-drug)**
+
+**CIP - Accessory Mechanisms**:
+- group_16337/yedI (0.233 SHAP) - **DNA mismatch repair (surviving quinolone damage)**
+- chpB (0.126 SHAP) - **Toxin (ChpB-ChpS TA system - persister formation)**
+- group_8350 (0.285 SHAP) - Hypothetical
+- group_12513 (0.253 SHAP) - Hypothetical
+
+**Why Slight Performance Decreases for AMX/CIP**:
+
+**AMX (-1.2% F1)**:
+- TEM-4 so dominant (2.069 SHAP, >85% of signal) that additional features provide diminishing returns
+- Adding 179 novel genes dilutes the signal slightly (increased model complexity without proportional gain)
+- This is expected behavior when one feature is overwhelmingly predictive
+
+**CIP (-1.4% F1)**:
+- gyrA mutations so dominant (5.088 combined SHAP, 56% of signal) that additional features again dilute slightly
+- However, maintaining F1 = 0.943 is still near-perfect
+- Novel genes (chpB, yedI) capture **accessory mechanisms** important for tolerance, not primary resistance
+
+**AMC Shows Improvement (+0.4% F1)**:
+- Most complex drug - requires multiple mechanisms
+- Novel genes (yfeA, wcaM) fill critical **biofilm/tolerance gaps** not in Tier 2
+- These mechanisms essential for surviving clavulanate inhibitor pressure
+
+---
+
+### 5. Control Experiment (Notebook 3.4) - Validating Non-Redundancy
+
+**Hypothesis Test**: Are novel genes redundant with general stress/metal resistance genes (Tier 1B)?
+
+**Method**: Replace filtered novel genes with Tier 1B (50 stress genes: ars, mer, sil, qacE, sul, etc.)
+
+**Feature Sets Compared**:
+- **Test**: Tier 2 (1,236) + Novel genes (88-179) = Tier 3
+- **Control**: Tier 2 (1,236) + Tier 1B (50 stress) = 1,286 features
+
+#### Results
+
+| Drug | Tier 3 (Test) F1 | Control (T2+T1B) F1 | Δ F1 | p-value | Conclusion |
+|------|------------------|---------------------|------|---------|------------|
+| **AMX** | 0.903 | 0.902 | **-0.001** | NS (p=0.89) | **Redundant** |
+| **AMC** | 0.685 | 0.605 | **-0.080** | p < 0.001 | **Unique** |
+| **CIP** | 0.943 | 0.781 | **-0.162** | p < 0.001 | **Critical** |
+
+#### Interpretation by Drug
+
+**AMX - Redundancy Confirmed**:
+- Performance essentially identical (-0.1% F1, not statistically significant)
+- **Why redundant?**
+  - Novel genes (ybeT, traL, tnpR) = plasmid co-carriage markers
+  - Tier 1B genes (sul1, qacE) = also plasmid co-carriage markers
+  - Both capture **same underlying signal**: presence of conjugative plasmids
+- **Control Model Top Features** (substitutions work):
+  - TEM-4 (1.53) - same as Tier 3
+  - blaTEM-1 (0.86) - same
+  - **sul1 (0.27)** - replaces **ybeT (0.20)** - both plasmid markers
+  - **phoP_Y179H (0.16)** - replaces **traL (0.10)** - both plasmid-associated
+- **Conclusion**: For AMX, novel genes don't provide **mechanistically distinct** information beyond general mobile element markers
+
+**AMC - Uniqueness Validated**:
+- Performance drops significantly (-8.0% F1, p < 0.001)
+- **Why unique?**
+  - Novel genes (yfeA, wcaM) provide **specific biofilm/tolerance mechanisms**
+  - yfeA: c-di-GMP signaling → biofilm matrix formation
+  - wcaM: Colanic acid biosynthesis → capsule physical barrier
+  - Tier 1B stress genes (ars, mer, qac) are **general stress response**, don't capture these specific pathways
+- **Control Model Fails** because:
+  - Stress genes don't activate biofilm formation
+  - Metal resistance ≠ antibiotic tolerance
+- **Conclusion**: Novel genes fill **critical mechanistic gaps** for inhibitor-protected drugs
+
+**CIP - Criticality Demonstrated**:
+- Performance drops severely (-16.2% F1, largest effect, p < 0.001)
+- **Why critical?**
+  - After gyrA/parC mutations (primary), novel genes capture **crucial accessory factors**:
+    - **chpB**: Toxin-antitoxin system → persister cells (survive >10× MIC)
+    - **group_16337/yedI**: DNA mismatch repair → survive quinolone-induced DNA damage
+    - **group_9126**: ABC transporter → additional efflux mechanism
+  - Tier 1B stress genes are **too generic** (metal resistance irrelevant to DNA damage repair)
+- **Control Model Fails** because:
+  - F1 drops from 0.943 → 0.781 (loses near-perfect prediction)
+  - Tier 1B captures some MDR lineage signal but misses **specific quinolone tolerance mechanisms**
+- **Conclusion**: Highly filtered novel genes are **indispensable** for comprehensive CIP prediction beyond primary mutations
+
+---
+
+### 6. PRIMARY OUTCOME - Novel Genes-Only Models (Notebook 3.6)
+
+**THIS IS THE MAIN RESULT** demonstrating that novel genes discovered through pangenome-wide analysis can independently predict resistance without known AMR databases or chromosomal mutations.
+
+**Features**: 88-179 lineage-filtered novel genes per drug (NO Tier 2, NO known AMR genes)
+
+**Hypothesis**: If novel genes have genuine functional signal, they should predict resistance independently
+
+#### A) Novel Genes-Only Performance (BEFORE Lineage Filter)
+
+**Features**: 489-495 unfiltered novel genes (top 500 from MI+RF selection, minus a few due to post-hoc correlation)
+
+**Performance**:
+
+| Drug | AUROC | AUPRC | Precision | Recall | F1 Score | 5-Fold CV | Top Gene (SHAP) |
+|------|-------|-------|-----------|--------|----------|-----------|----------------|
+| **AMX** | **0.888** | 0.939 | 0.936 | 0.780 | **0.851** | 0.918 ± 0.015 | tnpR (1.551) |
+| **AMC** | **0.825** | 0.670 | 0.579 | 0.677 | **0.624** | 0.823 ± 0.040 | tnpR (0.645) |
+| **CIP** | **0.966** | 0.952 | 0.846 | 0.917 | **0.880** | 0.972 ± 0.009 | yfkN_2 (0.510) |
+
+**Comparison to Baseline (Tier 1A)**:
+
+| Drug | Baseline F1 | Novel-Only F1 | Performance Retention | Interpretation |
+|------|-------------|---------------|----------------------|----------------|
+| **AMX** | 0.911 | **0.851** | **93%** | Novel genes capture mobile resistome |
+| **AMC** | 0.678 | **0.624** | **92%** | Novel genes capture tolerance mechanisms |
+| **CIP** | 0.758 | **0.880** | **116% (OUTPERFORMS!)** | Novel genes capture lineage + accessory mechanisms |
+
+**FINDING - CIP Outperformance**:
+- Novel genes-only **surpass baseline by 16%** (F1: 0.880 vs 0.758)
+- **Why?**
+  - Baseline CIP (Tier 1A) uses **plasmid replicons as poor surrogates** for MDR lineages (IncFIA → ST131 proxy)
+  - Novel genes include **better lineage markers** (prophage genes, lineage-specific genes) that more directly track ST131
+  - PLUS novel genes capture **genuine accessory mechanisms** (chpB, yedI) that baseline lacks
+- **Validation**: Even after lineage filter removes 82% of genes, filtered novel-only still achieves F1 = 0.857 (13% better than baseline)
+
+#### B) Novel Genes-Only Performance (AFTER Lineage Filter, ρ ≥ 0.70)
+
+**Features**: 179 (AMX), 118 (AMC), 88 (CIP) filtered novel genes
+
+**Purpose**: Test if genuine functional signal remains after aggressive lineage removal
+
+**Performance**:
+
+| Drug | AUROC | AUPRC | Precision | Recall | F1 Score | 5-Fold CV | Top Gene (SHAP) | % Genes Removed |
+|------|-------|-------|-----------|--------|----------|-----------|-----------------|-----------------|
+| **AMX** | **0.862** | 0.917 | 0.875 | 0.795 | **0.833** | 0.888 ± 0.015 | group_3326 (1.083) | 63% |
+| **AMC** | **0.819** | 0.653 | 0.603 | 0.677 | **0.638** | 0.793 ± 0.049 | group_3326 (0.609) | 76% |
+| **CIP** | **0.940** | 0.923 | 0.805 | 0.917 | **0.857** | 0.956 ± 0.016 | group_9126 (0.909) | 82% |
+
+#### Lineage Filter Effectiveness
+
+| Drug | Unfiltered F1 | Filtered F1 | Performance Drop | Genes Removed | Validation |
+|------|---------------|-------------|------------------|---------------|------------|
+| **AMX** | 0.851 | 0.833 | **-2.1%** | 310 (63%) | Minimal loss despite 63% removal |
+| **AMC** | 0.624 | 0.638 | **+2.2%** | 371 (76%) | Slight IMPROVEMENT (removed noise) |
+| **CIP** | 0.880 | 0.857 | **-2.6%** | 407 (82%) | Minimal loss despite 82% removal |
+
+**Key Validation**:
+- Removing **63-82% of genes** causes only **2-3% performance change**
+- This confirms filtered genes have **genuine functional signal** independent of clonal structure
+- For AMC, filtering actually **improves** performance (+2.2%) - removed confounding lineage markers were adding noise
+
+**Why CIP Has Highest Removal Rate (82%)**:
+- CIP resistance is **highly clonal** (ST131 pandemic lineage accounts for >70% of CIP-R isolates)
+- Most top-ranking unfiltered genes (ρ = 0.70-0.90 with gyrA mutations) were:
+  - yihF_2 (0.88 with gyrA_S83L) - prophage gene marking ST131
+  - betU (0.81 with parC_S80I) - betaine transporter, ST131 marker
+  - gatD (0.75 with gyrA_V85F) - galactitol operon, clonal marker
+- After filtering: only 88 genes remain with **independent functional roles**
+
+#### Biological Interpretation by Drug
+
+**AMX - Mobile Resistome Capture**:
+- **Top filtered genes**:
+  - group_3326 (1.083 SHAP) - Tn3 transposase (persists after filtering)
+  - pemK (0.292 SHAP) - Plasmid maintenance toxin-antitoxin
+  - intI (0.242 SHAP) - Class 1 integron integrase
+- **Mechanism**: These genes are **functional markers** of conjugative plasmids
+  - tnpR/group_3326: Active in transposition (gene mobility)
+  - pemK: Ensures plasmid retention during cell division
+  - intI: Integration of resistance cassettes
+- **Why it works**: These genes **co-occur** with β-lactamases on mobile elements
+- **Conclusion**: Novel genes predict AMX resistance by **tracking the mobile resistome**, not specific genes
+
+**AMC - Tolerance Mechanism Capture**:
+- **Top filtered genes**:
+  - group_3326 (0.609 SHAP) - Tn3 transposase (mobile element)
+  - insA_1 (0.276 SHAP) - IS1 transposase
+  - wcaM (0.176 SHAP) - **Colanic acid biosynthesis (biofilm/capsule)**
+  - group_20717 (0.246 SHAP) - Plasmid maintenance (CcdA)
+- **Mechanism**: Captures **non-enzymatic tolerance**:
+  - wcaM: Forms extracellular matrix (biofilm) → protects from drug exposure
+  - Colanic acid capsule: Physical barrier to drug penetration
+  - c-di-GMP signaling (yfeA, not in top 10 but present): Regulates biofilm formation
+- **Why it works**: AMC (inhibitor-protected) requires **sub-lethal survival mechanisms**
+- **Conclusion**: Novel genes **complement** enzyme resistance with tolerance barriers
+
+**CIP - Lineage + Accessory Mechanism Capture**:
+- **Top filtered genes**:
+  - group_9126 (0.909 SHAP) - **ABC transporter (efflux)**
+  - chpB (0.753 SHAP) - **Toxin (ChpB-ChpS TA system - persister formation)**
+  - group_20717 (0.571 SHAP) - Plasmid maintenance (CcdA)
+  - dmsB_1 (0.489 SHAP) - Anaerobic DMSO reductase (stress metabolism)
+  - group_16337/yedI (0.353 SHAP) - **DNA mismatch repair (surviving quinolone damage)**
+- **Mechanism**: Captures **two components**:
+  1. **Partial clonal signal** (ρ = 0.65-0.69, just below 0.70 filter threshold):
+     - Some genes still weakly correlate with ST131 lineage
+     - These are **better lineage markers** than baseline's IncFIA plasmids
+  2. **Genuine accessory mechanisms**:
+     - chpB: Induces persister cells (dormancy) → tolerance to 10-100× MIC
+     - yedI: Repairs quinolone-induced DNA breaks → survival
+     - group_9126: ABC transporter → efflux (reduces intracellular drug)
+- **Why it works**: Combination of **accurate lineage identification** + **functional tolerance mechanisms**
+- **Conclusion**: Novel genes **outperform baseline** by being better proxies AND adding genuine mechanisms
+
+**CIP Outperformance Explained**:
+
+| Model | F1 | Primary Signal | Mechanism Type |
+|-------|-----|----------------|----------------|
+| **Baseline (Tier 1A)** | 0.758 | IncFIA plasmid (poor proxy) | Indirect/confounded |
+| **Novel-Only (Unfiltered)** | 0.880 | ST131 markers + accessory | Better proxy + functional |
+| **Novel-Only (Filtered)** | 0.857 | Accessory mechanisms | Mostly functional |
+| **Tier 2 (Gold Standard)** | 0.957 | gyrA/parC mutations | Direct causal |
+
+The progression shows novel genes capture **orthogonal information** to baseline, explaining outperformance.
+
+---
+
+### 7. Comparative Performance Summary Across All Models
+
+#### Complete Performance Table
+
+| Model Type | Drug | AUROC | F1 | Top Mechanism | Feature Count | Notebook |
+|------------|------|-------|-----|---------------|---------------|----------|
+| **Baseline (Tier 1A)** | AMX | 0.935 | **0.911** | TEM-4 β-lactamase | 409 | 4.0 |
+| | AMC | 0.826 | 0.678 | TEM-4 + OXA-1 | 409 | 4.0 |
+| | CIP | 0.927 | 0.758 | mdtM/IncFIA (surrogates) | 409 | 4.0 |
+| **Mutations Only** | AMX | 0.742 | 0.693 | gyrA (lineage marker) | 827 | 3.2 |
+| | AMC | 0.707 | 0.554 | gyrA (surrogate) | 827 | 3.2 |
+| | CIP | **0.972** | **0.957** | gyrA_S83L + V85F | 827 | 3.2 |
+| **Tier 2 (Genes+Mutations)** | AMX | 0.936 | **0.915** | TEM-4 | 1,236 | 3.1 |
+| | AMC | 0.883 | 0.681 | TEM-4 + ompC | 1,236 | 3.1 |
+| | CIP | **0.981** | **0.957** | gyrA mutations | 1,236 | 3.1 |
+| **Tier 3 (Unfiltered +500)** | AMX | 0.935 | 0.911 | TEM-4 + tnpR | 1,736 | 3.1 |
+| | AMC | 0.893 | **0.712** | TEM-4 + yfeA | 1,736 | 3.1 |
+| | CIP | 0.966 | 0.957 | gyrA + rz | 1,736 | 3.1 |
+| **Tier 3 (Filtered Novel)** | AMX | 0.936 | 0.903 | TEM-4 + ybeT | 1,415 | 3.5 |
+| | AMC | 0.889 | **0.685** | TEM-4 + wcaM | 1,354 | 3.5 |
+| | CIP | 0.973 | 0.943 | gyrA + chpB/yedI | 1,324 | 3.5 |
+| **Control (T2+Stress)** | AMX | - | 0.902 | TEM-4 + sul1 | 1,286 | 3.4 |
+| | AMC | - | 0.605 | TEM-4 (lacking biofilm) | 1,286 | 3.4 |
+| | CIP | - | 0.781 | gyrA (lacking tolerance) | 1,286 | 3.4 |
+| **Novel Only (Unfiltered)** | AMX | 0.888 | 0.851 | tnpR, ybeT | 489 | 3.6 |
+| | AMC | 0.825 | 0.624 | tnpR, yfeA | 489 | 3.6 |
+| | CIP | **0.966** | **0.880** | yfkN_2, chpB | 495 | 3.6 |
+| **Novel Only (Filtered)** | AMX | 0.862 | 0.833 | group_3326 | 179 | 3.6 |
+| | AMC | 0.819 | 0.638 | group_3326, wcaM | 118 | 3.6 |
+| | CIP | 0.940 | **0.857** | group_9126, chpB | 88 | 3.6 |
+
+#### Best Performance by Drug
+
+| Drug | Best Model | F1 Score | Features | Interpretation |
+|------|------------|----------|----------|----------------|
+| **AMX** | Tier 2 | **0.915** | 1,236 | β-lactamase genes dominate; mutations/novel add minimal value |
+| **AMC** | Tier 3 (Unfiltered) | **0.712** | 1,736 | Complex multi-factorial; requires all mechanisms including novel tolerance |
+| **CIP** | Tier 2 OR Mutations-Only | **0.957** | 1,236 or 827 | gyrA mutations sufficient; novel genes maintain but don't improve |
+
+#### Novel Gene Value by Drug
+
+| Drug | Baseline F1 | Novel-Only (Filtered) F1 | % of Baseline | Value Assessment |
+|------|-------------|--------------------------|---------------|------------------|
+| **AMX** | 0.911 | 0.833 | **91%** | Redundant with plasmid markers (control: -0.1%) |
+| **AMC** | 0.678 | 0.638 | **94%** | Unique tolerance mechanisms (control: -8.0%) |
+| **CIP** | 0.758 | **0.857** | **113% (Outperforms)** | Critical accessory + better lineage markers (control: -16.2%) |
+
+---
+
+### 8. Mechanistic Insights from Results
+
+#### Drug Resistance Hierarchy
+
+| Drug | Primary (>50% SHAP) | Secondary (20-50% SHAP) | Tertiary (<20% SHAP) |
+|------|---------------------|------------------------|---------------------|
+| **AMX** | Acquired genes (TEM-4: 85%) | Mobile elements | Permeability (minor) |
+| **AMC** | Acquired genes (TEM-4+OXA-1: 45%) | Permeability (ompC: 15%) | Tolerance (yfeA, wcaM: 15%) |
+| **CIP** | Chromosomal mutations (gyrA: 56%) | Accessory mechanisms (chpB, yedI: 20%) | Efflux (group_9126: 10%) |
+
+#### Functional Categories of Novel Genes (55 Unique Total)
+
+| Category | % of Genes | Representative Genes | Biological Role | SHAP Contribution |
+|----------|------------|---------------------|-----------------|-------------------|
+| **Mobile Genetic Elements** | 40% | tnpR, group_3326, insA_1, traL, intI | Transposases, conjugation - HGT markers | AMX: High, AMC: High |
+| **Prophage Elements** | 25% | group_3820, group_17656, group_7896 | Phage structural - integration hotspots | AMX: Moderate, CIP: Low |
+| **Membrane/Permeability** | 15% | ybeT, wcaM, neuC | OM proteins, capsule - drug barriers | AMX: Moderate, AMC: High |
+| **Stress/Tolerance** | 15% | yfeA, chpB, group_16337 (yedI) | c-di-GMP, TA, DNA repair - tolerance | AMC: High, CIP: High |
+| **Hypothetical** | 5% | group_24688 (pan-drug) | Uncharacterized - genuine novel | All drugs: Moderate |
+
+#### Pan-Drug Candidate
+
+**group_24688** (Hypothetical protein):
+- **Only gene appearing in ALL THREE drug models**:
+  - AMX: Rank 4 (SHAP 0.124)
+  - AMC: Rank 3 (SHAP 0.134)
+  - CIP: Top 20 (present, lower SHAP)
+- **Prevalence**: 38% (409/1089 isolates)
+- **Survives lineage filter** for AMX and AMC
+- **Unknown function** = genuinely novel discovery
+- **HIGHEST PRIORITY** for experimental validation:
+  - Gene knockout + comprehensive MIC panel (all 3 antibiotics + 12 others)
+  - Test hypothesis: multi-drug resistance role
+  - Protein expression + structural characterization (AlphaFold prediction)
+
+---
+
+### 9. Validation Prioritization
+
+#### Top 5 Targets for Experimental Studies
+
+| Priority | Gene(s) | Drug(s) | Annotation | SHAP | Validation Approach | Expected Outcome |
+|----------|---------|---------|------------|------|---------------------|------------------|
+| **1 (HIGHEST)** | **group_24688** | AMX, AMC, CIP | Hypothetical | 0.11-0.13 | Gene knockout + MIC (multi-drug) | MIC reduction across multiple antibiotics |
+| **2 (HIGHEST)** | **ybeT** | AMX | Outer membrane protein | 0.177 | Knockout + permeability assays (ONPG, HPLC) | Increased β-lactam influx in knockout |
+| **3 (HIGH)** | **yfeA** | AMC | Diguanylate cyclase | 0.152 | Knockout + biofilm assays + c-di-GMP (HPLC-MS) | Reduced biofilm, lower MIC in knockout |
+| **4 (HIGH)** | **chpB/chpS** | CIP | Toxin-antitoxin | 0.126 | Knockout + time-kill curves (persister freq) | Reduced persisters at 10× MIC |
+| **5 (HIGH)** | **group_16337 (yedI)** | CIP | DNA mismatch repair | 0.161 | Knockout + DNA damage assays (Comet, γH2AX) | Increased DNA damage, lower MIC |
+
+#### Validation Strategy by Category
+
+**1. Membrane/Permeability (ybeT, wcaM, neuC)**:
+- **Assays**: ONPG uptake (permeability), β-lactam accumulation (HPLC), India ink staining (capsule), crystal violet (biofilm), TEM (ultrastructure)
+- **Expected**: Knockout increases drug influx → increased susceptibility
+- **Timeline**: 6-8 months (strain construction + phenotyping)
+
+**2. Stress/Tolerance (yfeA, chpB, yedI)**:
+- **Assays**: Time-kill curves (persistence), c-di-GMP quantification (HPLC-MS), Comet assay (DNA damage), RNA-seq (stress response)
+- **Expected**: Knockout reduces tolerance → faster killing at sub-lethal doses
+- **Timeline**: 8-12 months (complex phenotypes + omics)
+
+**3. Mobile Elements (tnpR, insA_1, traL)**:
+- **Assays**: Plasmid curing (SDS, elevated temp), conjugation frequency, long-read sequencing (plasmid maps)
+- **Expected**: Transposon disruption → plasmid instability → loss of co-carried resistance
+- **Timeline**: 4-6 months (plasmid-focused)
+
+**4. Hypothetical (group_24688, group_8350)**:
+- **Assays**: Comprehensive MIC (15 antibiotics), protein expression + purification, X-ray/Cryo-EM (structure), pull-down + Y2H (interactome), metabolomics
+- **Expected**: Unknown - discovery-driven
+- **Timeline**: 12-24 months (full characterization)
+
+---
+
+### 10. Summary of Key Results
+
+#### Finding 1: Novel Genes Independently Predict Resistance
+
+| Drug | Novel-Only F1 | Baseline F1 | Performance | Clinical Implication |
+|------|---------------|-------------|-------------|---------------------|
+| AMX | 0.833 | 0.911 | 91% retention | Novel genes track mobile resistome |
+| AMC | 0.638 | 0.678 | 94% retention | Novel genes add unique tolerance |
+| CIP | **0.857** | 0.758 | **113% (outperforms)** | Novel genes surpass traditional databases |
+
+#### Finding 2: Rigorous Filtering Works
+
+| Drug | Pre-Filter | Post-Filter | % Removed | Performance Drop |
+|------|------------|-------------|-----------|------------------|
+| AMX | 489 | 179 | **63%** | -2.1% F1 |
+| AMC | 489 | 118 | **76%** | +2.2% F1 (improved!) |
+| CIP | 495 | 88 | **82%** | -2.6% F1 |
+
+**Validation**: Removing 63-82% of genes causes only 2-3% change → filtered genes have genuine signal
+
+#### Finding 3: Control Experiment Validates Non-Redundancy
+
+| Drug | Novel vs Stress | Δ F1 | Conclusion |
+|------|----------------|------|------------|
+| AMX | -0.1% | NS | Redundant (both plasmid markers) |
+| AMC | **-8.0%** | p<0.001 | **Unique** (biofilm/tolerance) |
+| CIP | **-16.2%** | p<0.001 | **Critical** (DNA repair/persisters) |
+
+#### Finding 4: Drug Mechanisms Distinct
+
+| Drug | Dominant Mechanism | Evidence | Novel Gene Role |
+|------|-------------------|----------|-----------------|
+| AMX | **Gene-driven** | TEM-4 = 85% SHAP | Mobile resistome markers |
+| AMC | **Multi-factorial** | No feature >20% | Tolerance mechanisms |
+| CIP | **Mutation-driven** | gyrA = 56% SHAP | Accessory tolerance |
+
+#### Finding 5: Novel Genes Show 2.2-3.4× Enrichment
+
+| Drug | Novel % Features | Novel % SHAP | Enrichment |
+|------|------------------|--------------|------------|
+| AMX | 12.6% | 30.3% | **2.4×** |
+| AMC | 8.7% | 29.6% | **3.4×** |
+| CIP | 6.6% | 14.4% | **2.2×** |
+
+**This Results Summary synthesizes findings from all 12 notebooks, demonstrating that pangenome-wide discovery successfully identifies 55 novel resistance determinants with independent predictive power, validated through rigorous filtering and control experiments.**
+
+</details>
+
+---
+
+## **Installation**
 
 ### Requirements
 
 - Python 3.8+
 - Jupyter Notebook
-- 16GB RAM minimum (32GB recommended for large datasets)
+- 16GB RAM minimum
 
 ### Dependencies
 
@@ -1694,10 +2171,7 @@ cd AMR-Discovery-E-coli
 python -m venv venv
 source venv/bin/activate  # On Windows: venv\Scripts\activate
 
-# 3. Install dependencies
-pip install -r requirements.txt
-
-# 4. Extract compressed datasets
+# 3. Extract compressed datasets
 cd "1. datasets/rar files"
 unrar x amr_features.rar ../
 unrar x snp_features.rar ../
@@ -1705,147 +2179,19 @@ unzip plasmidfinder.zip -d ../
 
 cd ../..
 ```
-
 ---
 
-## 🔑 Key Findings
-
-### 1. Novel Genes Can Independently Predict Resistance Without Known AMR Databases
-
-**Primary Discovery** (Notebook 3.6 - Novel Genes-Only Models):
-
-Novel genes alone achieve **high predictive performance** without any known AMR genes or chromosomal mutations:
-
-| Drug | Novel-Only AUROC | Novel-Only F1 | Baseline (Tier 1) F1 | Performance vs Baseline |
-|------|------------------|---------------|----------------------|------------------------|
-| **AMX** | **0.888** | **0.851** | 0.911 | **93% of baseline F1** |
-| **AMC** | **0.825** | **0.624** | 0.678 | **92% of baseline F1** |
-| **CIP** | **0.966** | **0.880** | 0.758 | **116% of baseline F1** |
-
-**Critical Insight**: Novel genes alone **outperform the baseline model for CIP** (F1: 0.880 vs 0.758), demonstrating that pangenome-wide discovery can **surpass traditional AMR databases** for mutation-driven resistance.
-
-**Biological Interpretation**:
-- **AMX**: Novel genes (tnpR, ybeT) capture the **mobile resistome** - plasmid carriage patterns that co-occur with β-lactamases
-- **AMC**: Novel genes (yfeA, wcaM) capture **biofilm/tolerance mechanisms** essential for inhibitor-protected drugs
-- **CIP**: Novel genes (chpB, yihF_2) partially capture **clonal lineage + accessory mechanisms** (DNA repair, persisters)
-
-**Validation**: After applying the stringent lineage filter (ρ ≥ 0.70), performance drops only **2-3%**, confirming that filtered genes have **genuine functional signal**, not just clonal confounding.
-
-### 2. Rigorous Filtering Successfully Removes 63-82% of Candidate Genes
-
-**Filtering Effectiveness** (Novel Gene Discovery Pipeline):
-
-| Drug | Pre-Filter (Top 500) | Post-Lineage Filter | Removed | % Removed | Final Genes |
-|------|---------------------|---------------------|---------|-----------|-------------|
-| **AMX** | 489 | → | 310 | **63.4%** | **179** |
-| **AMC** | 489 | → | 371 | **75.9%** | **118** |
-| **CIP** | 495 | → | 407 | **82.2%** | **88** |
-
-**Why CIP Has Highest Removal Rate**:
-- CIP resistance is **highly clonal** (ST131 pandemic lineage dominance)
-- Most top-ranking genes were correlated with gyrA mutations (ρ > 0.70)
-- Only genes with **independent functional mechanisms** passed the filter
-- Result: Smaller but **higher-confidence** gene set (88 genes)
-
-**Validation of Filtering**:
-- **Control Experiment** (Notebook 3.4): Replacing novel genes with Tier 1B stress genes causes:
-  - AMC: -8.0% F1 drop (p < 0.001) - **novel genes are unique**
-  - CIP: -16.2% F1 drop (p < 0.001) - **novel genes are critical**
-- **Statistical Test**: Novel genes have **2.2-3.4× enrichment** for resistance prediction vs random gene sets (p < 0.001)
-
-### 3. Novel Genes Represent Distinct Functional Categories
-
-**Functional Classification** (55 unique genes across all drugs):
-
-| Category | % of Genes | Representative Genes | Biological Role |
-|----------|------------|---------------------|-----------------|
-| **Mobile Genetic Elements** | 40% | tnpR, insA_1, traL, group_3326 | Transposases, conjugation machinery - markers of horizontal gene transfer |
-| **Prophage Elements** | 25% | group_3820, group_17656, group_7896 | Phage structural proteins - integration hotspots for AMR genes |
-| **Membrane/Permeability** | 15% | ybeT, wcaM, neuC | Outer membrane proteins, capsule - altered drug influx/physical barriers |
-| **Stress/Tolerance** | 15% | yfeA, chpB/chpS, group_16337 (yedI) | c-di-GMP signaling, TA systems, DNA repair - non-genetic tolerance |
-| **Hypothetical** | 5% | **group_24688** (pan-drug) | Uncharacterized - **highest priority for validation** |
-
-**Pan-Drug Candidate**: **group_24688** is the **only gene appearing in all three drug models** (AMX rank 4, AMC rank 3, CIP top 20), making it the **highest-priority target** for experimental validation.
-
-### 4. Drug-Specific Mechanisms Are Distinct
-
-**Comparative Analysis** (Baseline vs Novel-Only Models):
-
-**AMX (Gene-Driven)**:
-- **Baseline**: Dominated by TEM-4 β-lactamase (25% SHAP importance)
-- **Novel-Only**: Dominated by tnpR transposase (SHAP: 1.55)
-- **Mechanism**: Both capture the **mobile resistome** (plasmid carriage)
-- **Conclusion**: Novel genes act as **surrogate markers** for β-lactamase-carrying plasmids
-
-**AMC (Multi-Factorial)**:
-- **Baseline**: TEM-4 + OXA-1 enzymes (combined 40% SHAP)
-- **Novel-Only**: tnpR + yfeA + wcaM (combined 60% SHAP)
-- **Mechanism**: Novel genes capture **additional tolerance mechanisms** (biofilm, capsule)
-- **Conclusion**: Novel genes **complement** enzyme-based resistance with non-enzymatic barriers
-
-**CIP (Mutation-Driven)**:
-- **Baseline**: mdtM efflux + plasmid replicons (surrogates for MDR lineages)
-- **Baseline (Mutations-Only)**: gyrA S83L + V85F (56% SHAP, AUROC 0.972)
-- **Novel-Only**: yfkN_2 + chpB + yihF_2 (combined 50% SHAP)
-- **Mechanism**: Novel genes capture **accessory mechanisms** (persisters, DNA repair) + **partial clonal signal**
-- **Conclusion**: Novel genes **enhance** mutation-based prediction with tolerance/lineage markers
-
-### 5. Top Novel Genes for Experimental Validation
-
-**Validation Prioritization** (Based on SHAP importance, biological plausibility, and pan-drug presence):
-
-| Priority | Gene(s) | Drug | Annotation | SHAP | Validation Approach |
-|----------|---------|------|------------|------|---------------------|
-| **HIGHEST** | **group_24688** | AMX, AMC, CIP | **Hypothetical protein** | 0.11-0.13 | **Gene knockout + MIC testing (multi-drug)**. Only gene appearing in all three models. |
-| **HIGHEST** | **ybeT** | AMX | Outer membrane protein | 0.177 | Gene knockout + **permeability assays** (ONPG uptake), β-lactam accumulation. |
-| **HIGH** | **yfeA** | AMC | Diguanylate cyclase | 0.152 | Gene knockout + **biofilm formation assays**, **c-di-GMP quantification** (HPLC-MS). |
-| **HIGH** | **chpB/chpS** | CIP | Toxin-antitoxin system | 0.126 | Gene knockout + **time-kill curves** (persister frequency at 10× MIC), rifampicin tolerance assays. |
-| **HIGH** | **group_16337 (yedI)** | CIP | DNA mismatch repair | 0.161 | Gene knockout + **DNA damage assays** (Comet assay, γH2AX foci), CIP-induced mutagenesis. |
-| **MEDIUM** | **tnpR, insA_1** | AMX, AMC | Transposases | 0.26, 0.12 | **Plasmid curing experiments** (SDS treatment, elevated temp), transconjugation assays. |
-| **MEDIUM** | **wcaM** | AMC | Colanic acid biosynthesis | 0.103 | Gene knockout + **capsule/biofilm assays** (crystal violet, Congo red binding), TEM imaging. |
-
-**Validation Strategies by Category**:
-
-1. **Membrane/Permeability Genes (ybeT, wcaM, neuC)**:
-   - Knockout strains + MIC testing (AMX, AMC)
-   - Permeability assays (ONPG uptake, β-lactam accumulation via HPLC)
-   - Capsule visualization (India ink staining, TEM)
-   - Biofilm formation (crystal violet, flow cell microscopy)
-
-2. **Stress/Tolerance Genes (yfeA, chpB, yedI)**:
-   - Knockout strains + MIC testing
-   - Time-kill curves (measure persister frequency)
-   - c-di-GMP quantification (HPLC-MS)
-   - DNA damage assays (Comet assay, γH2AX immunofluorescence)
-   - Transcriptomics (RNA-seq of knockout vs wild-type under drug stress)
-
-3. **Mobile Element Genes (tnpR, insA_1, traL)**:
-   - Plasmid curing experiments (validate role in resistance maintenance)
-   - Transposon mutagenesis (disrupt tnpR, test resistance loss)
-   - Conjugation assays (measure horizontal transfer efficiency)
-   - Plasmid profiling (long-read sequencing to map insertion sites)
-
-4. **Hypothetical Genes (group_24688, group_8350, etc.)**:
-   - Gene knockout + comprehensive MIC panel (15 antibiotics)
-   - Protein expression and purification (if soluble)
-   - Structural characterization (X-ray crystallography, AlphaFold prediction)
-   - Interactome studies (pull-down assays, Y2H)
-   - Metabolomics (identify altered metabolic pathways)
-
----
-
-## 📚 Citation
+## **Citation**
 
 If you use this work, please cite:
 
 ```bibtex
-@article{amr_discovery_2025,
+@heart{muhammadlukman2026amr_discovery,
   title={Pangenome-Wide Discovery of Novel Antimicrobial Resistance Determinants in Escherichia coli Through Machine Learning and Hierarchical Feature Engineering},
-  author={[Your Name]},
-  journal={[Journal Name]},
+  author={Muhammad Lukman},
   year={2025},
-  doi={[DOI if published]},
-  note={55 novel resistance genes discovered through rigorous filtering of 44,957 pangenome genes}
+  note={GitHub repository},
+  url={https://github.com/Muhammad-Lukman/Discovery-of-Novel-AMR-Determinants-in-E.coli-Through-Machine-Learning.git}
 }
 ```
 
@@ -1868,12 +2214,12 @@ If you use this work, please cite:
 
 ---
 
-## 📧 Contact
+## **Contact**
 
-**Author**: [Your Name]  
-**Email**: [your.email@example.com]  
-**Institution**: [Your Institution]  
-**GitHub**: [Your GitHub Profile]
+**Author**: Muhammad Lukman  
+**Email**: dr.mlukmanuaf@gmail.com  
+**Institution**: UAF  
+**GitHub**: [Muahhamd-Lukman](https://github.com/Muhammad-Lukman)
 
 **For questions about**:
 - **Data access**: Contact via email for raw genomic data (assemblies, VCF files)
@@ -1882,7 +2228,7 @@ If you use this work, please cite:
 
 ---
 
-## 📝 License
+## **License**
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
@@ -1894,7 +2240,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ---
 
-## 🙏 Acknowledgments
+## **Acknowledgments**
 
 **Data Sources**:
 - **CARD**: https://card.mcmaster.ca/
@@ -1911,52 +2257,13 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - **SHAP** (model interpretation)
 - **scikit-learn** (feature selection, evaluation)
 
-**Computational Resources**: [Your Institution/Cluster Name]
+**Computational Resources**: Google Colab and Virtual Machine
 
-**Funding**: [Grant Information if applicable]
-
----
-
-## 🔄 Version History
-
-**v1.0.0** (February 2026)
-- Initial release with complete analysis pipeline
-- 55 novel genes discovered across 3 antibiotics
-- 30+ trained models (multiple tiers per drug)
-- Comprehensive SHAP interpretation
-- Control experiments validating discoveries
-- 12 Jupyter notebooks documenting full workflow
 
 ---
 
-## 📖 Additional Resources
+**Last Updated**: February 28, 2026
 
-### Useful Links
-
-- [CARD Database](https://card.mcmaster.ca/)
-- [ResFinder](https://cge.food.dtu.dk/services/ResFinder/)
-- [AMRFinderPlus](https://www.ncbi.nlm.nih.gov/pathogens/antimicrobial-resistance/AMRFinder/)
-- [Roary Documentation](https://sanger-pathogens.github.io/Roary/)
-- [XGBoost Documentation](https://xgboost.readthedocs.io/)
-- [SHAP Documentation](https://shap.readthedocs.io/)
-
-### Tutorials
-
-**Getting Started**:
-1. [Understanding Pangenomes](https://github.com/sanger-pathogens/Roary/wiki)
-2. [AMR Gene Prediction](https://github.com/ncbi/amr/wiki/Running-AMRFinderPlus)
-3. [XGBoost for Beginners](https://xgboost.readthedocs.io/en/stable/tutorials/index.html)
-4. [SHAP for Model Interpretation](https://shap.readthedocs.io/en/latest/example_notebooks/overviews/An%20introduction%20to%20explainable%20AI%20with%20Shapley%20values.html)
-
-**Advanced Topics**:
-1. [Handling Class Imbalance](https://scikit-learn.org/stable/modules/generated/sklearn.utils.class_weight.compute_class_weight.html)
-2. [Feature Selection Strategies](https://scikit-learn.org/stable/modules/feature_selection.html)
-3. [Cross-Validation Best Practices](https://scikit-learn.org/stable/modules/cross_validation.html)
-
----
-
-**Last Updated**: February 26, 2026
-
-**Repository Status**: ✅ Active (accepting issues and pull requests)
+**Repository Status**: Active (accepting issues and pull requests)
 
 **Star this repo** if you find it useful for your research!
