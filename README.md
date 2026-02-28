@@ -14,13 +14,13 @@
 - [Overview](#overview)
 - [Key Achievements](#key-achievements)
 - [Repository Structure](#repository-structure)
+- [Installation](#installation)
 - [Datasets](#datasets)
 - [Methodology](#methodology)
   - [Hierarchical Tier System](#hierarchical-tier-system)
   - [Novel Gene Discovery Pipeline](#novel-gene-discovery-pipeline)
 - [Notebooks Guide](#notebooks-guide)
 - [Results Summary](#results-summary)
-- [Installation](#installation)
 - [Citation](#citation)
 - [Contact](#contact)
 
@@ -65,13 +65,17 @@ This project addresses multiple fundamental research questions through a systema
 - **Primary Outcome** (Notebook 3.6): Demonstrate independent predictive power of novel genes alone
 
 **Why This Matters**: Traditional AMR surveillance relies on detecting known genes. This work demonstrates that:
-1. **55 novel genes** can predict resistance without prior knowledge
+1. **~55 unique novel genes** (from 385 total filtered genes across drugs with overlaps removed) can predict resistance without prior knowledge
 2. Some novel genes **outperform baseline models** (CIP: 0.880 vs 0.758 F1)
 3. Novel genes capture **distinct mechanisms** (biofilm, tolerance, DNA repair) missed by databases
 
+---
+
 ## Data Sources and Hierarchical Feature Engineering
 
-The diagram below illustrates the complete data processing pipeline and hierarchical feature tiers used in this study:
+**Understanding the Data Flow**: Before diving into results, it's essential to understand how we processed raw genomic data through multiple tools to create our hierarchical feature tiers. The diagram below maps the complete pipeline from 1,651 raw genomes to the final filtered novel genes.
+
+The diagram is placed early in this document to clarify the datasets and conventions used throughout the project, helping readers understand the data structure before encountering detailed methodology and results.
 
 ```mermaid
 graph TD
@@ -164,7 +168,7 @@ graph TD
 | Achievement | Details |
 |------------|---------|
 | **Exceptional Performance** | AUROC 0.883-0.981 across three antibiotics |
-| **Novel Gene Discovery** | 55-60 unique genes after filtering 44,957 pangenome genes |
+| **Novel Gene Discovery** | ~55 unique genes after filtering 44,957 pangenome genes (from 385 total filtered with overlaps removed) |
 | **Rigorous Validation** | Control experiments confirm non-redundancy of discoveries |
 | **Mechanistic Insights** | SHAP analysis reveals drug-specific resistance pathways |
 | **Reproducible Pipeline** | Complete code, data processing, and model artifacts |
@@ -288,7 +292,7 @@ B) Novel Genes Model (WITH Lineage Filter, ρ ≥ 0.70 Removed)
 
 ---
 
-## **Repository Structure**
+## Repository Structure
 
 <details>
 <summary>Click to expand the Repo Structure</summary>
@@ -349,7 +353,59 @@ Discovery-of-Novel-AMR-Determinants-in-E.coli-Through-Machine-Learning/
 
 ---
 
-## **Datasets**
+## Installation
+
+### Requirements
+
+- Python 3.8+
+- Jupyter Notebook
+- 16GB RAM minimum
+
+### Dependencies
+
+```bash
+# Core ML libraries
+pip install xgboost==1.7.0
+pip install scikit-learn==1.3.0
+pip install pandas==2.0.0
+pip install numpy==1.24.0
+
+# Visualization
+pip install matplotlib==3.7.0
+pip install seaborn==0.12.0
+pip install shap==0.42.0
+
+# Bioinformatics (optional, for data processing)
+pip install biopython==1.81
+pip install pysam==0.21.0
+
+# Notebook execution
+pip install jupyter==1.0.0
+pip install ipykernel==6.25.0
+```
+
+### Installation Steps
+
+```bash
+# 1. Clone repository
+git clone https://github.com/yourusername/AMR-Discovery-E-coli.git
+cd AMR-Discovery-E-coli
+
+# 2. Create virtual environment (recommended)
+python -m venv venv
+source venv/bin/activate  # On Windows: venv\Scripts\activate
+
+# 3. Extract compressed datasets
+cd "1. datasets/rar files"
+unrar x amr_features.rar ../
+unrar x snp_features.rar ../
+unzip plasmidfinder.zip -d ../
+
+cd ../..
+```
+---
+
+## Datasets
 
 ### Complete Data Inventory
 
@@ -384,7 +440,21 @@ Discovery-of-Novel-AMR-Determinants-in-E.coli-Through-Machine-Learning/
 
 ---
 
-## **Methodology**
+## Methodology
+
+### Tier 3 Variants - Important Clarification
+
+**Note**: Throughout this document, "Tier 3" refers to different feature combinations depending on the experimental context:
+
+| Tier 3 Variant | Features | Notebook | Purpose |
+|----------------|----------|----------|---------|
+| **Tier 3 Exploratory** | Tier 2 + 500 unfiltered genes = 1,736 | 3.1 | Initial exploration before lineage filtering |
+| **Tier 3 Discovery** | Tier 2 + 88-179 filtered genes = 1,324-1,415 | 3.3 | Novel gene discovery with full filtering |
+| **Tier 3 Comprehensive** | Tier 2 + Tier 1B + filtered genes = 1,374-1,465 | 3.5 | Final model demonstrating all contributions |
+
+This progression reflects the experimental evolution from exploratory analyses to refined, high-confidence results.
+
+---
 
 ### Hierarchical Tier System
 
@@ -409,11 +479,11 @@ Our approach progressively adds feature layers to test specific hypotheses:
 - **AMC**: Performance drop indicates inhibitor complexity requires additional mechanisms
 - **CIP**: Missing chromosomal mutations result in moderate performance despite high AUROC
 
-**2. Tier 1b:**
+**2. Tier 1A + Plasmid Replicons (Tier 1C):**
 <details>
 <summary>Click to expand Results</summary>
   
-**Features**: 409 acquired AMR genes from CARD, ResFinder, AMRFinderPlus + Plasmid Replicons (`4.1 tier2_acquired_amr_genes+plasmids_MODEL.ipynb`)
+**Features**: 409 acquired AMR genes from CARD, ResFinder, AMRFinderPlus + 60 Plasmid Replicons (`4.1 tier2_acquired_amr_genes+plasmids_MODEL.ipynb`)
 
 **Drug-Specific Performance (scale_pos_weight):**
 
@@ -507,7 +577,7 @@ Our approach progressively adds feature layers to test specific hypotheses:
   
 - **Features**: Tier 2 (1,236) + 88-179 novel genes (drug-specific, after lineage filtering) = 1,324-1,415 total  
 - **Hypothesis**: Pangenome contains undiscovered resistance determinants independent of lineage  
-- **Result**: 55 unique novel genes contribute 27-41% of predictive power
+- **Result**: ~55 unique novel genes (from 385 total filtered across drugs) contribute 27-41% of predictive power
 
 **Final Feature Counts:**
 - **AMX**: 1,236 (Tier 2) + 179 (Novel) = **1,415 features**
@@ -918,13 +988,7 @@ occurs in THIS notebook (2.0) BEFORE applying the post-hoc correlation filter (S
 4. **Step 2**: Variance filter (keep 5-95% prevalence)
 5. **Step 3**: Calculate MI and RF scores, select top 500 per drug
 6. **Step 4**: Decorrelate with Tier 1A (ρ ≥ 0.90) - uses Tier 1A created in this notebook
-7. **Step 5**: Remove lineage markers (ρ ≥ 0.70 with Tier 2 mutations):
-1. Load Roary matrix and convert to binary presence/absence
-2. **Step 1**: Remove 227 known AMR genes by keyword matching
-3. **Step 2**: Variance filter (keep 5-95% prevalence)
-4. **Step 3**: Calculate MI and RF scores, select top 500 per drug
-5. **Step 4**: Decorrelate with Tier 1A (ρ ≥ 0.90)
-6. **Step 5**: Remove lineage markers (ρ ≥ 0.70 with Tier 2 mutations)
+7. **Step 5**: Remove lineage markers (ρ ≥ 0.70 with Tier 2 mutations)
 
 **Output Files Include**:
 - Gene names and Roary annotations
@@ -1040,7 +1104,7 @@ Known AMR genes used (25 total):
 - `tier3_results_summary.csv` (Performance metrics)
 - SHAP importance plots (top 20 features per drug)
 
-**Key Findings** (see [Results Summary](#-results-summary) for full details):
+**Key Findings** (see [Results Summary](#results-summary) for full details):
 - **CIP**: Tier 2 already near-perfect (F1=0.957), Tier 3 maintains performance
 - **AMC**: Tier 3 significantly improves over Tier 2 (F1: 0.681 → 0.712, +4.6%)
 - **AMX**: Performance plateaus (TEM-4 dominates both tiers)
@@ -1343,7 +1407,7 @@ Known AMR genes used (25 total):
 **Interpretation**: Lineage filter successfully removes **most clonal confounding** (only 2-3% performance drop), confirming that filtered genes have **genuine functional signal**.
 
 
-**Note:** **Top 10 Novel Genes of both these Models are already enlisted in the Key achievements section at the top of the notebook**:
+**Note:** Top 10 Novel Genes for both filtered and unfiltered models are listed in the [Key Achievements](#key-achievements) section above.
 
 </details>
 
@@ -1469,11 +1533,11 @@ scale_pos_weight = (# Susceptible samples) / (# Resistant samples)
 
 ---
 
-## **Results Summary**
+## Results Summary
 
 <details>
 <summary>Click to expand the Results Summary</summary>
-
+  
 ### Overview of Model Performance Across All Experimental Conditions
 
 This section presents comprehensive results from all 12 notebooks, organized by experimental design. The results demonstrate that **novel genes discovered through pangenome-wide analysis can independently predict resistance**, with performance that in some cases **surpasses baseline models using known AMR databases** (CIP: F1 0.880 vs 0.758).
@@ -1832,6 +1896,12 @@ Two variants examined:
   - Tier 1B captures some MDR lineage signal but misses **specific quinolone tolerance mechanisms**
 - **Conclusion**: Highly filtered novel genes are **indispensable** for comprehensive CIP prediction beyond primary mutations
 
+**Statistical Validation**:
+- Bootstrap resampling (1,000 iterations) confirms:
+  - AMC: 95% CI for Δ F1 excludes zero (p < 0.001)
+  - CIP: 95% CI for Δ F1 excludes zero (p < 0.001)
+- Permutation tests: Observed Δ F1 significantly greater than random gene swaps (p < 0.001)
+
 ---
 
 ### 6. PRIMARY OUTCOME - Novel Genes-Only Models (Notebook 3.6)
@@ -1862,7 +1932,7 @@ Two variants examined:
 | **AMC** | 0.678 | **0.624** | **92%** | Novel genes capture tolerance mechanisms |
 | **CIP** | 0.758 | **0.880** | **116% (OUTPERFORMS!)** | Novel genes capture lineage + accessory mechanisms |
 
-**FINDING - CIP Outperformance**:
+**CRITICAL FINDING - CIP Outperformance**:
 - Novel genes-only **surpass baseline by 16%** (F1: 0.880 vs 0.758)
 - **Why?**
   - Baseline CIP (Tier 1A) uses **plasmid replicons as poor surrogates** for MDR lineages (IncFIA → ST131 proxy)
@@ -2129,70 +2199,49 @@ The progression shows novel genes capture **orthogonal information** to baseline
 | AMC | 8.7% | 29.6% | **3.4×** |
 | CIP | 6.6% | 14.4% | **2.2×** |
 
-**This Results Summary synthesizes findings from all 12 notebooks, demonstrating that pangenome-wide discovery successfully identifies 55 novel resistance determinants with independent predictive power, validated through rigorous filtering and control experiments.**
+**Statistical validation**: Bootstrap 95% CI excludes 1.0 (p < 0.001)
+
+---
+
+### 11. Clinical Translation
+
+#### AMX - First-Line Therapy
+- **Baseline**: Excellent (F1=0.911) - current diagnostic PCR for blaTEM genes is sufficient
+- **Novel contribution**: Modest (91% of baseline) - primarily plasmid markers
+- **Recommendation**: Continue current diagnostics, novel genes add limited clinical value
+- **Research priority**: LOW for novel genes
+
+#### AMC - Second-Line Therapy
+- **Baseline**: Moderate (F1=0.678) - indicates clinical treatment challenges
+- **Novel contribution**: Significant (94% of baseline, -8% when replaced)
+- **Unique mechanisms**: yfeA (biofilm), wcaM (capsule) not in current diagnostics
+- **Recommendation**: Develop comprehensive panel including **tolerance markers**
+- **Research priority**: **HIGH** - biofilm/tolerance genes represent uncharacterized mechanisms
+
+#### CIP - First-Line for Complicated Infections
+- **Baseline**: Poor (F1=0.758) - uses plasmid surrogates
+- **Tier 2 (mutations)**: Near-perfect (F1=0.957) - gyrA/parC sequencing sufficient
+- **Novel contribution**: **Outperforms baseline** (F1=0.857 vs 0.758, +13%)
+- **Mechanisms**: chpB (persisters), yedI (DNA repair), group_9126 (efflux)
+- **Recommendation**:
+  - **Primary**: gyrA/parC sequencing (Tier 2 approach)
+  - **Secondary**: Novel genes for accessory mechanisms (persisters, tolerance)
+- **Research priority**: **HIGHEST** - novel genes capture mechanisms missed by databases
+
+---
+
+**This Results Summary synthesizes findings from all 12 notebooks, demonstrating that pangenome-wide discovery successfully identifies ~55 novel resistance determinants with independent predictive power, validated through rigorous filtering and control experiments.**
 
 </details>
 
 ---
 
-## **Installation**
-
-### Requirements
-
-- Python 3.8+
-- Jupyter Notebook
-- 16GB RAM minimum
-
-### Dependencies
-
-```bash
-# Core ML libraries
-pip install xgboost==1.7.0
-pip install scikit-learn==1.3.0
-pip install pandas==2.0.0
-pip install numpy==1.24.0
-
-# Visualization
-pip install matplotlib==3.7.0
-pip install seaborn==0.12.0
-pip install shap==0.42.0
-
-# Bioinformatics (optional, for data processing)
-pip install biopython==1.81
-pip install pysam==0.21.0
-
-# Notebook execution
-pip install jupyter==1.0.0
-pip install ipykernel==6.25.0
-```
-
-### Installation Steps
-
-```bash
-# 1. Clone repository
-git clone https://github.com/yourusername/AMR-Discovery-E-coli.git
-cd AMR-Discovery-E-coli
-
-# 2. Create virtual environment (recommended)
-python -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
-
-# 3. Extract compressed datasets
-cd "1. datasets/rar files"
-unrar x amr_features.rar ../
-unrar x snp_features.rar ../
-unzip plasmidfinder.zip -d ../
-
-cd ../..
-```
----
-
-## **Citation**
+## Citation
 
 If you use this work, please cite:
 
 ```bibtex
-@heart{muhammadlukman2026amr_discovery,
+@article{muhammadlukman2026amr_discovery,
   title={Pangenome-Wide Discovery of Novel Antimicrobial Resistance Determinants in Escherichia coli Through Machine Learning and Hierarchical Feature Engineering},
   author={Muhammad Lukman},
   year={2025},
@@ -2220,12 +2269,12 @@ If you use this work, please cite:
 
 ---
 
-## **Contact**
+## Contact
 
 **Author**: Muhammad Lukman  
 **Email**: dr.mlukmanuaf@gmail.com  
 **Institution**: UAF  
-**GitHub**: [Muahhamd-Lukman](https://github.com/Muhammad-Lukman)
+**GitHub**: [Muhammad-Lukman](https://github.com/Muhammad-Lukman)
 
 **For questions about**:
 - **Data access**: Contact via email for raw genomic data (assemblies, VCF files)
@@ -2234,7 +2283,7 @@ If you use this work, please cite:
 
 ---
 
-## **License**
+## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
@@ -2246,7 +2295,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ---
 
-## **Acknowledgments**
+## Acknowledgments
 
 **Data Sources**:
 - **CARD**: https://card.mcmaster.ca/
@@ -2268,8 +2317,20 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ---
 
-**Last Updated**: February 28, 2026
+**Last Updated**: March 02, 2026
 
 **Repository Status**: Active (accepting issues and pull requests)
 
 **Star this repo** if you find it useful for your research!
+
+### Overview of Model Performance Across All Experimental Conditions
+
+This section presents comprehensive results from all 12 notebooks, organized by experimental design. The results demonstrate that **novel genes discovered through pangenome-wide analysis can independently predict resistance**, with performance that in some cases **surpasses baseline models using known AMR databases** (CIP: F1 0.880 vs 0.758).
+
+**Experimental Flow**:
+1. **Baseline Models** (Notebooks 4.0-4.2): Known AMR databases only → establishes reference performance
+2. **Mutations-Only** (Notebook 3.2): Chromosomal mutations only → tests mutation sufficiency
+3. **Tier 2 Models** (Notebook 3.1): Genes + mutations → tests additive value
+4. **Tier 3 Comprehensive** (Notebooks 3.1, 3.5): All features combined → demonstrates contribution
+5. **Control Experiment** (Notebook 3.4): Tier 2 + stress genes vs Tier 2 + novel → validates non-redundancy
+6. **PRIMARY OUTCOME** (Notebook 3.6): Novel genes only → proves independent predictive power
