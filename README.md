@@ -2322,15 +2322,3 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 **Repository Status**: Active (accepting issues and pull requests)
 
 **Star this repo** if you find it useful for your research!
-
-### Overview of Model Performance Across All Experimental Conditions
-
-This section presents comprehensive results from all 12 notebooks, organized by experimental design. The results demonstrate that **novel genes discovered through pangenome-wide analysis can independently predict resistance**, with performance that in some cases **surpasses baseline models using known AMR databases** (CIP: F1 0.880 vs 0.758).
-
-**Experimental Flow**:
-1. **Baseline Models** (Notebooks 4.0-4.2): Known AMR databases only → establishes reference performance
-2. **Mutations-Only** (Notebook 3.2): Chromosomal mutations only → tests mutation sufficiency
-3. **Tier 2 Models** (Notebook 3.1): Genes + mutations → tests additive value
-4. **Tier 3 Comprehensive** (Notebooks 3.1, 3.5): All features combined → demonstrates contribution
-5. **Control Experiment** (Notebook 3.4): Tier 2 + stress genes vs Tier 2 + novel → validates non-redundancy
-6. **PRIMARY OUTCOME** (Notebook 3.6): Novel genes only → proves independent predictive power
