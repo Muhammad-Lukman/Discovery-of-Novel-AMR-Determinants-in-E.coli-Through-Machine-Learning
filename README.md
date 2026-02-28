@@ -5,7 +5,7 @@
 [![scikit-learn](https://img.shields.io/badge/scikit--learn-1.3.0-orange)](https://scikit-learn.org/)
 [![License](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
-> **A hierarchical machine learning framework for predicting antimicrobial resistance in *Escherichia coli* and discovering 55 novel resistance genes beyond known databases through rigorous pangenome-wide analysis.**
+> **A hierarchical machine learning framework for predicting antimicrobial resistance in *Escherichia coli* and discovering novel resistance genes beyond known databases through rigorous pangenome-wide analysis.**
 
 ---
 
