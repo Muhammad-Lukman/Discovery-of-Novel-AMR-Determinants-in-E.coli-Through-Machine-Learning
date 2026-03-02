@@ -1896,12 +1896,6 @@ Two variants examined:
   - Tier 1B captures some MDR lineage signal but misses **specific quinolone tolerance mechanisms**
 - **Conclusion**: Highly filtered novel genes are **indispensable** for comprehensive CIP prediction beyond primary mutations
 
-**Statistical Validation**:
-- Bootstrap resampling (1,000 iterations) confirms:
-  - AMC: 95% CI for Δ F1 excludes zero (p < 0.001)
-  - CIP: 95% CI for Δ F1 excludes zero (p < 0.001)
-- Permutation tests: Observed Δ F1 significantly greater than random gene swaps (p < 0.001)
-
 ---
 
 ### 6. PRIMARY OUTCOME - Novel Genes-Only Models (Notebook 3.6)
