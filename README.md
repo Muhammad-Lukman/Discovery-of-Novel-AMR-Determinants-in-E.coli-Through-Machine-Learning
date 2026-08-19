@@ -7,6 +7,8 @@
 
 > **A hierarchical machine learning framework for predicting antimicrobial resistance in *Escherichia coli* and discovering novel resistance genes beyond known databases through rigorous pangenome-wide analysis.**
 
+> One glance: 1,089 E. coli clinical isolates (ENA), 3 antibiotics (AMX, AMC, CIP), 44,957 pangenome genes reduced to ~55 novel candidate determinants. Novel genes alone predict resistance at F1 0.833 (AMX), 0.638 (AMC), 0.857 (CIP) after lineage filtering, matching up to 93 percent of the full model. Full pipeline: 12 notebooks, XGBoost + SHAP.
+
 ---
 
 ## Table of Contents
